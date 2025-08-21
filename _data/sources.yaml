@@ -37,6 +37,10 @@
 # An expanded evaluation of protein function prediction methods shows an improvement in accuracy.
 - id: doi:10.1186/s13059-016-1037-6
   remove: true
+  
+# UniProt: the universal protein knowledgebase
+- id: doi:10.1093/nar/gkw1099
+  remove: true
 
 # From the research laboratory to the database: the Caenorhabditis elegans kinome in UniProtKB
 - id: doi:10.1042/BCJ20160991
