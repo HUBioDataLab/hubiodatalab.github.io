@@ -1,264 +1,1597 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- id: doi:10.1101/2025.06.19.660613
-  title: Scalable data harmonization for single-cell image-based profiling with CytoTable
+- id: doi:10.1101/2025.04.19.649272
+  title: 'ProtHGT: Heterogeneous Graph Transformers for Automated Protein Function
+    Prediction Using Biological Knowledge Graphs and Language Models'
   authors:
-  - Dave Bunten
-  - Jenna Tomkinson
-  - Erik Serrano
-  - Michael J. Lippincott
-  - Kenneth I. Brewer
-  - Vince Rubinetti
-  - Faisal Alquaddoomi
-  - Gregory P. Way
+  - Erva Ulusoy
+  - "Tunca Do\u011Fan"
   publisher: Cold Spring Harbor Laboratory
-  date: '2025-06-25'
-  link: https://doi.org/g9rfr3
-  orcid: 0000-0002-4655-3773
+  date: '2025-04-24'
+  link: https://doi.org/g9xshp
+  orcid: 0000-0002-1298-9763
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1093/nar/gkad1082
-  title: "The Monarch Initiative in 2024: an analytic platform integrating phenotypes,\
-    \ genes\_and diseases across species"
+- id: doi:10.1101/2025.04.10.648084
+  title: A Benchmarking Platform for Assessing Protein Language Models on Function-related
+    Prediction Tasks
   authors:
-  - Tim E Putman
-  - Kevin Schaper
-  - Nicolas Matentzoglu
-  - "Vincent\_P Rubinetti"
-  - "Faisal\_S Alquaddoomi"
-  - Corey Cox
-  - J Harry Caufield
-  - Glass Elsarboukh
-  - Sarah Gehrke
-  - Harshad Hegde
-  - "Justin\_T Reese"
-  - Ian Braun
-  - "Richard\_M Bruskiewich"
-  - Luca Cappelletti
-  - Seth Carbon
-  - "Anita\_R Caron"
-  - "Lauren\_E Chan"
-  - "Christopher\_G Chute"
-  - "Katherina\_G Cortes"
-  - "Vin\xEDcius De\_Souza"
-  - Tommaso Fontana
-  - "Nomi\_L Harris"
-  - "Emily\_L Hartley"
-  - Eric Hurwitz
-  - "Julius\_O B Jacobsen"
-  - Madan Krishnamurthy
-  - "Bryan\_J Laraway"
-  - "James\_A McLaughlin"
-  - "Julie\_A McMurry"
-  - "Sierra\_A T Moxon"
-  - "Kathleen\_R Mullen"
-  - "Shawn\_T O\u2019Neil"
-  - "Kent\_A Shefchek"
-  - Ray Stefancsik
-  - Sabrina Toro
-  - "Nicole\_A Vasilevsky"
-  - "Ramona\_L Walls"
-  - "Patricia\_L Whetzel"
-  - David Osumi-Sutherland
-  - Damian Smedley
-  - "Peter\_N Robinson"
-  - "Christopher\_J Mungall"
-  - "Melissa\_A Haendel"
-  - "Monica\_C Munoz-Torres"
-  publisher: Nucleic Acids Research
-  date: '2023-11-24'
-  link: https://doi.org/gs6kmr
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1101/2023.10.11.560955
-  title: Integration of 168,000 samples reveals global patterns of the human gut microbiome
-  authors:
-  - Richard J. Abdill
-  - Samantha P. Graham
-  - Vincent Rubinetti
-  - Frank W. Albert
-  - Casey S. Greene
-  - Sean Davis
-  - Ran Blekhman
+  - "Elif \xC7evrim"
+  - "Melih G\xF6kay Yi\u011Fit"
+  - Erva Ulusoy
+  - "Ardan Y\u0131lmaz"
+  - "Tunca Do\u011Fan"
   publisher: Cold Spring Harbor Laboratory
-  date: '2023-10-11'
-  link: https://doi.org/gsvf5z
-  orcid: 0000-0002-4655-3773
+  date: '2025-04-16'
+  link: https://doi.org/g9xshq
+  orcid: 0000-0002-1298-9763
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1093/nar/gkad289
-  title: 'MyGeneset.info: an interactive and programmatic platform for community-curated
-    and user-created collections of genes'
+- id: doi:10.1016/j.sbi.2025.103017
+  title: "Protein language models for predicting drug\u2013target interactions: Novel\
+    \ approaches, emerging methods, and future directions"
   authors:
-  - Ricardo Avila
-  - Vincent Rubinetti
-  - Xinghua Zhou
-  - Dongbo Hu
-  - Zhongchao Qian
-  - Marco Alvarado Cano
-  - Everaldo Rodolpho
-  - Ginger Tsueng
-  - Casey Greene
-  - Chunlei Wu
-  publisher: Nucleic Acids Research
-  date: '2023-04-18'
-  link: https://doi.org/gr5hb5
-  orcid: 0000-0002-4655-3773
+  - "Atabey \xDCnl\xFC"
+  - Erva Ulusoy
+  - "Melih G\xF6kay Yi\u011Fit"
+  - Melih Darcan
+  - "Tunca Do\u011Fan"
+  publisher: Current Opinion in Structural Biology
+  date: '2025-04-01'
+  link: https://doi.org/g9qdzb
+  orcid: 0000-0002-1298-9763
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2023.01.05.522941
-  title: Hetnet connectivity search provides rapid insights into how two biomedical
-    entities are related
+- id: doi:10.1002/ddr.70008
+  title: "Design, synthesis, and evaluation of novel Indole\u2010Based small molecules\
+    \ as sirtuin inhibitors with anticancer activities"
   authors:
-  - Daniel S. Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J. Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N. Nicholson
-  - Yun Hao
-  - Blair D. Sullivan
-  - Michael W. Nagle
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-01-07'
-  link: https://doi.org/grmcb9
-  orcid: 0000-0002-4655-3773
+  - Busra Binarci
+  - Ensar Korkut Kilic
+  - Tunca Dogan
+  - Rengul Cetin Atalay
+  - Deniz Cansen Kahraman
+  - Sultan Nacak Baytas
+  publisher: Drug Development Research
+  date: '2024-10-21'
+  link: https://doi.org/g9xshr
+  orcid: 0000-0002-1298-9763
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1093/gigascience/giad047
-  title: Hetnet connectivity search provides rapid insights into how biomedical entities
-    are related
+- id: doi:10.1002/pro.4988
+  title: "Mutual annotation\u2010based prediction of protein domain functions with\
+    \ <scp>Domain2GO</scp>"
   authors:
-  - Daniel S Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N Nicholson
-  - Yun Hao
-  - Blair D Sullivan
-  - Michael W Nagle
-  - Casey S Greene
-  publisher: GigaScience
-  date: '2022-12-28'
-  link: https://doi.org/gsd85n
-  orcid: 0000-0002-4655-3773
+  - Erva Ulusoy
+  - "Tunca Do\u011Fan"
+  publisher: Protein Science
+  date: '2024-05-16'
+  link: https://doi.org/g9xsht
+  orcid: 0000-0002-1298-9763
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2022.02.18.461833
-  title: 'MolEvolvR: A web-app for characterizing proteins using molecular evolution
-    and phylogeny'
+- id: doi:10.1016/j.csbj.2023.09.017
+  title: 'ASCARIS: Positional feature annotation and protein structure-based representation
+    of single amino acid variations'
   authors:
-  - Jacob D Krol
-  - Joseph T Burke
-  - Samuel Z Chen
-  - Lo M Sosinski
-  - Faisal S Alquaddoomi
-  - Evan P Brenner
-  - Ethan P Wolfe
-  - Vincent P Rubinetti
-  - Shaddai Amolitos
-  - Kellen M Reason
-  - John B Johnston
-  - Janani Ravi
-  publisher: Cold Spring Harbor Laboratory
-  date: '2022-02-22'
-  link: https://doi.org/gstx7j
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1186/s13059-020-02021-3
-  title: Compressing gene expression data using multiple latent space dimensionalities
-    learns complementary biological representations
-  authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Genome Biology
-  date: '2020-05-11'
-  link: https://doi.org/gg2mjh
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1371/journal.pcbi.1007128
-  title: Open collaborative writing with Manubot
-  authors:
-  - Daniel S. Himmelstein
-  - Vincent Rubinetti
-  - David R. Slochower
-  - Dongbo Hu
-  - Venkat S. Malladi
-  - Casey S. Greene
-  - Anthony Gitter
-  publisher: PLOS Computational Biology
-  date: '2020-12-04'
-  link: https://doi.org/c7np
-  orcid: 0000-0002-4655-3773
-  plugin: sources.py
-  file: sources.yaml
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-  - type: manubot
-    link: https://greenelab.github.io/meta-review/
-  - type: source
-    text: Manuscript Source
-    link: https://github.com/greenelab/meta-review
-  - type: website
-    link: http://manubot.org/
-  tags:
-  - open science
-  - collaboration
-  repo: greenelab/meta-review
-- id: doi:10.1101/573782
-  title: Sequential compression of gene expression across dimensionalities and methods
-    reveals no single best method or dimensionality
-  authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2019-03-11'
-  link: https://doi.org/gfxjxf
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
-  authors:
-  - David N. Nicholson
-  - Casey S. Greene
+  - Fatma Cankara
+  - "Tunca Do\u011Fan"
   publisher: Computational and Structural Biotechnology Journal
-  date: '2020-01-01'
-  link: https://doi.org/gg7m48
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.7554/eLife.32822
-  title: Sci-Hub provides access to nearly all scholarly literature
+  date: '2023-01-01'
+  link: https://doi.org/g9xshw
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41587-023-01848-y
+  title: Democratizing knowledge representation with BioCypher
   authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
-  publisher: eLife
-  date: '2018-03-01'
-  link: https://doi.org/ckcj
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
-  plugin: sources.py
-  file: sources.yaml
+  - Sebastian Lobentanzer
+  - Patrick Aloy
+  - Jan Baumbach
+  - Balazs Bohar
+  - Vincent J. Carey
+  - Pornpimol Charoentong
+  - Katharina Danhauser
+  - "Tunca Do\u011Fan"
+  - Johann Dreo
+  - Ian Dunham
+  - Elias Farr
+  - "Adri\xE0 Fernandez-Torras"
+  - Benjamin M. Gyori
+  - Michael Hartung
+  - Charles Tapley Hoyt
+  - Christoph Klein
+  - Tamas Korcsmaros
+  - Andreas Maier
+  - Matthias Mann
+  - David Ochoa
+  - Elena Pareja-Lorente
+  - Ferdinand Popp
+  - Martin Preusse
+  - Niklas Probul
+  - Benno Schwikowski
+  - "B\xFCnyamin Sen"
+  - Maximilian T. Strauss
+  - Denes Turei
+  - Erva Ulusoy
+  - Dagmar Waltemath
+  - Judith A. H. Wodke
+  - Julio Saez-Rodriguez
+  publisher: Nature Biotechnology
+  date: '2023-06-19'
+  link: https://doi.org/gszqjr
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1088/2632-2153/acdb30
+  title: 'SELFormer: molecular representation learning via SELFIES language models'
+  authors:
+  - "Atakan Y\xFCksel"
+  - Erva Ulusoy
+  - "Atabey \xDCnl\xFC"
+  - "Tunca Do\u011Fan"
+  publisher: 'Machine Learning: Science and Technology'
+  date: '2023-06-01'
+  link: https://doi.org/g9xshx
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bioinformatics/btad234
+  title: "Transfer learning for drug\u2013target interaction prediction"
+  authors:
+  - "Alperen Dalk\u0131ran"
+  - Ahmet Atakan
+  - "Ahmet S Rifaio\u011Flu"
+  - Maria J Martin
+  - "Reng\xFCl \xC7etin Atalay"
+  - Aybar C Acar
+  - "Tunca Do\u011Fan"
+  - Volkan Atalay
+  publisher: Bioinformatics
+  date: '2023-06-01'
+  link: https://doi.org/g9dhzh
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bib/bbac627
+  title: "ProFAB\u2014open protein functional annotation benchmark"
+  authors:
+  - "A Samet \xD6zdilek"
+  - Ahmet Atakan
+  - "G\xF6khan \xD6zsar\u0131"
+  - Aybar Acar
+  - M Volkan Atalay
+  - "Tunca Do\u011Fan"
+  - "Ahmet S Rifaio\u011Flu"
+  publisher: Briefings in Bioinformatics
+  date: '2023-02-03'
+  link: https://doi.org/g9xshz
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.48550/ARXIV.2302.07868
+  title: Target Specific De Novo Design of Drug Candidate Molecules with Graph Transformer-based
+    Generative Adversarial Networks
+  authors:
+  - "Atabey \xDCnl\xFC"
+  - "Elif \xC7evrim"
+  - "Melih G\xF6kay Yi\u011Fit"
+  - "Ahmet Sar\u0131g\xFCn"
+  - "Hayriye \xC7elikbilek"
+  - Osman Bayram
+  - Deniz Cansen Kahraman
+  - "Abdurrahman Ol\u011Fa\xE7"
+  - "Ahmet Sureyya Rifaio\u011Flu"
+  - "Erden Bano\u011Flu"
+  - "Tunca Do\u011Fan"
+  publisher: arXiv
+  date: '2023-01-01'
+  link: https://doi.org/g9xsh2
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s13321-023-00689-w
+  title: "How to approach machine learning-based prediction of drug/compound\u2013\
+    target interactions"
+  authors:
+  - Heval Atas Guvenilir
+  - "Tunca Do\u011Fan"
+  publisher: Journal of Cheminformatics
+  date: '2023-02-06'
+  link: https://doi.org/g9xsh3
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/nar/gkac1052
+  title: 'UniProt: the Universal Protein Knowledgebase in 2023'
+  authors:
+  - Alex Bateman
+  - Maria-Jesus Martin
+  - Sandra Orchard
+  - Michele Magrane
+  - Shadab Ahmad
+  - Emanuele Alpi
+  - Emily H Bowler-Barnett
+  - Ramona Britto
+  - Hema Bye-A-Jee
+  - Austra Cukura
+  - Paul Denny
+  - Tunca Dogan
+  - ThankGod Ebenezer
+  - Jun Fan
+  - Penelope Garmiri
+  - Leonardo Jose da Costa Gonzales
+  - Emma Hatton-Ellis
+  - Abdulrahman Hussein
+  - Alexandr Ignatchenko
+  - Giuseppe Insana
+  - Rizwan Ishtiaq
+  - Vishal Joshi
+  - Dushyanth Jyothi
+  - Swaathi Kandasaamy
+  - Antonia Lock
+  - Aurelien Luciani
+  - Marija Lugaric
+  - Jie Luo
+  - Yvonne Lussi
+  - Alistair MacDougall
+  - Fabio Madeira
+  - Mahdi Mahmoudy
+  - Alok Mishra
+  - Katie Moulang
+  - Andrew Nightingale
+  - Sangya Pundir
+  - Guoying Qi
+  - Shriya Raj
+  - Pedro Raposo
+  - Daniel L Rice
+  - Rabie Saidi
+  - Rafael Santos
+  - Elena Speretta
+  - James Stephenson
+  - Prabhat Totoo
+  - Edward Turner
+  - Nidhi Tyagi
+  - Preethi Vasudev
+  - Kate Warner
+  - Xavier Watkins
+  - Rossana Zaru
+  - Hermann Zellner
+  - Alan J Bridge
+  - Lucila Aimo
+  - Ghislaine Argoud-Puy
+  - Andrea H Auchincloss
+  - Kristian B Axelsen
+  - Parit Bansal
+  - Delphine Baratin
+  - Teresa M Batista Neto
+  - Marie-Claude Blatter
+  - Jerven T Bolleman
+  - Emmanuel Boutet
+  - Lionel Breuza
+  - Blanca Cabrera Gil
+  - Cristina Casals-Casas
+  - Kamal Chikh Echioukh
+  - Elisabeth Coudert
+  - Beatrice Cuche
+  - Edouard de Castro
+  - Anne Estreicher
+  - Maria L Famiglietti
+  - Marc Feuermann
+  - Elisabeth Gasteiger
+  - Pascale Gaudet
+  - Sebastien Gehant
+  - Vivienne Gerritsen
+  - Arnaud Gos
+  - Nadine Gruaz
+  - Chantal Hulo
+  - Nevila Hyka-Nouspikel
+  - Florence Jungo
+  - Arnaud Kerhornou
+  - Philippe Le Mercier
+  - Damien Lieberherr
+  - Patrick Masson
+  - Anne Morgat
+  - Venkatesh Muthukrishnan
+  - Salvo Paesano
+  - Ivo Pedruzzi
+  - Sandrine Pilbout
+  - Lucille Pourcel
+  - Sylvain Poux
+  - Monica Pozzato
+  - Manuela Pruess
+  - Nicole Redaschi
+  - Catherine Rivoire
+  - Christian J A Sigrist
+  - Karin Sonesson
+  - Shyamala Sundaram
+  - Cathy H Wu
+  - Cecilia N Arighi
+  - Leslie Arminski
+  - Chuming Chen
+  - Yongxing Chen
+  - Hongzhan Huang
+  - Kati Laiho
+  - Peter McGarvey
+  - Darren A Natale
+  - Karen Ross
+  - C R Vinayaka
+  - Qinghua Wang
+  - Yuqi Wang
+  - Jian Zhang
+  publisher: Nucleic Acids Research
+  date: '2022-11-21'
+  link: https://doi.org/grn7tt
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1080/17460441.2023.2153830
+  title: Machine learning-based prediction of drug approvals using molecular, physicochemical,
+    clinical trial, and patent-related features
+  authors:
+  - Fulya Ciray
+  - "Tunca Do\u011Fan"
+  publisher: Expert Opinion on Drug Discovery
+  date: '2022-12-02'
+  link: https://doi.org/g9xsh4
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2022.11.03.514980
+  title: Mutual Annotation-Based Prediction of Protein Domain Functions with Domain2GO
+  authors:
+  - Erva Ulusoy
+  - "Tunca Do\u011Fan"
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-11-04'
+  link: https://doi.org/g9xsh5
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bioinformatics/btac458
+  title: 'SLPred: a multi-view subcellular localization prediction tool for multi-location
+    human proteins'
+  authors:
+  - "G\xF6khan \xD6zsar\u0131"
+  - Ahmet Sureyya Rifaioglu
+  - Ahmet Atakan
+  - "Tunca Do\u011Fan"
+  - Maria Jesus Martin
+  - "Reng\xFCl \xC7etin Atalay"
+  - Volkan Atalay
+  publisher: Bioinformatics
+  date: '2022-07-08'
+  link: https://doi.org/g9xsh6
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2022.05.01.490207
+  title: How to Best Represent Proteins in Machine Learning-based Prediction of Drug/Compound-Target
+    Interactions
+  authors:
+  - Heval Atas
+  - "Tunca Do\u011Fan"
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-05-01'
+  link: https://doi.org/g9xsh7
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s42256-022-00457-9
+  title: Learning functional properties of proteins with language models
+  authors:
+  - Serbulent Unsal
+  - Heval Atas
+  - Muammer Albayrak
+  - Kemal Turhan
+  - Aybar C. Acar
+  - "Tunca Do\u011Fan"
+  publisher: Nature Machine Intelligence
+  date: '2022-03-21'
+  link: https://doi.org/grckz2
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pbio.3001464
+  title: A crowdsourcing open platform for literature curation in UniProt
+  authors:
+  - Yuqi Wang
+  - Qinghua Wang
+  - Hongzhan Huang
+  - Wei Huang
+  - Yongxing Chen
+  - Peter B. McGarvey
+  - Cathy H. Wu
+  - Cecilia N. Arighi
+  publisher: PLOS Biology
+  date: '2021-12-06'
+  link: https://doi.org/gqk8cs
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3389/fmolb.2021.806474
+  title: 'Editorial: Machine Learning Methodologies to Study Molecular Interactions'
+  authors:
+  - Artur Yakimovich
+  - "Arzucan \xD6zg\xFCr"
+  - "Tunca Do\u011Fan"
+  - Elif Ozkirimli
+  publisher: Frontiers in Molecular Biosciences
+  date: '2021-12-03'
+  link: https://doi.org/g9xsh8
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/s12029-021-00768-x
+  title: Data Centric Molecular Analysis and Evaluation of Hepatocellular Carcinoma
+    Therapeutics Using Machine Intelligence-Based Tools
+  authors:
+  - Rengul Cetin-Atalay
+  - Deniz Cansen Kahraman
+  - Esra Nalbat
+  - Ahmet Sureyya Rifaioglu
+  - Ahmet Atakan
+  - Ataberk Donmez
+  - Heval Atas
+  - M. Volkan Atalay
+  - Aybar C. Acar
+  - "Tunca Do\u011Fan"
+  publisher: Journal of Gastrointestinal Cancer
+  date: '2021-12-01'
+  link: https://doi.org/g9xsh9
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pcbi.1009171
+  title: "Protein domain-based prediction of drug/compound\u2013target interactions\
+    \ and experimental validation on LIM kinases"
+  authors:
+  - "Tunca Do\u011Fan"
+  - "Ece Akhan G\xFCzelcan"
+  - Marcus Baumann
+  - Altay Koyas
+  - Heval Atas
+  - Ian R. Baxendale
+  - Maria Martin
+  - Rengul Cetin-Atalay
+  publisher: PLOS Computational Biology
+  date: '2021-11-29'
+  link: https://doi.org/g9xsjb
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/nar/gkab543
+  title: 'CROssBAR: comprehensive resource of biomedical relations with knowledge
+    graph representations'
+  authors:
+  - "Tunca Do\u011Fan"
+  - Heval Atas
+  - Vishal Joshi
+  - Ahmet Atakan
+  - "Ahmet\_Sureyya Rifaioglu"
+  - Esra Nalbat
+  - Andrew Nightingale
+  - Rabie Saidi
+  - Vladimir Volynkin
+  - Hermann Zellner
+  - Rengul Cetin-Atalay
+  - Maria Martin
+  - Volkan Atalay
+  publisher: Nucleic Acids Research
+  date: '2021-06-28'
+  link: https://doi.org/gndrgn
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2021.06.14.448307
+  title: "Protein Domain-Based Prediction of Compound\u2013Target Interactions and\
+    \ Experimental Validation on LIM Kinases"
+  authors:
+  - "Tunca Do\u011Fan"
+  - "Ece Akhan G\xFCzelcan"
+  - Marcus Baumann
+  - Altay Koyas
+  - Heval Atas
+  - Ian Baxendale
+  - Maria Martin
+  - Rengul Cetin-Atalay
+  publisher: Cold Spring Harbor Laboratory
+  date: '2021-06-14'
+  link: https://doi.org/g9xsjc
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41467-021-23165-1
+  title: Crowdsourced mapping of unexplored target space of kinase inhibitors
+  authors:
+  - "Anna Cicho\u0144ska"
+  - Balaguru Ravikumar
+  - Robert J. Allaway
+  - Fangping Wan
+  - Sungjoon Park
+  - Olexandr Isayev
+  - Shuya Li
+  - Michael Mason
+  - Andrew Lamb
+  - Ziaurrehman Tanoli
+  - Minji Jeon
+  - Sunkyu Kim
+  - Mariya Popova
+  - Stephen Capuzzi
+  - Jianyang Zeng
+  - Kristen Dang
+  - Gregory Koytiger
+  - Jaewoo Kang
+  - Carrow I. Wells
+  - Timothy M. Willson
+  - Mehmet Tan
+  - Chih-Han Huang
+  - Edward S. C. Shih
+  - Tsai-Min Chen
+  - Chih-Hsun Wu
+  - Wei-Quan Fang
+  - Jhih-Yu Chen
+  - Ming-Jing Hwang
+  - Xiaokang Wang
+  - Marouen Ben Guebila
+  - Behrouz Shamsaei
+  - Sourav Singh
+  - Thin Nguyen
+  - Mostafa Karimi
+  - Di Wu
+  - Zhangyang Wang
+  - Yang Shen
+  - "Hakime \xD6zt\xFCrk"
+  - Elif Ozkirimli
+  - "Arzucan \xD6zg\xFCr"
+  - Hansaim Lim
+  - Lei Xie
+  - Georgi K. Kanev
+  - Albert J. Kooistra
+  - Bart A. Westerman
+  - Panagiotis Terzopoulos
+  - Konstantinos Ntagiantas
+  - Christos Fotis
+  - Leonidas Alexopoulos
+  - Dimitri Boeckaerts
+  - Michiel Stock
+  - Bernard De Baets
+  - Yves Briers
+  - Yunan Luo
+  - Hailin Hu
+  - Jian Peng
+  - Tunca Dogan
+  - Ahmet S. Rifaioglu
+  - Heval Atas
+  - Rengul Cetin Atalay
+  - Volkan Atalay
+  - Maria J. Martin
+  - Minji Jeon
+  - Junhyun Lee
+  - Seongjun Yun
+  - Bumsoo Kim
+  - Buru Chang
+  - "G\xE1bor Turu"
+  - "\xC1d\xE1m Mis\xE1k"
+  - Bence Szalai
+  - "L\xE1szl\xF3 Hunyady"
+  - Matthias Lienhard
+  - Paul Prasse
+  - Ivo Bachmann
+  - Julia Ganzlin
+  - Gal Barel
+  - Ralf Herwig
+  - "Davor Or\u0161oli\u0107"
+  - "Bono Lu\u010Di\u0107"
+  - "Vi\u0161nja Stepani\u0107"
+  - "Tomislav \u0160muc"
+  - Tudor I. Oprea
+  - Avner Schlessinger
+  - David H. Drewry
+  - Gustavo Stolovitzky
+  - Krister Wennerberg
+  - Justin Guinney
+  - Tero Aittokallio
+  publisher: Nature Communications
+  date: '2021-06-03'
+  link: https://doi.org/g8rw24
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bioinformatics/btaa858
+  title: 'MDeePred: novel multi-channel protein featurization for deep learning-based
+    binding affinity prediction in drug discovery'
+  authors:
+  - A S Rifaioglu
+  - R Cetin Atalay
+  - D Cansen Kahraman
+  - "T Do\u011Fan"
+  - M Martin
+  - V Atalay
+  publisher: Bioinformatics
+  date: '2020-12-07'
+  link: https://doi.org/g9kf9x
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/nar/gkaa1100
+  title: 'UniProt: the universal protein knowledgebase in 2021'
+  authors:
+  - Alex Bateman
+  - Maria-Jesus Martin
+  - Sandra Orchard
+  - Michele Magrane
+  - Rahat Agivetova
+  - Shadab Ahmad
+  - Emanuele Alpi
+  - Emily H Bowler-Barnett
+  - Ramona Britto
+  - Borisas Bursteinas
+  - Hema Bye-A-Jee
+  - Ray Coetzee
+  - Austra Cukura
+  - Alan Da Silva
+  - Paul Denny
+  - Tunca Dogan
+  - ThankGod Ebenezer
+  - Jun Fan
+  - Leyla Garcia Castro
+  - Penelope Garmiri
+  - George Georghiou
+  - Leonardo Gonzales
+  - Emma Hatton-Ellis
+  - Abdulrahman Hussein
+  - Alexandr Ignatchenko
+  - Giuseppe Insana
+  - Rizwan Ishtiaq
+  - Petteri Jokinen
+  - Vishal Joshi
+  - Dushyanth Jyothi
+  - Antonia Lock
+  - Rodrigo Lopez
+  - Aurelien Luciani
+  - Jie Luo
+  - Yvonne Lussi
+  - Alistair MacDougall
+  - Fabio Madeira
+  - Mahdi Mahmoudy
+  - Manuela Menchi
+  - Alok Mishra
+  - Katie Moulang
+  - Andrew Nightingale
+  - Carla Susana Oliveira
+  - Sangya Pundir
+  - Guoying Qi
+  - Shriya Raj
+  - Daniel Rice
+  - Milagros Rodriguez Lopez
+  - Rabie Saidi
+  - Joseph Sampson
+  - Tony Sawford
+  - Elena Speretta
+  - Edward Turner
+  - Nidhi Tyagi
+  - Preethi Vasudev
+  - Vladimir Volynkin
+  - Kate Warner
+  - Xavier Watkins
+  - Rossana Zaru
+  - Hermann Zellner
+  - Alan Bridge
+  - Sylvain Poux
+  - Nicole Redaschi
+  - Lucila Aimo
+  - Ghislaine Argoud-Puy
+  - Andrea Auchincloss
+  - Kristian Axelsen
+  - Parit Bansal
+  - Delphine Baratin
+  - Marie-Claude Blatter
+  - Jerven Bolleman
+  - Emmanuel Boutet
+  - Lionel Breuza
+  - Cristina Casals-Casas
+  - Edouard de Castro
+  - Kamal Chikh Echioukh
+  - Elisabeth Coudert
+  - Beatrice Cuche
+  - Mikael Doche
+  - Dolnide Dornevil
+  - Anne Estreicher
+  - Maria Livia Famiglietti
+  - Marc Feuermann
+  - Elisabeth Gasteiger
+  - Sebastien Gehant
+  - Vivienne Gerritsen
+  - Arnaud Gos
+  - Nadine Gruaz-Gumowski
+  - Ursula Hinz
+  - Chantal Hulo
+  - Nevila Hyka-Nouspikel
+  - Florence Jungo
+  - Guillaume Keller
+  - Arnaud Kerhornou
+  - Vicente Lara
+  - Philippe Le Mercier
+  - Damien Lieberherr
+  - Thierry Lombardot
+  - Xavier Martin
+  - Patrick Masson
+  - Anne Morgat
+  - Teresa Batista Neto
+  - Salvo Paesano
+  - Ivo Pedruzzi
+  - Sandrine Pilbout
+  - Lucille Pourcel
+  - Monica Pozzato
+  - Manuela Pruess
+  - Catherine Rivoire
+  - Christian Sigrist
+  - Karin Sonesson
+  - Andre Stutz
+  - Shyamala Sundaram
+  - Michael Tognolli
+  - Laure Verbregue
+  - Cathy H Wu
+  - Cecilia N Arighi
+  - Leslie Arminski
+  - Chuming Chen
+  - Yongxing Chen
+  - John S Garavelli
+  - Hongzhan Huang
+  - Kati Laiho
+  - Peter McGarvey
+  - Darren A Natale
+  - Karen Ross
+  - C R Vinayaka
+  - Qinghua Wang
+  - Yuqi Wang
+  - Lai-Su Yeh
+  - Jian Zhang
+  - Patrick Ruch
+  - Douglas Teodoro
+  publisher: Nucleic Acids Research
+  date: '2020-11-25'
+  link: https://doi.org/gjjsh4
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2020.10.28.359828
+  title: 'Evaluation of Methods for Protein Representation Learning: A Quantitative
+    Analysis'
+  authors:
+  - Serbulent Unsal
+  - "Heval Ata\u015F"
+  - Muammer Albayrak
+  - Kemal Turhan
+  - Aybar C. Acar
+  - "Tunca Do\u011Fan"
+  publisher: Cold Spring Harbor Laboratory
+  date: '2020-10-28'
+  link: https://doi.org/g59tf3
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2020.09.14.296889
+  title: 'CROssBAR: Comprehensive Resource of Biomedical Relations with Deep Learning
+    Applications and Knowledge Graph Representations'
+  authors:
+  - "Tunca Do\u011Fan"
+  - Heval Atas
+  - Vishal Joshi
+  - Ahmet Atakan
+  - Ahmet Sureyya Rifaioglu
+  - Esra Nalbat
+  - Andrew Nightingale
+  - Rabie Saidi
+  - Vladimir Volynkin
+  - Hermann Zellner
+  - Rengul Cetin-Atalay
+  - Maria Martin
+  - Volkan Atalay
+  publisher: Cold Spring Harbor Laboratory
+  date: '2020-09-15'
+  link: https://doi.org/gk7dm6
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bioinformatics/btaa496
+  title: 'iBioProVis: interactive visualization and analysis of compound bioactivity
+    space'
+  authors:
+  - Ataberk Donmez
+  - Ahmet Sureyya Rifaioglu
+  - Aybar Acar
+  - "Tunca Do\u011Fan"
+  - Rengul Cetin-Atalay
+  - Volkan Atalay
+  publisher: Bioinformatics
+  date: '2020-05-14'
+  link: https://doi.org/g9xsjd
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1039/c9sc03414e
+  title: "DEEPScreen: high performance drug\u2013target interaction prediction with\
+    \ convolutional neural networks using 2-D structural compound representations"
+  authors:
+  - Ahmet Sureyya Rifaioglu
+  - Esra Nalbat
+  - Volkan Atalay
+  - Maria Jesus Martin
+  - Rengul Cetin-Atalay
+  - "Tunca Do\u011Fan"
+  publisher: Chemical Science
+  date: '2020-01-01'
+  link: https://doi.org/g82sw9
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41597-019-0180-9
+  title: FAIR adoption, assessment and challenges at UniProt
+  authors:
+  - Leyla Garcia
+  - Jerven Bolleman
+  - Sebastien Gehant
+  - Nicole Redaschi
+  - Maria Martin
+  - Alex Bateman
+  - Michele Magrane
+  - Maria Martin
+  - Sandra Orchard
+  - Shriya Raj
+  - Shadab Ahmad
+  - Emanuele Alpi
+  - Emily Bowler
+  - Ramona Britto
+  - Borisas Bursteinas
+  - Hema Bye-A-Jee
+  - Tunca Dogan
+  - Leyla Garcia
+  - Penelope Garmiri
+  - George Georghiou
+  - Leonardo Gonzales
+  - Emma Hatton-Ellis
+  - Alexandr Ignatchenko
+  - Giuseppe Insana
+  - Rizwan Ishtiaq
+  - Vishal Joshi
+  - Dushyanth Jyothi
+  - Jie Luo
+  - Yvonne Lussi
+  - Alistair MacDougall
+  - Mahdi Mahmoudy
+  - Andrew Nightingale
+  - Carla Oliveira
+  - Joseph Onwubiko
+  - Vivek Poddar
+  - Sangya Pundir
+  - Guoying Qi
+  - Ahmet Rifaioglu
+  - Daniel Rice
+  - Rabie Saidi
+  - Elena Speretta
+  - Edward Turner
+  - Nidhi Tyagi
+  - Preethi Vasudev
+  - Vladimir Volynkin
+  - Kate Warner
+  - Xavier Watkins
+  - Rossana Zaru
+  - Hermann Zellner
+  - Alan Bridge
+  - Lionel Breuza
+  - Elisabeth Coudert
+  - Damien Lieberherr
+  - Ivo Pedruzzi
+  - Sylvain Poux
+  - Manuela Pruess
+  - Nicole Redaschi
+  - Lucila Aimo
+  - Ghislaine Argoud-Puy
+  - Andrea Auchincloss
+  - Kristian Axelsen
+  - Parit Bansal
+  - Delphine Baratin
+  - "Teresa Batista\_Neto"
+  - Marie-Claude Blatter
+  - Jerven Bolleman
+  - Emmanuel Boutet
+  - Cristina Casals-Casas
+  - Beatrice Cuche
+  - Edouard De Castro
+  - Anne Estreicher
+  - Livia Famiglietti
+  - Marc Feuermann
+  - Elisabeth Gasteiger
+  - Sebastien Gehant
+  - Vivienne Gerritsen
+  - Arnaud Gos
+  - Nadine Gruaz
+  - Ursula Hinz
+  - Chantal Hulo
+  - Nevila Hyka-Nouspikel
+  - Florence Jungo
+  - Arnaud Kerhornou
+  - Philippe Lemercier
+  - Thierry Lombardot
+  - Patrick Masson
+  - Anne Morgat
+  - Sandrine Pilbout
+  - Monica Pozzato
+  - Catherine Rivoire
+  - Christian Sigrist
+  - Shyamala Sundaram
+  - Cathy Wu
+  - Cecilia Arighi
+  - Hongzhan Huang
+  - Peter McGarvey
+  - Darren Natale
+  - Leslie Arminski
+  - Chuming Chen
+  - Yongxing Chen
+  - John Garavelli
+  - Kati Laiho
+  - Karen Ross
+  - C. R. Vinayaka
+  - Qinghua Wang
+  - Yuki Wang
+  - Lai-Su Yeh
+  - Jian Zhang
+  publisher: Scientific Data
+  date: '2019-09-20'
+  link: https://doi.org/g9xsjf
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s13059-019-1835-8
+  title: The CAFA challenge reports improved protein function prediction and new functional
+    annotations for hundreds of genes through experimental screens
+  authors:
+  - Naihui Zhou
+  - Yuxiang Jiang
+  - Timothy R. Bergquist
+  - Alexandra J. Lee
+  - Balint Z. Kacsoh
+  - Alex W. Crocker
+  - Kimberley A. Lewis
+  - George Georghiou
+  - Huy N. Nguyen
+  - Md Nafiz Hamid
+  - Larry Davis
+  - Tunca Dogan
+  - Volkan Atalay
+  - Ahmet S. Rifaioglu
+  - "Alperen Dalk\u0131ran"
+  - Rengul Cetin Atalay
+  - Chengxin Zhang
+  - Rebecca L. Hurto
+  - Peter L. Freddolino
+  - Yang Zhang
+  - Prajwal Bhat
+  - Fran Supek
+  - "Jos\xE9 M. Fern\xE1ndez"
+  - Branislava Gemovic
+  - Vladimir R. Perovic
+  - "Radoslav S. Davidovi\u0107"
+  - Neven Sumonja
+  - Nevena Veljkovic
+  - Ehsaneddin Asgari
+  - Mohammad R.K. Mofrad
+  - Giuseppe Profiti
+  - Castrense Savojardo
+  - Pier Luigi Martelli
+  - Rita Casadio
+  - Florian Boecker
+  - Heiko Schoof
+  - Indika Kahanda
+  - Natalie Thurlby
+  - Alice C. McHardy
+  - Alexandre Renaux
+  - Rabie Saidi
+  - Julian Gough
+  - Alex A. Freitas
+  - Magdalena Antczak
+  - Fabio Fabris
+  - Mark N. Wass
+  - Jie Hou
+  - Jianlin Cheng
+  - Zheng Wang
+  - Alfonso E. Romero
+  - Alberto Paccanaro
+  - Haixuan Yang
+  - Tatyana Goldberg
+  - Chenguang Zhao
+  - Liisa Holm
+  - "Petri T\xF6r\xF6nen"
+  - Alan J. Medlar
+  - Elaine Zosa
+  - Itamar Borukhov
+  - Ilya Novikov
+  - Angela Wilkins
+  - Olivier Lichtarge
+  - Po-Han Chi
+  - Wei-Cheng Tseng
+  - Michal Linial
+  - Peter W. Rose
+  - Christophe Dessimoz
+  - Vedrana Vidulin
+  - Saso Dzeroski
+  - Ian Sillitoe
+  - Sayoni Das
+  - Jonathan Gill Lees
+  - David T. Jones
+  - Cen Wan
+  - Domenico Cozzetto
+  - Rui Fa
+  - Mateo Torres
+  - Alex Warwick Vesztrocy
+  - Jose Manuel Rodriguez
+  - Michael L. Tress
+  - Marco Frasca
+  - Marco Notaro
+  - Giuliano Grossi
+  - Alessandro Petrini
+  - Matteo Re
+  - Giorgio Valentini
+  - Marco Mesiti
+  - Daniel B. Roche
+  - Jonas Reeb
+  - David W. Ritchie
+  - Sabeur Aridhi
+  - Seyed Ziaeddin Alborzi
+  - Marie-Dominique Devignes
+  - Da Chen Emily Koo
+  - Richard Bonneau
+  - "Vladimir Gligorijevi\u0107"
+  - Meet Barot
+  - Hai Fang
+  - Stefano Toppo
+  - Enrico Lavezzo
+  - Marco Falda
+  - Michele Berselli
+  - Silvio C.E. Tosatto
+  - Marco Carraro
+  - Damiano Piovesan
+  - Hafeez Ur Rehman
+  - Qizhong Mao
+  - Shanshan Zhang
+  - Slobodan Vucetic
+  - Gage S. Black
+  - Dane Jo
+  - Erica Suh
+  - Jonathan B. Dayton
+  - Dallas J. Larsen
+  - Ashton R. Omdahl
+  - Liam J. McGuffin
+  - Danielle A. Brackenridge
+  - Patricia C. Babbitt
+  - Jeffrey M. Yunes
+  - Paolo Fontana
+  - Feng Zhang
+  - Shanfeng Zhu
+  - Ronghui You
+  - Zihan Zhang
+  - Suyang Dai
+  - Shuwei Yao
+  - Weidong Tian
+  - Renzhi Cao
+  - Caleb Chandler
+  - Miguel Amezola
+  - Devon Johnson
+  - Jia-Ming Chang
+  - Wen-Hung Liao
+  - Yi-Wei Liu
+  - Stefano Pascarelli
+  - Yotam Frank
+  - Robert Hoehndorf
+  - Maxat Kulmanov
+  - Imane Boudellioua
+  - Gianfranco Politano
+  - Stefano Di Carlo
+  - Alfredo Benso
+  - Kai Hakala
+  - Filip Ginter
+  - Farrokh Mehryary
+  - Suwisa Kaewphan
+  - "Jari Bj\xF6rne"
+  - Hans Moen
+  - Martti E.E. Tolvanen
+  - Tapio Salakoski
+  - Daisuke Kihara
+  - Aashish Jain
+  - "Tomislav \u0160muc"
+  - Adrian Altenhoff
+  - Asa Ben-Hur
+  - Burkhard Rost
+  - Steven E. Brenner
+  - Christine A. Orengo
+  - Constance J. Jeffery
+  - Giovanni Bosco
+  - Deborah A. Hogan
+  - Maria J. Martin
+  - "Claire O\u2019Donovan"
+  - Sean D. Mooney
+  - Casey S. Greene
+  - Predrag Radivojac
+  - Iddo Friedberg
+  publisher: Genome Biology
+  date: '2019-11-19'
+  link: https://doi.org/ggnxpz
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41598-019-43708-3
+  title: 'DEEPred: Automated Protein Function Prediction with Multi-task Feed-forward
+    Deep Neural Networks'
+  authors:
+  - Ahmet Sureyya Rifaioglu
+  - "Tunca Do\u011Fan"
+  - Maria Jesus Martin
+  - Rengul Cetin-Atalay
+  - Volkan Atalay
+  publisher: Scientific Reports
+  date: '2019-05-14'
+  link: https://doi.org/g9xsjg
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s12859-018-2368-y
+  title: 'ECPred: a tool for the prediction of the enzymatic functions of protein
+    sequences based on the EC nomenclature'
+  authors:
+  - Alperen Dalkiran
+  - Ahmet Sureyya Rifaioglu
+  - Maria Jesus Martin
+  - Rengul Cetin-Atalay
+  - Volkan Atalay
+  - "Tunca Do\u011Fan"
+  publisher: BMC Bioinformatics
+  date: '2018-09-21'
+  link: https://doi.org/g4jbgs
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7287/peerj.preprints.26663v2
+  title: 'HPO2GO: prediction of human phenotype ontology term associations using cross
+    ontology annotation co-occurrences'
+  authors:
+  - "Tunca Do\u011Fan"
+  publisher: PeerJ
+  date: '2018-07-29'
+  link: https://doi.org/g9xsjh
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bib/bby061
+  title: 'Recent applications of deep learning and machine intelligence on in silico
+    drug discovery: methods, tools and databases'
+  authors:
+  - Ahmet Sureyya Rifaioglu
+  - Heval Atas
+  - Maria Jesus Martin
+  - Rengul Cetin-Atalay
+  - Volkan Atalay
+  - "Tunca Do\u011Fan"
+  publisher: Briefings in Bioinformatics
+  date: '2018-07-31'
+  link: https://doi.org/gd2cqc
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/prot.25416
+  title: "Large\u2010scale automated function prediction of protein sequences and\
+    \ an experimental case study validation on PTEN transcript variants"
+  authors:
+  - Ahmet Sureyya Rifaioglu
+  - "Tunca Do\u011Fan"
+  - "\xD6mer Sinan Sara\xE7"
+  - Tulin Ersahin
+  - Rabie Saidi
+  - Mehmet Volkan Atalay
+  - Maria Jesus Martin
+  - "Rengul Cetin\u2010Atalay"
+  publisher: 'Proteins: Structure, Function, and Bioinformatics'
+  date: '2017-11-29'
+  link: https://doi.org/gcv23x
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.2174/1568026618666180601080824
+  title: A Structural Perspective on the Modulation of Protein-Protein Interactions
+    with Small Molecules
+  authors:
+  - Habibe Cansu Demirel
+  - Tunca Dogan
+  - Nurcan Tuncbag
+  publisher: Current Topics in Medicinal Chemistry
+  date: '2018-07-18'
+  link: https://doi.org/g9xsjj
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-1-4939-7756-7_4
+  title: Phylogenetic and Other Conservation-Based Approaches to Predict Protein Functional
+    Sites
+  authors:
+  - Heval Atas
+  - Nurcan Tuncbag
+  - "Tunca Do\u011Fan"
+  publisher: Methods in Molecular Biology
+  date: '2018-01-01'
+  link: https://doi.org/g9xsjk
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/nar/gkw1099
+  title: 'UniProt: the universal protein knowledgebase'
+  authors: []
+  publisher: Nucleic Acids Research
+  date: '2016-11-29'
+  link: https://doi.org/f9v378
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1042/BCJ20160991
+  title: 'From the research laboratory to the database: the <i>Caenorhabditis elegans</i>
+    kinome in UniProtKB'
+  authors:
+  - Rossana Zaru
+  - Michele Magrane
+  - Claire O'Donovan
+  publisher: Biochemical Journal
+  date: '2017-02-03'
+  link: https://doi.org/f9rn3q
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/bioinformatics/btw114
+  title: 'UniProt-DAAC: domain architecture alignment and classification, a new method
+    for automatic functional annotation in UniProtKB'
+  authors:
+  - "Tunca Do\u011Fan"
+  - Alistair MacDougall
+  - Rabie Saidi
+  - Diego Poggioli
+  - Alex Bateman
+  - "Claire O\u2019Donovan"
+  - Maria J. Martin
+  publisher: Bioinformatics
+  date: '2016-03-07'
+  link: https://doi.org/f83r9b
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/nar/gkv1116
+  title: 'Tools and data services registry: a community effort to document bioinformatics
+    resources'
+  authors:
+  - Jon Ison
+  - Kristoffer Rapacki
+  - "Herv\xE9 M\xE9nager"
+  - "Mat\xFA\u0161 Kala\u0161"
+  - Emil Rydza
+  - Piotr Chmura
+  - Christian Anthon
+  - Niall Beard
+  - Karel Berka
+  - Dan Bolser
+  - Tim Booth
+  - Anthony Bretaudeau
+  - Jan Brezovsky
+  - Rita Casadio
+  - Gianni Cesareni
+  - Frederik Coppens
+  - Michael Cornell
+  - Gianmauro Cuccuru
+  - Kristian Davidsen
+  - Gianluca Della Vedova
+  - Tunca Dogan
+  - Olivia Doppelt-Azeroual
+  - Laura Emery
+  - Elisabeth Gasteiger
+  - Thomas Gatter
+  - Tatyana Goldberg
+  - Marie Grosjean
+  - "Bj\xF6rn Gr\xFCning"
+  - Manuela Helmer-Citterich
+  - Hans Ienasescu
+  - Vassilios Ioannidis
+  - Martin Closter Jespersen
+  - Rafael Jimenez
+  - Nick Juty
+  - Peter Juvan
+  - Maximilian Koch
+  - Camille Laibe
+  - Jing-Woei Li
+  - Luana Licata
+  - Fabien Mareuil
+  - "Ivan Mi\u010Deti\u0107"
+  - "Rune M\xF8llegaard Friborg"
+  - Sebastien Moretti
+  - Chris Morris
+  - "Steffen M\xF6ller"
+  - Aleksandra Nenadic
+  - Hedi Peterson
+  - Giuseppe Profiti
+  - Peter Rice
+  - Paolo Romano
+  - Paola Roncaglia
+  - Rabie Saidi
+  - Andrea Schafferhans
+  - "Veit Schw\xE4mmle"
+  - Callum Smith
+  - Maria Maddalena Sperotto
+  - Heinz Stockinger
+  - "Radka Svobodov\xE1 Va\u0159ekov\xE1"
+  - Silvio C.E. Tosatto
+  - "Victor de\_la\_Torre"
+  - Paolo Uva
+  - Allegra Via
+  - Guy Yachdav
+  - Federico Zambelli
+  - Gert Vriend
+  - Burkhard Rost
+  - Helen Parkinson
+  - "Peter L\xF8ngreen"
+  - "S\xF8ren Brunak"
+  publisher: Nucleic Acids Research
+  date: '2015-11-03'
+  link: https://doi.org/ghzmnr
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s13059-016-1037-6
+  title: An expanded evaluation of protein function prediction methods shows an improvement
+    in accuracy
+  authors:
+  - Yuxiang Jiang
+  - Tal Ronnen Oron
+  - Wyatt T. Clark
+  - Asma R. Bankapur
+  - "Daniel D\u2019Andrea"
+  - Rosalba Lepore
+  - Christopher S. Funk
+  - Indika Kahanda
+  - Karin M. Verspoor
+  - Asa Ben-Hur
+  - Da Chen Emily Koo
+  - Duncan Penfold-Brown
+  - Dennis Shasha
+  - Noah Youngs
+  - Richard Bonneau
+  - Alexandra Lin
+  - Sayed M. E. Sahraeian
+  - Pier Luigi Martelli
+  - Giuseppe Profiti
+  - Rita Casadio
+  - Renzhi Cao
+  - Zhaolong Zhong
+  - Jianlin Cheng
+  - Adrian Altenhoff
+  - Nives Skunca
+  - Christophe Dessimoz
+  - Tunca Dogan
+  - Kai Hakala
+  - Suwisa Kaewphan
+  - Farrokh Mehryary
+  - Tapio Salakoski
+  - Filip Ginter
+  - Hai Fang
+  - Ben Smithers
+  - Matt Oates
+  - Julian Gough
+  - "Petri T\xF6r\xF6nen"
+  - Patrik Koskinen
+  - Liisa Holm
+  - Ching-Tai Chen
+  - Wen-Lian Hsu
+  - Kevin Bryson
+  - Domenico Cozzetto
+  - Federico Minneci
+  - David T. Jones
+  - Samuel Chapman
+  - Dukka BKC
+  - Ishita K. Khan
+  - Daisuke Kihara
+  - Dan Ofer
+  - Nadav Rappoport
+  - Amos Stern
+  - Elena Cibrian-Uhalte
+  - Paul Denny
+  - Rebecca E. Foulger
+  - Reija Hieta
+  - Duncan Legge
+  - Ruth C. Lovering
+  - Michele Magrane
+  - Anna N. Melidoni
+  - Prudence Mutowo-Meullenet
+  - Klemens Pichler
+  - Aleksandra Shypitsyna
+  - Biao Li
+  - Pooya Zakeri
+  - Sarah ElShal
+  - "L\xE9on-Charles Tranchevent"
+  - Sayoni Das
+  - Natalie L. Dawson
+  - David Lee
+  - Jonathan G. Lees
+  - Ian Sillitoe
+  - Prajwal Bhat
+  - "Tam\xE1s Nepusz"
+  - Alfonso E. Romero
+  - Rajkumar Sasidharan
+  - Haixuan Yang
+  - Alberto Paccanaro
+  - Jesse Gillis
+  - "Adriana E. Sede\xF1o-Cort\xE9s"
+  - Paul Pavlidis
+  - Shou Feng
+  - Juan M. Cejuela
+  - Tatyana Goldberg
+  - Tobias Hamp
+  - Lothar Richter
+  - Asaf Salamov
+  - Toni Gabaldon
+  - Marina Marcet-Houben
+  - Fran Supek
+  - Qingtian Gong
+  - Wei Ning
+  - Yuanpeng Zhou
+  - Weidong Tian
+  - Marco Falda
+  - Paolo Fontana
+  - Enrico Lavezzo
+  - Stefano Toppo
+  - Carlo Ferrari
+  - Manuel Giollo
+  - Damiano Piovesan
+  - Silvio C.E. Tosatto
+  - Angela del Pozo
+  - "Jos\xE9 M. Fern\xE1ndez"
+  - Paolo Maietta
+  - Alfonso Valencia
+  - Michael L. Tress
+  - Alfredo Benso
+  - Stefano Di Carlo
+  - Gianfranco Politano
+  - Alessandro Savino
+  - Hafeez Ur Rehman
+  - Matteo Re
+  - Marco Mesiti
+  - Giorgio Valentini
+  - Joachim W. Bargsten
+  - Aalt D. J. van Dijk
+  - Branislava Gemovic
+  - Sanja Glisic
+  - Vladmir Perovic
+  - Veljko Veljkovic
+  - Nevena Veljkovic
+  - Danillo C. Almeida-e-Silva
+  - Ricardo Z. N. Vencio
+  - Malvika Sharan
+  - "J\xF6rg Vogel"
+  - Lakesh Kansakar
+  - Shanshan Zhang
+  - Slobodan Vucetic
+  - Zheng Wang
+  - Michael J. E. Sternberg
+  - Mark N. Wass
+  - Rachael P. Huntley
+  - Maria J. Martin
+  - "Claire O\u2019Donovan"
+  - Peter N. Robinson
+  - Yves Moreau
+  - Anna Tramontano
+  - Patricia C. Babbitt
+  - Steven E. Brenner
+  - Michal Linial
+  - Christine A. Orengo
+  - Burkhard Rost
+  - Casey S. Greene
+  - Sean D. Mooney
+  - Iddo Friedberg
+  - Predrag Radivojac
+  publisher: Genome Biology
+  date: '2016-09-07'
+  link: https://doi.org/gg7qsc
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/database/bav120
+  title: The UniProtKB guide to the human proteome
+  authors:
+  - Lionel Breuza
+  - Sylvain Poux
+  - Anne Estreicher
+  - Maria Livia Famiglietti
+  - Michele Magrane
+  - Michael Tognolli
+  - Alan Bridge
+  - Delphine Baratin
+  - Nicole Redaschi
+  publisher: Database
+  date: '2016-01-01'
+  link: https://doi.org/f8p7gb
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/0471250953.bi0129s53
+  title: UniProt Tools
+  authors:
+  - Sangya Pundir
+  - Maria J. Martin
+  - Claire O'Donovan
+  publisher: Current Protocols in Bioinformatics
+  date: '2016-03-01'
+  link: https://doi.org/f9fs4t
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/nar/gku989
+  title: 'UniProt: a hub for protein information'
+  authors: []
+  publisher: Nucleic Acids Research
+  date: '2014-10-27'
+  link: https://doi.org/f64xfr
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1145/2808719.2811430
+  title: Unsupervised identification of redundant domain entries in InterPro database
+    using clustering techniques
+  authors:
+  - "Ahmet S\xFCreyya Rifaio\u011Flu"
+  - "Tunca Do\u011Fan"
+  - Tolga Can
+  publisher: Proceedings of the 6th ACM Conference on Bioinformatics, Computational
+    Biology and Health Informatics
+  date: '2015-09-09'
+  link: https://doi.org/g9xsjm
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/nar/gkt1140
+  title: Activities at the Universal Protein Resource (UniProt)
+  authors: []
+  publisher: Nucleic Acids Research
+  date: '2013-11-18'
+  link: https://doi.org/f5sftm
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.2316/P.2013.791-092
+  title: 2-D Thresholding of the Connectivity Map Following the Multiple Sequence
+    Alignments of Diverse Datasets
+  authors:
+  - "Tunca Do\u011Fan"
+  - "Bilge Kara\xE7al\u0131"
+  publisher: Biomedical Engineering
+  date: '2013-01-01'
+  link: https://doi.org/g9xsjn
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pone.0075458
+  title: Automatic Identification of Highly Conserved Family Regions and Relationships
+    in Genome Wide Datasets Including Remote Protein Sequences
+  authors:
+  - "Tunca Do\u011Fan"
+  - "Bilge Kara\xE7al\u0131"
+  publisher: PLoS ONE
+  date: '2013-09-12'
+  link: https://doi.org/g9xsjp
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/BIYOMUT.2010.5479846
+  title: Evolutionary relationships between gene sequences via nonlinear embedding
+  authors:
+  - Tunca Dogan
+  - Bilge Karacah
+  publisher: 2010 15th National Biomedical Engineering Meeting
+  date: '2010-04-01'
+  link: https://doi.org/bdkd54
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
