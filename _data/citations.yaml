@@ -550,15 +550,6 @@
   orcid: 0000-0002-1298-9763
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1093/nar/gkw1099
-  title: 'UniProt: the universal protein knowledgebase'
-  authors: []
-  publisher: Nucleic Acids Research
-  date: '2016-11-29'
-  link: https://doi.org/f9v378
-  orcid: 0000-0002-1298-9763
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1093/bioinformatics/btw114
   title: 'UniProt-DAAC: domain architecture alignment and classification, a new method
     for automatic functional annotation in UniProtKB'
