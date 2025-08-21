@@ -1,68 +1,68 @@
 # Evolutionary relationships between gene sequences via nonlinear embedding,Doǧrusal olmayan gömme teknikleri altinda gen dizilerinin evrimsel i̇lişkileri
-- id: 10.1109/BIYOMUT.2010.5479846 
+- id: doi:10.1109/BIYOMUT.2010.5479846 
   remove: true
 
 # Automatic identification of highly conserved family regions and relationships in genome wide datasets including remote protein sequences.
-- id: 10.1371/journal.pone.0075458
+- id: doi:10.1371/journal.pone.0075458
   remove: true
 
 # 2-D Thresholding of the Connectivity Map Following the Multiple Sequence Alignments of Diverse Datasets
-- id: 10.2316/P.2013.791-092
+- id: doi:10.2316/P.2013.791-092
   remove: true
 
 # Activities at the Universal Protein Resource (UniProt).
-- id: 10.1093/nar/gkt1140
+- id: doi:10.1093/nar/gkt1140
   remove: true
 
 # UniProt: a hub for protein information.
-- id: 10.1093/nar/gku989
+- id: doi:10.1093/nar/gku989
   remove: true
 
 # Unsupervised identification of redundant domain entries in InterPro database using clustering techniques
-- id: 10.1145/2808719.2811430
+- id: doi:10.1145/2808719.2811430
   remove: true
 
 # Tools and data services registry: a community effort to document bioinformatics resources.
-- id: 10.1093/nar/gkv1116
+- id: doi:10.1093/nar/gkv1116
   remove: true
 
 # UniProt Tools.
-- id: 10.1002/0471250953.bi0129s53
+- id: doi:10.1002/0471250953.bi0129s53
   remove: true
 
 # The UniProtKB guide to the human proteome.
-- id: 10.1093/database/bav120
+- id: doi:10.1093/database/bav120
   remove: true
 
 # An expanded evaluation of protein function prediction methods shows an improvement in accuracy.
-- id: 10.1186/s13059-016-1037-6
+- id: doi:10.1186/s13059-016-1037-6
   remove: true
 
 # From the research laboratory to the database: the Caenorhabditis elegans kinome in UniProtKB
-- id: 10.1042/BCJ20160991
+- id: doi:10.1042/BCJ20160991
   remove: true
 
 # FAIR adoption, assessment and challenges at UniProt
-- id: 10.1038/s41597-019-0180-9
+- id: doi:10.1038/s41597-019-0180-9
   remove: true
 
 # The CAFA challenge reports improved protein function prediction and new functional annotations for hundreds of genes through experimental screens
-- id: 10.1186/s13059-019-1835-8
+- id: doi:10.1186/s13059-019-1835-8
   remove: true
 
 # UniProt: the universal protein knowledgebase in 2021
-- id: 10.1093/nar/gkaa1100
+- id: doi:10.1093/nar/gkaa1100
   remove: true
 
 # Crowdsourced mapping of unexplored target space of kinase inhibitors
-- id: 10.1038/s41467-021-23165-1
+- id: doi:10.1038/s41467-021-23165-1
   remove: true
 
 # A crowdsourcing open platform for literature curation in UniProt
-- id: 10.1371/journal.pbio.3001464
+- id: doi:10.1371/journal.pbio.3001464
   remove: true
 
 # UniProt: the Universal Protein Knowledgebase in 2023
-- id: 10.1093/nar/gkac1052
+- id: doi:10.1093/nar/gkac1052
   remove: true
   
