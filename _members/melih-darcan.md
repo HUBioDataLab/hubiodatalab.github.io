@@ -1,6 +1,5 @@
 ---
 name: Melih Darcan
-image: images/team/some-image.jpg
 role: undergrad
 description: Researcher
 aliases:
