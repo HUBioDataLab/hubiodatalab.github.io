@@ -1,5 +1,35 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1128/jvi.00152-25
+  title: 'Mpox: disease manifestations and therapeutic development'
+  authors:
+  - Yining Wang
+  - Xin Wang
+  - "Tunca Do\u011Fan"
+  - Nadia A. Sam-Agudu
+  - Jaffar A. Al-Tawfiq
+  - Qiuwei Pan
+  publisher: Journal of Virology
+  date: '2025-08-11'
+  link: https://doi.org/g9x39h
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-1-0716-4662-5_14
+  title: A Benchmarking Platform for Assessing Protein Language Models on Function-Related
+    Prediction Tasks
+  authors:
+  - "Elif \xC7evrim"
+  - "Melih G\xF6kay Yi\u011Fit"
+  - Erva Ulusoy
+  - "Ardan Y\u0131lmaz"
+  - "Tunca Do\u011Fan"
+  publisher: Methods in Molecular Biology
+  date: '2025-01-01'
+  link: https://doi.org/g9x39j
+  orcid: 0000-0002-1298-9763
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1101/2025.04.19.649272
   title: 'ProtHGT: Heterogeneous Graph Transformers for Automated Protein Function
     Prediction Using Biological Knowledge Graphs and Language Models'
