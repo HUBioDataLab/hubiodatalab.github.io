@@ -1,11 +1,11 @@
 ---
-name: Ufuk Tanriverdi
+name: Ufuk Tanrıverdi
 image: images/team/ufuk-tanriverdi.jpg
 role: undergrad
 description: Researcher
 aliases:
   - Ufuk T.
-  - U. Tanriverdi
+  - U. Tanrıverdi
 links:
   email: ufuktanriverdi1@gmail.com
   github: UfukTanriverdi8
