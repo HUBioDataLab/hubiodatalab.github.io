@@ -2,7 +2,6 @@
 name: Melih Darcan
 image: images/team/melih-darcan.jpg
 role: undergrad
-description: Researcher
 aliases:
   - M Darcan
   - M. Darcan
