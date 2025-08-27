@@ -2,7 +2,6 @@
 name: Gamze Hatlar Deprem 
 image: images/team/gamze-hatlar.jpg
 role: msc 
-description: Researcher
 aliases:
   - G.Hatlar
   - ghatlar
