@@ -2,7 +2,6 @@
 name: Ufuk Tanrıverdi
 image: images/team/ufuk-tanriverdi.jpg
 role: undergrad
-description: Researcher
 aliases:
   - Ufuk T.
   - U. Tanrıverdi
