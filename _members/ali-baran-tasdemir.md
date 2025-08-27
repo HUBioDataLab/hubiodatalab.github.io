@@ -2,7 +2,6 @@
 name: Ali Baran Taşdemir
 image: images/team/ali-baran-tasdemir.jpg
 role: phd
-description: Researcher
 aliases:
   - AB Taşdemir
   - A.B. Taşdemir
