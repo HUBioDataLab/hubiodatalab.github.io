@@ -10,7 +10,6 @@ aliases:
 links:
   home-page: https://yunus.hacettepe.edu.tr/~tuncadogan/
   email: tuncadogan@gmail.com
-  email: tuncadogan@hacettepe.edu.tr
   orcid: 0000-0002-1298-9763
   google-scholar: tHnMNPEAAAAJ
   linkedin: tuncadogan
