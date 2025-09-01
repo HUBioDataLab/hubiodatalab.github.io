@@ -13,7 +13,7 @@ links:
   orcid: 0000-0001-5271-5751
   google-scholar: WytX5cAAAAJ
   github: bnymnsen
-  linkedin: bünyamin-şen
+  linkedin: bünyamin-şen-885661189
 ---
 
 I am currently pursuing a PhD in the Bioinformatics Program at Hacettepe University and working as a research and teaching assistant at the Informatics Institute. I hold a BSc in Molecular Biology and Genetics and an MSc in Bioinformatics.
