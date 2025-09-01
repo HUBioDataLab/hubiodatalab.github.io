@@ -1,13 +1,14 @@
 ---
 name: Bünyamin Şen
+image: images/team/bunyamin-sen.jpg
 role: phd
 aliases:
+  - Yucuklu Sumurta
   - Muhammet Bünyamin Şen
   - M. Bünyamin Şen
   - Bünyamin Sen
   - Şen Bünyamin
   - Sen Bünyamin
-  - Yucuklu Sumurta
 links:
   email: bjk.990.benim@gmail.com
   orcid: 0000-0001-5271-5751
