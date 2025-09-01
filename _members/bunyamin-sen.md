@@ -19,4 +19,4 @@ links:
 
 I am currently pursuing a PhD in the Bioinformatics Program at Hacettepe University and working as a research and teaching assistant at the Informatics Institute. I hold a BSc in Molecular Biology and Genetics and an MSc in Bioinformatics.
 
-My research focuses on the intersection of machine learning and computational biology, with particular emphasis on applying advanced computational methods to understand complex biological systems. My current research encompasses machine learning applications for protein biology, knowledge graph construction and analysis, and immunoinformatics. Recently, I’ve also become interested in the emerging field of genomic language models.
+My research focuses on the intersection of machine learning and computational biology, with particular emphasis on applying advanced computational methods to understand complex biological systems. My current research encompasses machine learning applications for protein biology, knowledge graphs, and immunoinformatics. Recently, I’ve also become interested in the emerging field of genomic language models.
