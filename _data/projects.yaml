@@ -1,7 +1,7 @@
 - title: "ContVAR"
   subtitle: "TÜBİTAK-ARDEB 1001 Scientific and Technological Research Projects Support Program 2024"
   group: featured
-  image: images/contvar.png
+  image: images/projects/contvar.png
   link: /projects/contvar
   description: |
     **Project number/acronym:** 124E639 / ContVAR  
@@ -13,7 +13,7 @@
 - title: "TURMIND"
   subtitle: "MareNostrum 5 Resource Pilot Access (TÜBİTAK ULAKBİM) Project Call 2024"
   group: featured
-  image: images/turmind.png
+  image: images/projects/turmind.png
   link: /projects/turmind
   description: |
     **Project acronym:** TURMIND  
@@ -24,7 +24,7 @@
 - title: "ProtGEN"
   subtitle: "TÜBİTAK-ARDEB 1001 Scientific and Technological Research Projects Support Program 2022"
   group: featured
-  image: images/protgen.png
+  image: images/projects/protgen.png
   link: /projects/protgen
   description: |
     **Project number/acronym:** 122E148 / ProtGEN  
@@ -35,7 +35,7 @@
 
 - title: "DrugGEN"
   subtitle: "TÜBİTAK-BİDEB 2247-A National Outstanding Researchers Program 2020"
-  image: images/druggen.png
+  image: images/projects/druggen.png
   link: /projects/druggen
   description: |
     **Project number/acronym:** 120C123 / DrugGEN  
@@ -46,7 +46,7 @@
 
 - title: "CROssBARv2"
   subtitle: "TÜBİTAK-ARDEB 3501 Career Support Program 2021"
-  image: images/crossbarv2.png
+  image: images/projects/crossbarv2.png
   link: /projects/crossbarv2
   description: |
     **Project number/acronym:** 120E531 / CROssBARv2  
@@ -57,7 +57,7 @@
 
 - title: "DeepResponse"
   subtitle: "National Health Institutes of Turkey (TÜSEB) – Systems Biology and Bioinformatics Project Call 2019"
-  image: images/deepresponse.png
+  image: images/projects/deepresponse.png
   link: /projects/deepresponse
   description: |
     **Project number/acronym:** 3912 / DeepResponse  
@@ -68,7 +68,7 @@
 
 - title: "CROssBAR"
   subtitle: "British Council & TÜBİTAK - Newton / Kâtip Çelebi Institutional Links Program Call 2016"
-  image: images/crossbar.png
+  image: images/projects/crossbar.png
   link: /projects/crossbar
   description: |
     **Project number/acronym:** 116E930 / CROssBAR  
@@ -79,7 +79,7 @@
 
 - title: "Gene Discovery & Drug Repositioning Platform"
   subtitle: "TÜBİTAK 1003 – Special Areas R&D Project Support Call 2018"
-  image: images/genediscovery.png
+  image: images/projects/genediscovery.png
   link: /projects/genediscovery
   description: |
     **Project number:** 318S218  
