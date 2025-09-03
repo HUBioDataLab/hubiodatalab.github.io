@@ -1,11 +1,16 @@
 ---
 name: Mert ERGÜN
+image: images/team/mert-ergun.jpg
 role: undergrad
 aliases:
   - M Ergun
   - M. Ergun
   - Mert Ergun
   - Ergun M.
+  - M Ergün
+  - M. Ergün
+  - Mert Ergün
+  - Ergün M.
 links:
   email: mertergun.cs@gmail.com
   github: mert-ergun
