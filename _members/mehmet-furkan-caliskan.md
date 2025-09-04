@@ -2,8 +2,9 @@
 name: Mehmet Furkan Çalışkan
 image: images/team/mehmet-furkan-caliskan.jpg
 role: undergrad
-aliases:
-
+aliases: 
+  -M.F. Caliskan
+  -MF Caliskan
 links:
   email: mfcaliskan03@gmail.com
   orcid: 0009-0002-3583-4294
