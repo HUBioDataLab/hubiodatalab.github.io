@@ -12,7 +12,7 @@ aliases:
 links:
   email: bjk.990.benim@gmail.com
   orcid: 0000-0002-0853-4731
-  google-scholar: WytX5cAAAAJ
+  google-scholar: -WytX5cAAAAJ
   github: bnymnsen
   linkedin: bünyamin-şen-885661189
 ---
