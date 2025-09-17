@@ -48,7 +48,7 @@ collections:
   posts:
     output: true
   # generate page for each project
-  posts:
+  projects:
     output: true
 
 # jekyll plugins
