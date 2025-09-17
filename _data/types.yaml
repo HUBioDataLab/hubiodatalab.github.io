@@ -231,3 +231,9 @@ package:
   icon: fa-solid fa-box
   text: Package
   tooltip: Package
+
+# Role types
+
+pi-lab:
+  icon: fa-solid fa-microscope
+  description: PI Lab.

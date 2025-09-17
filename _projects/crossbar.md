@@ -1,7 +1,11 @@
 ---
-layout: default
 title: "CROssBAR"
 image: images/projects/crossbar.jpg
+
+project-number: "120E531"
+project-title: "Integrative Representation and Deep Graph Learning Based Prediction of Complex and Heterogeneous Relationships in Biomolecular and Biomedical Data"
+project-role: pi-lab
+project-partners: ["Saezlab", "Heidelberg University"]
 ---
 
 # CROssBAR
