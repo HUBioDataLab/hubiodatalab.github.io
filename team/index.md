@@ -14,7 +14,9 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 {% include section.html %}
 
 {% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" %}
-{% include list.html data="members" component="portrait" filter="role != 'principal-investigator'" %}
+{% include list.html data="members" component="portrait" filter="role == 'phd'" %}
+{% include list.html data="members" component="portrait" filter="role == 'msc'" %}
+{% include list.html data="members" component="portrait" filter="role == 'undergrad'" %}
 
 {% include section.html background="images/background.jpg" dark=true %}
 
