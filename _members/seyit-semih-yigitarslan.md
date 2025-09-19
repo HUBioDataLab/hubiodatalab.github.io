@@ -1,7 +1,7 @@
 ---
 name: Seyit Semih Yiğitarslan
 image: images/team/seyit-semih-yigitarslan.jpg
-role: graduate
+role: msc
 aliases:
   - S. S. Yiğitarslan
   - S. Semih Yiğitarslan
