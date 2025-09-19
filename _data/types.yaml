@@ -22,13 +22,9 @@ undergrad:
   icon: fa-solid fa-user-graduate
   description: BSc Student
 
-programmer:
+alumni:
   icon: fa-solid fa-code
-  description: Programmer
-
-mascot:
-  icon: fa-solid fa-dog
-  description: Mascot
+  description: Alumni
 
 # general
 
