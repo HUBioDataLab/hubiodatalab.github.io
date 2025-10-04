@@ -18,8 +18,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 ## Highlighted Projects
 
-{% include list.html data="projects" component="card" filter="highlight == true" %}
+{% include list.html data="projects" component="project-card" filter="highlight == true" %}
 
 {% include section.html %} 
 
-{% include list.html data="projects" component="card" filter="highlight == false" %}
+{% include list.html data="projects" component="project-card" filter="highlight == false" %}
