@@ -1,6 +1,7 @@
 ---
 title: "CROssBARv2"
 image: images/projects/crossbarv2.jpg
+highlight: true
 
 project-number: "120E531"
 project-title: "Integrative Representation and Deep Graph Learning Based Prediction of Complex and Heterogeneous Relationships in Biomolecular and Biomedical Data"

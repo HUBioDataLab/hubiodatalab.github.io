@@ -1,6 +1,7 @@
 ---
 title: "DrugGEN"
 image: images/projects/druggen.jpg
+highlight: true
 
 project-number: "120C123"
 project-title: "Disease Centric Large Scale De Novo Design of Drug Candidate Molecules with Graph Generative Deep Adversarial Networks"

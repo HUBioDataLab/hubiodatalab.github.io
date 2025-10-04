@@ -1,6 +1,7 @@
 ---
 title: "ProtGEN"
 image: images/projects/protgen.jpg
+highlight: true
 
 project-number: "122E148"
 project-title: "Molecular Function-Driven Automated Design of New Protein Sequences with Generative Deep Learning"

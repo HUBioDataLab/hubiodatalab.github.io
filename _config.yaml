@@ -39,6 +39,7 @@ defaults:
       type: "projects"
     values:
       layout: project
+      highlight: false
 
 collections:
   # generate page for each member
