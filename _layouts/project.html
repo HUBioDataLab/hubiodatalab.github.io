@@ -13,12 +13,16 @@ layout: default
       <p><strong>Project Number:</strong> {{ page.project-number }}</p>
     {% endif %}
     {% if page.project-role %}
-      <p><strong>Role:</strong> {{ page.project-role }}</p>
+      <p><strong>Role of HUBioDataSciLab:</strong> {{ page.project-role }}</p>
     {% endif %}
     {% if page.project-partners %}
-      <p><strong>Partners:</strong> {{ page.project-partners | join: ", " }}</p>
+      <p><strong>Partner Lab(s):</strong> {{ page.project-partners | join: ", " }}</p>
     {% endif %}
   </div>
+
+  <h3 class="project-abstract-heading" style="font-size: 1.1rem; margin: 0.5rem 0 0.5rem 0; font-weight: 600;">
+    Abstract
+  </h3>
 
   <div class="project-description" style="margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.8; text-align: justify;">
     {{ content }}
@@ -26,7 +30,7 @@ layout: default
 
   {% if page.image %}
     <div class="project-full-image" style="text-align:center; margin-top: 3rem;">
-      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" 
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}"
            style="max-width: 100%; border-radius: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.15);">
     </div>
   {% endif %}
