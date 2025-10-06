@@ -1,7 +1,8 @@
 ---
 title: "DeepResponse"
-image: images/projects/deepresponse.jpg
+image: images/projects/deepresponse.jpg 
 
+supported-by: "National Health Institutes of Turkey (TUSEB) – Systems Biology and Bioinformatics Project Call 2019"
 project-number: "3912"
 project-title: "Large Scale Prediction of Cancer Cell Line Drug Response with Deep Learning Based Pharmacogenomic Modelling"
 project-role: pi-lab

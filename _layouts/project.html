@@ -8,7 +8,13 @@ layout: default
     {{ page.project-title | default: page.title }}
   </h1>
 
-  <div class="project-meta" style="margin-bottom: 2rem; text-align:center; font-size: 1rem; line-height: 1.6;">
+    <div class="project-meta" style="margin-bottom: 2rem; text-align:center; font-size: 1rem; line-height: 1.6;">
+    {% if page.title %}
+      <p><strong>Title:</strong> {{ page.title }}</p>
+    {% endif %}
+    {% if page.supported-by %}
+      <p><strong>Supported by:</strong> {{ page.supported-by }}</p>
+    {% endif %}
     {% if page.project-number %}
       <p><strong>Project Number:</strong> {{ page.project-number }}</p>
     {% endif %}
@@ -27,6 +33,7 @@ layout: default
   <div class="project-description" style="margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.8; text-align: justify;">
     {{ content }}
   </div>
+
 
   {% if page.image %}
     <div class="project-full-image" style="text-align:center; margin-top: 3rem;">

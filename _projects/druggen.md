@@ -2,7 +2,8 @@
 title: "DrugGEN"
 image: images/projects/druggen.jpg
 highlight: true
-
+ 
+supported-by: "TUBITAK-BIDEB 2247-A National Outstanding Researchers Program 2020"
 project-number: "120C123"
 project-title: "Disease Centric Large Scale De Novo Design of Drug Candidate Molecules with Graph Generative Deep Adversarial Networks"
 project-role: pi-lab

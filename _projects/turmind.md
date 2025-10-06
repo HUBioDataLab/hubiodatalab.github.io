@@ -1,7 +1,7 @@
 ---
 title: "TURMIND"
 
-
+supported-by: "MareNostrum 5 Resource Pilot Access (TUBITAK ULAKBIM) Project Call 2024"
 project-title: "Molecular Intelligence for Novel Discovery (MIND): A Universal Multi-Modal Foundation Model for Life’s Molecules"
 project-role: pi-lab
 
