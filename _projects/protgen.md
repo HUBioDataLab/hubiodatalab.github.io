@@ -2,7 +2,8 @@
 title: "ProtGEN"
 image: images/projects/protgen.jpg
 highlight: true
-
+ 
+supported-by: "TUBITAK-ARDEB 1001 Scientific and Technological Research Projects Support Program 2022" 
 project-number: "122E148"
 project-title: "Molecular Function-Driven Automated Design of New Protein Sequences with Generative Deep Learning"
 project-role: pi-lab
