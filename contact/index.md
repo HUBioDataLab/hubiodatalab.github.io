@@ -7,9 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Hacettepe Biological Data Science Lab, Department of Computer Engineering, Hacettepe University, 06800, Ankara, Türkiye
 
 {%
   include button.html
@@ -60,7 +58,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 <div style="margin-top: 1rem; text-align: center;">
   📍 <strong>Hacettepe University Biological Data Science Laboratory</strong><br>
   Department of Computer Engineering, Beytepe Campus,<br>
-  06800 Ankara, Turkey
+  06800 Ankara, Türkiye
 </div> 
 
 {%
@@ -72,28 +70,6 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 
 {% include section.html %}
-
-
-{% capture col1 %}
-
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
-
-{% endcapture %}
-
-{% capture col2 %}
-
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 %}
 
 {% include section.html dark=true %}
 
