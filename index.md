@@ -39,7 +39,7 @@ We apply cutting-edge machine learning and deep learning to decode complex biolo
 
 {% capture text %}
 
-Our lab builds and applies novel computational tools to real-world challenges. Our projects range from generative models for novel drug design to advanced graph networks for analyzing protein-target interactions.
+Our lab builds and applies novel computational tools to real-world challenges. Our projects range from generative models for novel drug design to advanced graph networks for analyzing drug-target interactions.
 
 {%
   include button.html
