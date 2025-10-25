@@ -7,14 +7,13 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Our lab focuses on the application of machine learning and deep learning to complex challenges in bioinformatics and cheminformatics. We specialize in developing novel computational methods for protein function prediction, drug-target interaction analysis, and de novo molecular design, aiming to accelerate the pace of scientific discovery.
 
 {% include section.html %}
 
 ## Highlighted
 
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
+{% include citation.html lookup="doi:10.1038/s42256-025-01082-y" style="rich" %}
 
 {% include section.html %}
 
