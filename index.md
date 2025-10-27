@@ -1,9 +1,14 @@
 ---
 ---
 
-# HUBioDataLab's Website
+# Hacettepe University Biological Data Science Laboratory
 
-An engaging 1-3 sentence description of your lab.
+Hacettepe Biological Data Science Lab's work focuses on developing machine/deep learning-based methods for:
+i. the integration and representation of heterogeneous biomedical data
+ii. the prediction of the functional properties of genes/proteins
+iii. discovering/designing new drug candidates
+
+We frequently utilise representation learning and generative artificial intelligence. We have multiple ongoing projects focused on small molecule and protein design.
 
 {% include section.html %}
 
@@ -11,7 +16,7 @@ An engaging 1-3 sentence description of your lab.
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We apply cutting-edge machine learning and deep learning to decode complex biological and chemical data. Our research focuses on novel AI methods for drug discovery, protein function prediction, and molecular representation learning.
 
 {%
   include button.html
@@ -26,7 +31,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/research.jpg"
   link="research"
   title="Our Research"
   text=text
@@ -34,7 +39,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Our lab builds and applies novel computational tools to real-world challenges. Our projects range from generative models for novel drug design to advanced graph networks for analyzing drug-target interactions.
 
 {%
   include button.html
@@ -49,7 +54,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/projects.jpg"
   link="projects"
   title="Our Projects"
   flip=true
@@ -59,7 +64,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Our lab is powered by an interdisciplinary team of computational biologists, data scientists, and engineers. We are passionate about using AI for science and fostering a collaborative research environment.
 
 {%
   include button.html
@@ -74,7 +79,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/team.jpg"
   link="team"
   title="Our Team"
   text=text

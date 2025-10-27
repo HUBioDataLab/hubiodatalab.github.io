@@ -8,12 +8,10 @@ proofer: false
 
 # site social media and other links
 links:
-  email: contact@HUBioDataLab.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
-  github: HUBioDataLab
-  twitter: HUBioDataLab
-  youtube: HUBioDataLab
+  email: tuncadogan@gmail.com
+  orcid: https://orcid.org/0000-0002-1298-9763
+  google-scholar: tHnMNPEAAAAJ
+  github: hubiodatalab
 
 ### jekyll settings
 
@@ -34,6 +32,12 @@ defaults:
       type: "posts"
     values:
       layout: post
+  # markdown files in /_projects
+  - scope:
+      type: "projects"
+    values:
+      layout: project
+      highlight: false
 
 collections:
   # generate page for each member
@@ -41,6 +45,9 @@ collections:
     output: true
   # generate page for each post
   posts:
+    output: true
+  # generate page for each project
+  projects:
     output: true
 
 # jekyll plugins

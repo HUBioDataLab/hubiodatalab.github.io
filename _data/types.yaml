@@ -14,17 +14,17 @@ phd:
   icon: fa-solid fa-graduation-cap
   description: PhD Student
 
+msc:
+  icon: fa-solid fa-graduation-cap
+  description: MSc Student
+
 undergrad:
   icon: fa-solid fa-user-graduate
-  description: Undergraduate Student
+  description: BSc Student
 
-programmer:
+alumni:
   icon: fa-solid fa-code
-  description: Programmer
-
-mascot:
-  icon: fa-solid fa-dog
-  description: Mascot
+  description: Alumni
 
 # general
 
@@ -126,6 +126,13 @@ linkedin:
   tooltip: LinkedIn
   link: https://www.linkedin.com/in/$VALUE
 
+medium:
+  icon: fa-brands fa-medium
+  text: Medium
+  tooltip: Medium
+  link: https://medium.com/@$VALUE
+
+
 # alerts
 
 tip:
@@ -220,3 +227,9 @@ package:
   icon: fa-solid fa-box
   text: Package
   tooltip: Package
+
+# Role types
+
+pi-lab:
+  icon: fa-solid fa-microscope
+  description: PI Lab.
