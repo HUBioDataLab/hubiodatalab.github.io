@@ -3,7 +3,10 @@
 
 {%- assign light_logo = site.logo.light | file_exists -%}
 {%- assign dark_logo  = site.logo.dark  | file_exists -%}
+{%- assign single_logo = nil -%}
+{%- if site.logo and site.logo.light == nil and site.logo.dark == nil -%}
 {%- assign single_logo = site.logo | file_exists -%}
+{%- endif -%}
 {%- assign fallback_svg = "images/logo.svg" | file_exists -%}
 {%- assign fallback_png = "images/logo.png" | file_exists -%}
 {%- assign fallback_jpg = "images/logo.jpg" | file_exists -%}

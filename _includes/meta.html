@@ -38,12 +38,18 @@
 {%- endcomment -%}
 {%- assign icon_light = site.icon.light | file_exists -%}
 {%- assign icon_dark  = site.icon.dark  | file_exists -%}
+{%- assign icon_single = nil -%}
+{%- if site.icon and site.icon.light == nil and site.icon.dark == nil -%}
 {%- assign icon_single = site.icon | file_exists -%}
+{%- endif -%}
 {%- assign png_fallback = "images/icon.png" | file_exists -%}
 {%- assign jpg_fallback = "images/icon.jpg" | file_exists -%}
 {%- assign logo_light = site.logo.light | file_exists -%}
 {%- assign logo_dark  = site.logo.dark  | file_exists -%}
+{%- assign logo_single = nil -%}
+{%- if site.logo and site.logo.light == nil and site.logo.dark == nil -%}
 {%- assign logo_single = site.logo | file_exists -%}
+{%- endif -%}
 
 {%- assign icon_default = icon_single | default: png_fallback | default: jpg_fallback | default: logo_single | default: logo_light | default: logo_dark -%}
 
