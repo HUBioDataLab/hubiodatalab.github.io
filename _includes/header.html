@@ -1,10 +1,22 @@
 {% assign image = page.header | default: site.header %}
 {% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
 
-{% assign svg = "images/logo.svg" | file_exists %}
-{% assign png = "images/logo.png" | file_exists %}
-{% assign jpg = "images/logo.jpg" | file_exists %}
-{% assign logo = svg | default: png | default: jpg | default: nil %}
+{%- assign light_logo = site.logo.light | file_exists -%}
+{%- assign dark_logo  = site.logo.dark  | file_exists -%}
+{%- assign single_logo = site.logo | file_exists -%}
+{%- assign fallback_svg = "images/logo.svg" | file_exists -%}
+{%- assign fallback_png = "images/logo.png" | file_exists -%}
+{%- assign fallback_jpg = "images/logo.jpg" | file_exists -%}
+{%- if single_logo -%}
+  {%- assign logo = single_logo -%}
+{%- else -%}
+  {%- if dark == true -%}
+    {%- assign logo = dark_logo | default: light_logo -%}
+  {%- else -%}
+    {%- assign logo = light_logo | default: dark_logo -%}
+  {%- endif -%}
+  {%- assign logo = logo | default: fallback_svg | default: fallback_png | default: fallback_jpg -%}
+{%- endif -%}
 
 <header
   class="background"
@@ -19,8 +31,9 @@
   <a href="{{ "/" | relative_url }}" class="home">
     {% if logo %}
       <span class="logo">
-        {% if svg %}
-          {{ svg | file_read }}
+        {% assign is_svg = logo | regex_scan: '\\.(svg)$' %}
+        {% if is_svg %}
+          {{ logo | file_read }}
         {% else %}
           <img src="{{ logo | relative_url | uri_escape }}" alt="logo">
         {% endif %}
