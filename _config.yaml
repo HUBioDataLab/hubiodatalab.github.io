@@ -6,6 +6,14 @@ header: images/background.jpg
 footer: images/background.jpg
 proofer: false
 
+# site branding (light/dark logos and icons)
+logo:
+  light: images/lab_logo/lab_logo_light_transparent.svg
+  dark: images/lab_logo/lab_logo_dark_transparent.svg
+icon:
+  light: images/lab_logo/lab_logo_light_transparent.svg
+  dark: images/lab_logo/lab_logo_dark_transparent.svg
+
 # site social media and other links
 links:
   email: tuncadogan@gmail.com

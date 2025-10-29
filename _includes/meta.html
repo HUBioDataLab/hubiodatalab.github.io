@@ -32,9 +32,20 @@
 
 {% assign description = description | xml_escape %}
 
-{% assign png = "images/icon.png" | file_exists %}
-{% assign jpg = "images/icon.jpg" | file_exists %}
-{% assign icon = png | default: jpg | relative_url %}
+{%- comment -%}
+  Icon selection: supports site.icon as string or {light, dark}.
+  Falls back to PNG/JPG in /images, then to site.logo variants if present.
+{%- endcomment -%}
+{%- assign icon_light = site.icon.light | file_exists -%}
+{%- assign icon_dark  = site.icon.dark  | file_exists -%}
+{%- assign icon_single = site.icon | file_exists -%}
+{%- assign png_fallback = "images/icon.png" | file_exists -%}
+{%- assign jpg_fallback = "images/icon.jpg" | file_exists -%}
+{%- assign logo_light = site.logo.light | file_exists -%}
+{%- assign logo_dark  = site.logo.dark  | file_exists -%}
+{%- assign logo_single = site.logo | file_exists -%}
+
+{%- assign icon_default = icon_single | default: png_fallback | default: jpg_fallback | default: logo_single | default: logo_light | default: logo_dark -%}
 
 {% assign jpg = "images/share.jpg" | file_exists %}
 {% assign png = "images/share.png" | file_exists %}
@@ -49,7 +60,24 @@
 
 <title>{{ fulltitle }}</title>
 
-<link rel="icon" href="{{ icon }}">
+{%- comment -%}
+  Prefer color-scheme aware SVG icons if provided, with PNG/JPG fallback.
+{%- endcomment -%}
+{%- if icon_light or icon_dark -%}
+  {%- if icon_light -%}
+    <link rel="icon" href="{{ icon_light | relative_url | uri_escape }}" type="image/svg+xml" media="(prefers-color-scheme: light)">
+  {%- endif -%}
+  {%- if icon_dark -%}
+    <link rel="icon" href="{{ icon_dark | relative_url | uri_escape }}" type="image/svg+xml" media="(prefers-color-scheme: dark)">
+  {%- endif -%}
+  {%- if png_fallback or jpg_fallback -%}
+    <link rel="icon" href="{{ png_fallback | default: jpg_fallback | relative_url | uri_escape }}">
+  {%- else -%}
+    <link rel="icon" href="{{ icon_default | relative_url | uri_escape }}" type="image/svg+xml">
+  {%- endif -%}
+{%- else -%}
+  <link rel="icon" href="{{ icon_default | relative_url | uri_escape }}">
+{%- endif -%}
 
 <meta name="title" content="{{ title }}">
 <meta name="description" content="{{ description }}">
@@ -94,7 +122,7 @@
     "headline": "{{ title }}",
     "publisher": {
       "@type": "Organization",
-      "logo": { "@type": "ImageObject", "url": "{{ icon }}" }
+      "logo": { "@type": "ImageObject", "url": "{{ (png_fallback | default: jpg_fallback | default: icon_default) | relative_url }}" }
     },
     "url": "{{ url }}"
   }
