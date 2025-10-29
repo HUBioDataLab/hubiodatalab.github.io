@@ -3,12 +3,12 @@
 
 # Hacettepe University Biological Data Science Laboratory
 
-Hacettepe Biological Data Science Lab's work focuses on developing machine/deep learning-based methods for:
-i. the integration and representation of heterogeneous biomedical data
-ii. the prediction of the functional properties of genes/proteins
-iii. discovering/designing new drug candidates
+**Hacettepe Biological Data Science Lab**’s work focuses on developing machine/deep learning-based methods for: 
+- the integration and representation of heterogeneous biomedical data,
+- the prediction of the functional properties of genes/proteins,
+- discovering/designing new drug candidate molecules.
 
-We frequently utilise representation learning and generative artificial intelligence. We have multiple ongoing projects focused on small molecule and protein design.
+We frequently utilise representation learning and generative artificial intelligence and have multiple ongoing projects focused on small-molecule and protein design.
 
 {% include section.html %}
 
@@ -33,7 +33,7 @@ We apply cutting-edge machine learning and deep learning to decode complex biolo
   include feature.html
   image="images/research.jpg"
   link="research"
-  title="Our Research"
+  title="Research"
   text=text
 %}
 
@@ -56,7 +56,7 @@ Our lab builds and applies novel computational tools to real-world challenges. O
   include feature.html
   image="images/projects.jpg"
   link="projects"
-  title="Our Projects"
+  title="Projects"
   flip=true
   style="bare"
   text=text
@@ -81,6 +81,6 @@ Our lab is powered by an interdisciplinary team of computational biologists, dat
   include feature.html
   image="images/team.jpg"
   link="team"
-  title="Our Team"
+  title="Team"
   text=text
 %}
