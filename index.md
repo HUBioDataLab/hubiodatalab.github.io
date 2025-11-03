@@ -64,7 +64,7 @@ Our lab builds and applies novel computational tools to real-world challenges. O
 
 {% capture text %}
 
-Our lab is powered by an interdisciplinary team of computational biologists, data scientists, and engineers. We are passionate about using AI for science and fostering a collaborative research environment.
+Our lab is powered by an interdisciplinary team of bioinformaticians, computer scientists, computational biologists and AI engineers. We are passionate about using AI for science and fostering a collaborative research environment.
 
 {%
   include button.html
