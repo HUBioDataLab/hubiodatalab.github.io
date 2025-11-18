@@ -37,21 +37,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>ContVAR | HUBioDataSciLab</title>
+<title>DrugGEN | HUBioDataSciLab</title>
 <link rel="icon" href="/images/lab_logo/lab_logo_light_transparent.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
 <link rel="icon" href="/images/lab_logo/lab_logo_dark_transparent.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/images/icon.png">
-<meta name="title" content="ContVAR">
+<meta name="title" content="DrugGEN">
 <meta name="description" content="An engaging 1-3 sentence description of your lab.">
 
-<meta property="og:title" content="ContVAR">
+<meta property="og:title" content="DrugGEN">
 <meta property="og:site_title" content="HUBioDataSciLab">
 <meta property="og:description" content="An engaging 1-3 sentence description of your lab.">
 <meta property="og:url" content="https://hubiodatalab.github.io">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="ContVAR">
+<meta property="twitter:title" content="DrugGEN">
 <meta property="twitter:description" content="An engaging 1-3 sentence description of your lab.">
 <meta property="twitter:url" content="https://hubiodatalab.github.io">
 <meta property="twitter:card" content="summary_large_image">
@@ -67,9 +67,9 @@
     
       "@type": "WebSite",
     
-    "name": "ContVAR",
+    "name": "DrugGEN",
     "description": "An engaging 1-3 sentence description of your lab.",
-    "headline": "ContVAR",
+    "headline": "DrugGEN",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
@@ -347,8 +347,20 @@
       
     
       
+        <a href="/publications/" data-tooltip="Published works">
+          Publications
+        </a>
+      
+    
+      
         <a href="/projects/" data-tooltip="Software, datasets, and more">
           Projects
+        </a>
+      
+    
+      
+        <a href="/researches/" data-tooltip="Software, datasets, and more">
+          Research
         </a>
       
     
@@ -394,40 +406,31 @@
     <div class="project-page" style="max-width: 900px; margin: 0 auto; padding: 2rem;">
 
   <h1 class="project-title" style="text-align:center; margin-bottom: 1.5rem;">
-    High Precision Protein Function Prediction with Graph Contrastive Representation Learning
+    Disease Centric Large Scale De Novo Design of Drug Candidate Molecules with Graph Generative Deep Adversarial Networks
   </h1>
 
-    <div class="project-meta" style="margin-bottom: 2rem; text-align:center; font-size: 1rem; line-height: 1.6;">
+  <div class="project-meta" style="margin-bottom: 2rem; text-align:center; font-size: 1rem; line-height: 1.6;">
     
-      <p><strong>Title:</strong> ContVAR</p>
-    
-    
-      <p><strong>Supported by:</strong> TUBITAK-ARDEB 1001 Scientific and Technological Research Projects Support Program 2024</p>
+      <p><strong>Project Number:</strong> 120C123</p>
     
     
-      <p><strong>Project Number:</strong> 124E639</p>
+      <p><strong>Role:</strong> pi-lab</p>
     
     
-      <p><strong>Role of HUBioDataSciLab:</strong> PI lab</p>
-    
-    
-      <p><strong>Partner Lab(s):</strong> Karaca Lab, IBG</p>
+      <p><strong>Partners:</strong> Kansil Lab, METU</p>
     
   </div>
-
-  <h3 class="project-abstract-heading" style="font-size: 1.1rem; margin: 0.5rem 0 0.5rem 0; font-weight: 600;">
-    Abstract
-  </h3>
 
   <div class="project-description" style="margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.8; text-align: justify;">
-    <p>This project addresses the challenge of understanding functional alterations in proteins caused by single amino acid variations, a key issue in biomedical research and biotechnology. Existing computational methods often indicate whether a mutation is pathogenic or leads to a broad gain or loss of function but cannot specify the exact biological roles affected. To overcome this, we introduce ContVAR, an artificial intelligence–based framework that combines contrastive and graph representation learning. Its core is a self-supervised contrastive variant representation learning model that captures detailed structural and functional information from protein variants without relying on extensive annotations. Due to the lack of large-scale gained/lost function datasets, deep mutational screening data support this self-supervised approach, enabling the model to distinguish between function-altering and neutral variants. Using 3D structures predicted by AlphaFold2/3, encoded as graphs, ContVAR produces high-dimensional embeddings that feed into a supervised model trained on Gene Ontology annotations of natural proteins. The system will be validated with resources such as UniProt and ProteinGym and examined in biologically important contexts like the p53-MDM2 pathway, with additional verification through cell-based assays in liver, breast, and colon cancer models. Finally, ContVAR will be released as a user-friendly computational tool with a graphical interface, providing life science researchers with a practical means to analyze protein variants in real time and accelerate applications in drug discovery and biotechnology.</p>
+    <h1 id="druggen">DrugGEN</h1>
+
+<p>Discovering novel, efficacious small molecules remains a slow and failure-prone process, given the enormity of chemical space. We developed DrugGEN, a generative AI system for <em>de novo</em>, target-specific small-molecule design against drug-resistant cancers. Molecules were represented as graphs and modelled with a graph-transformer-based generative adversarial network conditioned on target context. The model ingested curated training corpora and was optimised to maximise chemical validity, uniqueness/novelty, and predicted bioactivity while satisfying multi-parameter property profiles. In Stage 1, we trained and evaluated the system on expert-selected cancer targets, demonstrating high validity and novelty rates, with improved predicted affinity compared to strong baselines. A prioritised subset of designs was advanced to medicinal chemistry; multiple compounds were synthesised successfully and exhibited measurable inhibitory activity on enzymatic assays and drug-resistant cancer cell lines in vitro. In Stage 2, prospective rounds incorporated feedback from docking, molecular dynamics, and assay results, yielding iterative gains in predicted potency and developability. We released an open-access codebase (<a href="https://github.com/HUBioDataLab/druggen">https://github.com/HUBioDataLab/druggen</a>) and a web service (<a href="https://huggingface.co/spaces/HUBioDataLab/DrugGEN">https://huggingface.co/spaces/HUBioDataLab/DrugGEN</a>) that enables life-science researchers to generate candidate molecular structures by specifying target proteins, facilitating rapid hypothesis generation and experimental triage. DrugGEN establishes a practical, target-conditioned molecular generation pipeline that couples graph-native modelling with property-aware constraints to deliver experimentally testable inhibitors for resistant oncology indications.</p>
 
   </div>
-
 
   
     <div class="project-full-image" style="text-align:center; margin-top: 3rem;">
-      <img src="/images/projects/contvar.jpg" alt="ContVAR" style="max-width: 100%; border-radius: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.15);">
+      <img src="/images/projects/druggen.jpg" alt="DrugGEN" style="max-width: 100%; border-radius: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.15);">
     </div>
   
 

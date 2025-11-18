@@ -37,21 +37,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>CROssBARv2 | HUBioDataSciLab</title>
+<title>TURMIND | HUBioDataSciLab</title>
 <link rel="icon" href="/images/lab_logo/lab_logo_light_transparent.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
 <link rel="icon" href="/images/lab_logo/lab_logo_dark_transparent.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/images/icon.png">
-<meta name="title" content="CROssBARv2">
+<meta name="title" content="TURMIND">
 <meta name="description" content="An engaging 1-3 sentence description of your lab.">
 
-<meta property="og:title" content="CROssBARv2">
+<meta property="og:title" content="TURMIND">
 <meta property="og:site_title" content="HUBioDataSciLab">
 <meta property="og:description" content="An engaging 1-3 sentence description of your lab.">
 <meta property="og:url" content="https://hubiodatalab.github.io">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="CROssBARv2">
+<meta property="twitter:title" content="TURMIND">
 <meta property="twitter:description" content="An engaging 1-3 sentence description of your lab.">
 <meta property="twitter:url" content="https://hubiodatalab.github.io">
 <meta property="twitter:card" content="summary_large_image">
@@ -67,9 +67,9 @@
     
       "@type": "WebSite",
     
-    "name": "CROssBARv2",
+    "name": "TURMIND",
     "description": "An engaging 1-3 sentence description of your lab.",
-    "headline": "CROssBARv2",
+    "headline": "TURMIND",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
@@ -347,8 +347,20 @@
       
     
       
+        <a href="/publications/" data-tooltip="Published works">
+          Publications
+        </a>
+      
+    
+      
         <a href="/projects/" data-tooltip="Software, datasets, and more">
           Projects
+        </a>
+      
+    
+      
+        <a href="/researches/" data-tooltip="Software, datasets, and more">
+          Research
         </a>
       
     
@@ -394,41 +406,24 @@
     <div class="project-page" style="max-width: 900px; margin: 0 auto; padding: 2rem;">
 
   <h1 class="project-title" style="text-align:center; margin-bottom: 1.5rem;">
-    Integrative Representation and Deep Graph Learning Based Prediction of Complex and Heterogeneous Relationships in Biomolecular and Biomedical Data
+    Molecular Intelligence for Novel Discovery (MIND): A Universal Multi-Modal Foundation Model for Life’s Molecules
   </h1>
 
-    <div class="project-meta" style="margin-bottom: 2rem; text-align:center; font-size: 1rem; line-height: 1.6;">
-    
-      <p><strong>Title:</strong> CROssBARv2</p>
+  <div class="project-meta" style="margin-bottom: 2rem; text-align:center; font-size: 1rem; line-height: 1.6;">
     
     
-      <p><strong>Supported by:</strong> TUBITAK-ARDEB 3501 Career Support Program 2021</p>
+      <p><strong>Role:</strong> pi-lab</p>
     
-    
-      <p><strong>Project Number:</strong> 120E531</p>
-    
-    
-      <p><strong>Role of HUBioDataSciLab:</strong> pi-lab</p>
-    
-    
-      <p><strong>Partner Lab(s):</strong> Saezlab, Heidelberg University</p>
     
   </div>
-
-  <h3 class="project-abstract-heading" style="font-size: 1.1rem; margin: 0.5rem 0 0.5rem 0; font-weight: 600;">
-    Abstract
-  </h3>
 
   <div class="project-description" style="margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.8; text-align: justify;">
-    <p>Systematic analysis of large-scale biomedical data is critical for deciphering mechanisms and enabling personalized, clinically actionable therapies. Two impediments limit translation: (i) many relationships among biological entities (e.g., protein–function, gene–disease) remain unknown, and (ii) heterogeneous technologies, data models, and storage formats prevent a unified, integrable resource. Addressing these gaps requires new methods that both integrate disparate datasets and learn missing relations. We developed an end-to-end computational system that integrates heterogeneous biological/biomedical data from multiple open sources into graph-structured knowledge graphs, and applies deep graph neural networks to predict complex inter-entity relations. In Stage 1, we implemented automated pipelines to ingest and fuse multi-layer biological data and persist them in a graph database. In Stage 2, we formulated relation inference as link prediction over the resulting heterogeneous graphs and trained deep models directly on biological graphs. As two concrete applications, we trained models to (i) predict protein–function assignments and (ii) predict drug–target protein interactions. Selected predictions were corroborated by targeted literature checks. We deployed the integrated graphs and models as an online network service for open scientific use and reproducibility, and coupled the system with large language models to power a domain chatbot that answers natural-language scientific queries with minimized hallucination risk (<a href="https://crossbarv2.hubiodatalab.com/">https://crossbarv2.hubiodatalab.com/</a>). We anticipate broad impact in hypothesis generation and testing across the life sciences, by enabling researchers to interrogate complex, system-level relationships among genes/proteins and their functions, variants, and expression profiles, and their connections to diseases, phenotypes, drugs, and underlying biological mechanisms.</p>
+    <h1 id="turmind">TURMIND</h1>
+
+<p>The aim of this project is to develop a universal foundation model for molecular representation learning, capable of handling all molecules related to life, including biomolecules such as DNA, RNA, proteins, and small-molecule ligands and metabolites. The proposed foundation model will utilise cutting-edge deep learning techniques to encode atomic and molecular-level information, serving as the backbone for downstream tasks. By leveraging multi-modal data and state-of-the-art architectures, this project aims to advance machine understanding of biology and accelerate drug discovery and biotechnology innovation. The foundation model will adopt a multimodal learning approach to integrate diverse data types, including sequences (e.g., nucleotide and amino acid sequences), structures (e.g., atomic 3D coordinates), interactions (e.g., protein-protein or protein-ligand networks), textual annotations, and imaging data (e.g., immunohistochemistry). We will explore advanced transformer-based architectures as the primary modelling approach, including encoder-decoder models and dense attention mechanisms. Alternatives, such as graph neural networks (GNNs) and diffusion models, will be considered to capture the relational and spatial information inherent in molecular systems. This will enable the model to operate at the atomic level, using atoms and bonds as the fundamental building blocks to provide a unified representation for all molecules. Following pretraining, the model will be fine-tuned for generative tasks such as designing novel proteins with specified functions and drug candidates targeting biomolecules of interest. Generative tasks will utilise autoregressive or diffusion-based generative models. Discriminative tasks, such as protein function prediction and molecular property prediction, will leverage fine-tuned classifiers and regressors. Potential applications include enzyme design, metabolite synthesis, materials science, and drug discovery.</p>
 
   </div>
 
-
-  
-    <div class="project-full-image" style="text-align:center; margin-top: 3rem;">
-      <img src="/images/projects/crossbarv2.jpg" alt="CROssBARv2" style="max-width: 100%; border-radius: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.15);">
-    </div>
   
 
 </div>

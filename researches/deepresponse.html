@@ -37,21 +37,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>CROssBAR | HUBioDataSciLab</title>
+<title>DeepResponse | HUBioDataSciLab</title>
 <link rel="icon" href="/images/lab_logo/lab_logo_light_transparent.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
 <link rel="icon" href="/images/lab_logo/lab_logo_dark_transparent.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/images/icon.png">
-<meta name="title" content="CROssBAR">
+<meta name="title" content="DeepResponse">
 <meta name="description" content="An engaging 1-3 sentence description of your lab.">
 
-<meta property="og:title" content="CROssBAR">
+<meta property="og:title" content="DeepResponse">
 <meta property="og:site_title" content="HUBioDataSciLab">
 <meta property="og:description" content="An engaging 1-3 sentence description of your lab.">
 <meta property="og:url" content="https://hubiodatalab.github.io">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="CROssBAR">
+<meta property="twitter:title" content="DeepResponse">
 <meta property="twitter:description" content="An engaging 1-3 sentence description of your lab.">
 <meta property="twitter:url" content="https://hubiodatalab.github.io">
 <meta property="twitter:card" content="summary_large_image">
@@ -67,9 +67,9 @@
     
       "@type": "WebSite",
     
-    "name": "CROssBAR",
+    "name": "DeepResponse",
     "description": "An engaging 1-3 sentence description of your lab.",
-    "headline": "CROssBAR",
+    "headline": "DeepResponse",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
@@ -347,8 +347,20 @@
       
     
       
+        <a href="/publications/" data-tooltip="Published works">
+          Publications
+        </a>
+      
+    
+      
         <a href="/projects/" data-tooltip="Software, datasets, and more">
           Projects
+        </a>
+      
+    
+      
+        <a href="/researches/" data-tooltip="Software, datasets, and more">
+          Research
         </a>
       
     
@@ -394,40 +406,32 @@
     <div class="project-page" style="max-width: 900px; margin: 0 auto; padding: 2rem;">
 
   <h1 class="project-title" style="text-align:center; margin-bottom: 1.5rem;">
-    Comprehensive Resource of Biomedical Relations with Network Representations and Deep Learning (CROssBAR)
+    Large Scale Prediction of Cancer Cell Line Drug Response with Deep Learning Based Pharmacogenomic Modelling
   </h1>
 
-    <div class="project-meta" style="margin-bottom: 2rem; text-align:center; font-size: 1rem; line-height: 1.6;">
+  <div class="project-meta" style="margin-bottom: 2rem; text-align:center; font-size: 1rem; line-height: 1.6;">
     
-      <p><strong>Title:</strong> CROssBAR</p>
-    
-    
-      <p><strong>Supported by:</strong>  British Council &amp; TUBITAK - Newton / Kâtip Çelebi Institutional Links Program Call 2016</p>
+      <p><strong>Project Number:</strong> 3912</p>
     
     
-      <p><strong>Project Number:</strong> 116E930</p>
+      <p><strong>Role:</strong> pi-lab</p>
     
     
-      <p><strong>Role of HUBioDataSciLab:</strong> co-pi-lab</p>
-    
-    
-      <p><strong>Partner Lab(s):</strong> Kansil Lab, METU</p>
+      <p><strong>Partners:</strong> Kansil Lab, METU</p>
     
   </div>
-
-  <h3 class="project-abstract-heading" style="font-size: 1.1rem; margin: 0.5rem 0 0.5rem 0; font-weight: 600;">
-    Abstract
-  </h3>
 
   <div class="project-description" style="margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.8; text-align: justify;">
-    <p>Systemic analysis of available large-scale biological/biomedical data is critical for studying biological mechanisms, and developing novel and effective treatment approaches against diseases. However, different layers of the available data are produced using different technologies and scattered across individual computational resources without any explicit connections to each other, which hinders extensive and integrative multi-omics-based analysis. We aimed to address this issue by developing a new data integration/representation methodology and its application by constructing a biological data resource. <strong>CROssBAR</strong> is a comprehensive system that integrates large-scale biological/biomedical data from various resources and stores them in a NoSQL database. <strong>CROssBAR</strong> is enriched with the deep-learning-based prediction of relationships between numerous data entries, which is followed by the rigorous analysis of the enriched data to obtain biologically meaningful modules. These complex sets of entities and relationships are displayed to users via easy-to-interpret, interactive knowledge graphs within an open-access service. <strong>CROssBAR</strong> knowledge graphs incorporate relevant genes–proteins, molecular interactions, pathways, phenotypes, diseases, as well as known/predicted drugs and bioactive compounds, and they are constructed on-the-fly based on simple non-programmatic user queries. These intensely processed heterogeneous networks are expected to aid systems-level research, especially to infer biological mechanisms in relation to genes, proteins, their ligands, and diseases. <strong>CROssBAR</strong> is available at: <a href="https://crossbar.kansil.org/">https://crossbar.kansil.org/</a></p>
+    <h1 id="deepresponse">DeepResponse</h1>
+
+<p>Personalised oncology requires advanced knowledge of tumour response across therapeutic options, yet only a fraction of the pharmacogenomic space has been profiled experimentally due to the cost and duration of large screens (e.g., GDSC, CCLE, NCI-60). To address this gap with this project, we developed DeepResponse, a large-scale, AI-driven pharmacogenomic platform that predicts quantitative drug sensitivity (pIC50) by jointly modelling cell-line and drug attributes. On the cell side, we integrated multi-omics features—gene expression, single mutations, copy-number variation, and DNA methylation (augmented with pathway membership şinformation of genes)—while drugs were represented with molecular fingerprints, graphs or with language modeling-based embeddings. Training drew on major public resources (GDSC, CCLE/DepMap, NCI-60, and ChEMBL), followed by optimisation, validation, and independent tests, with cross-domain evaluation to assess generalisation. Methodologically, we implemented a pairwise-input deep architecture that couples 2-D convolution over gene-wise multi-omic channels with message-passing graph neural networks (or chemical language models in an alternative model) over drugs. We then executed full-matrix inference (∼10^3 cell lines × ∼10^4 compounds) to prioritise untested pairs at scale and advanced top hypotheses to in-vitro validation in a hepatocellular carcinoma use case. The platform demonstrated that multi-omics integration and drug modelling yield consistent performance gains over single-omic baselines and support candidate nomination and repurposing at scale. DeepResponse operationalises computational drug-response prediction for large cohorts and libraries, complementing experimental screening and enabling faster hypothesis triage toward preclinical testing.</p>
+
 
   </div>
-
 
   
     <div class="project-full-image" style="text-align:center; margin-top: 3rem;">
-      <img src="/images/projects/crossbar.jpg" alt="CROssBAR" style="max-width: 100%; border-radius: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.15);">
+      <img src="/images/projects/deepresponse.jpg" alt="DeepResponse" style="max-width: 100%; border-radius: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.15);">
     </div>
   
 
