@@ -20,7 +20,7 @@ We apply cutting-edge machine learning and deep learning to decode complex biolo
 
 {%
   include button.html
-  link="research"
+  link="publications"
   text="See our publications"
   icon="fa-solid fa-arrow-right"
   flip=true
@@ -32,8 +32,8 @@ We apply cutting-edge machine learning and deep learning to decode complex biolo
 {%
   include feature.html
   image="images/research.jpg"
-  link="research"
-  title="Research"
+  link="publications"
+  title="Publications"
   text=text
 %}
 
@@ -43,8 +43,8 @@ Our lab builds and applies novel computational tools to real-world challenges. O
 
 {%
   include button.html
-  link="projects"
-  text="Browse our projects"
+  link="research"
+  text="Browse our research"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -55,8 +55,8 @@ Our lab builds and applies novel computational tools to real-world challenges. O
 {%
   include feature.html
   image="images/projects.jpg"
-  link="projects"
-  title="Projects"
+  link="research"
+  title="Research"
   flip=true
   style="bare"
   text=text
