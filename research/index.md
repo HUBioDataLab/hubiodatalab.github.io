@@ -15,8 +15,8 @@ Our lab focuses on the application of machine learning and deep learning to comp
 
 ## Highlighted Research
 
-{% include list.html data="researches" component="research-card" filter="highlight == true" %}
+{% include list.html data="research" component="research-card" filter="highlight == true" %}
 
 {% include section.html %} 
 
-{% include list.html data="researches" component="research-card" filter="highlight == false" %}
+{% include list.html data="research" component="research-card" filter="highlight == false" %}
