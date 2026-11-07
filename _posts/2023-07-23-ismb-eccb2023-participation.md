@@ -1,5 +1,6 @@
 ---
 title: ISMB/ECCB 2023 Participation
+image: /images/news/ismb2023.jpg
 author: research-group
 tags:
   - conference

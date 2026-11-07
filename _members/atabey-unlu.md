@@ -1,6 +1,6 @@
 ---
 name: Atabey Ünlü
-image: images/team/atabey-unlu.jpg
+image: /images/team/atabey-unlu.jpg
 role: phd
 aliases:
   - A Ünlü

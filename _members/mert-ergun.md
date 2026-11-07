@@ -1,6 +1,6 @@
 ---
-name: Mert ERGÜN
-image: images/team/mert-ergun.jpg
+name: Mert Ergün
+image: /images/team/mert-ergun.jpg
 role: undergrad
 aliases:
   - M Ergun

@@ -1,0 +1,135 @@
+---
+layout: default
+title: Hacettepe Biological Data Science Lab
+body_class: home
+---
+{%- assign pubs = site.data.publications | where_exp: "p", "p.hidden != true" -%}
+{%- assign people = site.members | where_exp: "m", "m.role != 'alumni'" -%}
+{%- assign projects = site.projects | sort: "order" -%}
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ site.lab.department }} · {{ site.lab.university }}, Ankara</p>
+      <h1 class="display">Machine learning for molecules, proteins and biomedical knowledge.</h1>
+      <p class="lede">We develop deep learning methods that integrate heterogeneous biomedical data, predict the functions of genes and proteins, and design new drug candidates and proteins. Our code, data and models are released in the open.</p>
+      <div class="hero-actions">
+        <a class="btn" href="{{ '/projects/' | relative_url }}">Our projects {% include icon.html name="arrow" %}</a>
+        <a class="btn btn-ghost" href="{{ '/publications/' | relative_url }}">Publications</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      {% include mark.html class="mark-hero" stroke="0.55" %}
+    </div>
+  </div>
+  <div class="wrap">
+    <dl class="stats">
+      <div><dt>Publications</dt><dd>{{ pubs.size }}</dd></div>
+      <div><dt>Funded projects</dt><dd>{{ site.projects.size }}</dd></div>
+      <div><dt>Lab members</dt><dd>{{ people.size }}</dd></div>
+      <div><dt>Open-source repositories</dt><dd><a href="https://github.com/{{ site.lab.github }}">GitHub {% include icon.html name="ext" %}</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="eyebrow">Research</p>
+      <h2>Three questions we keep coming back to</h2>
+    </header>
+    <ol class="themes">
+      <li>
+        <span class="num">01</span>
+        <h3>How do we connect scattered biomedical data?</h3>
+        <p>We integrate genes, proteins, pathways, diseases and drugs from open resources into knowledge graphs, and learn representations that can be queried and reasoned over.</p>
+        <p class="theme-projects"><a href="{{ '/projects/crossbarv2/' | relative_url }}">CROssBARv2</a><a href="{{ '/projects/crossbar/' | relative_url }}">CROssBAR</a></p>
+      </li>
+      <li>
+        <span class="num">02</span>
+        <h3>What does a protein do, and what if we change it?</h3>
+        <p>We predict protein functions and the effects of variants with protein language models and graph learning, and design new protein sequences and backbones for a given function.</p>
+        <p class="theme-projects"><a href="{{ '/projects/protgen/' | relative_url }}">ProtGEN</a><a href="{{ '/projects/contvar/' | relative_url }}">ContVAR</a></p>
+      </li>
+      <li>
+        <span class="num">03</span>
+        <h3>Can we design the molecule we need?</h3>
+        <p>We build generative models that design target-specific drug candidates, and predictive models of drug–target interactions and drug response. We test the best designs in the wet lab with our collaborators.</p>
+        <p class="theme-projects"><a href="{{ '/projects/druggen/' | relative_url }}">DrugGEN</a><a href="{{ '/projects/deepresponse/' | relative_url }}">DeepResponse</a></p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section-feature">
+  <div class="wrap feature">
+    <figure class="feature-figure">
+      <img src="{{ '/images/projects/druggen.jpg' | relative_url }}" alt="DrugGEN pipeline: dataset formation, generative model training, and molecule selection through docking, molecular dynamics and in vitro assays." loading="lazy" width="1500" height="932">
+    </figure>
+    <div class="feature-copy">
+      <p class="eyebrow">Featured · Nature Machine Intelligence, 2025</p>
+      <h2>DrugGEN: designing target-specific drug candidates with graph transformers</h2>
+      <p>DrugGEN couples a generative adversarial network with graph transformers to design new molecules for a chosen protein target. For AKT1, five designs were synthesised; two inhibited the target significantly in vitro.</p>
+      <ul class="link-row">
+        <li><a class="link-arrow" href="https://www.nature.com/articles/s42256-025-01082-y">Paper {% include icon.html name="ext" %}</a></li>
+        <li><a class="link-arrow" href="https://github.com/HUBioDataLab/DrugGEN">Code {% include icon.html name="ext" %}</a></li>
+        <li><a class="link-arrow" href="https://huggingface.co/spaces/HUBioDataLab/DrugGEN">Try the demo {% include icon.html name="ext" %}</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <header class="section-head section-head-row">
+      <div>
+        <p class="eyebrow">Projects</p>
+        <h2>What we're building</h2>
+      </div>
+      <a class="link-arrow" href="{{ '/projects/' | relative_url }}">All projects {% include icon.html name="arrow" %}</a>
+    </header>
+    <div class="card-grid">
+      {%- for pr in projects offset: 1 limit: 3 %}
+      {% include project-card.html project=pr %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-split">
+  <div class="wrap split">
+    <div>
+      <header class="section-head section-head-row">
+        <div><p class="eyebrow">Recent papers</p><h2>Publications</h2></div>
+        <a class="link-arrow" href="{{ '/publications/' | relative_url }}">All {% include icon.html name="arrow" %}</a>
+      </header>
+      <ol class="pub-list pub-list-compact">
+        {%- for p in pubs limit: 5 %}{% include pub.html pub=p %}{% endfor %}
+      </ol>
+    </div>
+    <div>
+      <header class="section-head section-head-row">
+        <div><p class="eyebrow">Lab news</p><h2>News</h2></div>
+        <a class="link-arrow" href="{{ '/news/' | relative_url }}">All {% include icon.html name="arrow" %}</a>
+      </header>
+      <ol class="news-list">
+        {%- for post in site.posts limit: 5 %}
+        <li>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {%- endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section cta">
+  <div class="wrap cta-inner">
+    <div>
+      <h2>Join the lab</h2>
+      <p>We welcome motivated students at all levels (BSc, MSc and PhD) with a background in computer science, bioinformatics or the life sciences. If you'd like to work with us, send a short note and your CV.</p>
+    </div>
+    <a class="btn" href="{{ '/contact/' | relative_url }}">Get in touch {% include icon.html name="arrow" %}</a>
+  </div>
+</section>

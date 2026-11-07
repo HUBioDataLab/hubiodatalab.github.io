@@ -1,0 +1,15 @@
+{%- assign p = include.pub -%}
+{%- assign href = p.url | default: "" -%}
+{%- if href == "" and p.doi %}{% assign href = "https://doi.org/" | append: p.doi %}{% endif -%}
+{%- if href == "" and p.scholar_id %}{% assign href = "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=" | append: site.lab.scholar | append: "&citation_for_view=" | append: p.scholar_id %}{% endif -%}
+<li class="pub{% if p.selected %} is-selected{% endif %}{% if p.preprint %} is-preprint{% endif %}" data-year="{{ p.year }}">
+  <h3 class="pub-title"><a href="{{ href }}">{{ p.title }}</a></h3>
+  <p class="pub-authors" data-authors>{{ p.authors }}</p>
+  <p class="pub-meta">
+    {%- if p.venue and p.venue != "" %}<span class="pub-venue">{{ p.venue }}</span>{% endif -%}
+    {%- unless include.hide_year %}{% if p.year %}<span>{{ p.year }}</span>{% endif %}{% endunless -%}
+    {%- if p.preprint %}<span class="tag">Preprint</span>{% endif -%}
+    {%- if p.code %}<a class="pub-link" href="{{ p.code }}">Code</a>{% endif -%}
+    {%- for slug in p.projects %}{% assign pr = site.projects | where_exp: "x", "x.slug == slug" | first %}{% if pr %}<a class="tag tag-project" href="{{ pr.url | relative_url }}">{{ pr.title }}</a>{% endif %}{% endfor -%}
+  </p>
+</li>

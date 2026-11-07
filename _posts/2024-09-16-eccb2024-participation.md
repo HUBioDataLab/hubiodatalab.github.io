@@ -1,5 +1,6 @@
 ---
 title: ECCB 2024 Participation
+image: /images/news/eccb2024.jpg
 author: research-group
 tags:
   - conference

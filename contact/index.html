@@ -1,0 +1,30 @@
+---
+title: Contact
+eyebrow: Contact
+heading: Get in touch
+lede: For collaborations, student positions or questions about our tools, email the lab or Prof. Doğan directly.
+---
+<div class="contact-grid">
+  <div class="contact-cards">
+    <div class="contact-card">
+      <p class="eyebrow">Lab</p>
+      <a class="contact-email" href="mailto:{{ site.lab.email }}">{{ site.lab.email }}</a>
+    </div>
+    <div class="contact-card">
+      <p class="eyebrow">{{ site.lab.pi }}</p>
+      <a class="contact-email" href="mailto:{{ site.lab.pi_email }}">{{ site.lab.pi_email }}</a>
+    </div>
+    <div class="contact-card">
+      <p class="eyebrow">Address</p>
+      <address><strong>{{ site.title }}</strong><br>{% for line in site.lab.address %}{{ line }}<br>{% endfor %}</address>
+      <a class="link-arrow" href="{{ site.lab.maps }}">Directions {% include icon.html name="ext" %}</a>
+    </div>
+    <div class="contact-card">
+      <p class="eyebrow">Prospective students</p>
+      <p>We welcome students at all levels (BSc, MSc and PhD). Tell us what you'd like to work on and attach your CV and transcript.</p>
+    </div>
+  </div>
+  <div class="map">
+    <iframe title="Map: Hacettepe University Computer Engineering, Beytepe Campus" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.1251644685512!2d32.733790775565545!3d39.87143418864808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d3476c7df6a739%3A0xd3ae6a4e60ccb982!2sHacettepe%20%C3%9Cniversitesi%20Bilgisayar%20M%C3%BChendisli%C4%9Fi!5e0!3m2!1sen!2str!4v1760029587236!5m2!1sen!2str" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  </div>
+</div>

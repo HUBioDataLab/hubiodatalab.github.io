@@ -1,7 +1,8 @@
 ---
 name: Tunca Doğan
-image: images/team/tunca-dogan.jpg
+image: /images/team/tunca-dogan.jpg
 role: principal-investigator
+position: Professor, Department of Computer Engineering, Hacettepe University
 aliases:
   - T Doğan
   - T. Doğan

@@ -1,5 +1,6 @@
 ---
 title: HIBIT 2024 Participation
+image: /images/news/hibit2024.jpg
 author: research-group
 tags:
   - conference

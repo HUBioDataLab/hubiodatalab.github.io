@@ -1,6 +1,6 @@
 ---
 name: Rauf Yanmaz
-image: images/team/rauf-yanmaz.jpg
+image: /images/team/rauf-yanmaz.jpg
 role: undergrad
 aliases:
   - R Yanmaz

@@ -1,0 +1,39 @@
+---
+title: Publications
+eyebrow: Publications
+heading: Papers, preprints and chapters
+lede: Lab members are highlighted. For citation counts and the complete record, see our Google Scholar profile.
+---
+{%- assign pubs = site.data.publications | where_exp: "p", "p.hidden != true" -%}
+{%- assign selected = pubs | where: "selected", true -%}
+
+<section class="selected-pubs">
+  <h2 class="h-sub">Selected</h2>
+  <ol class="pub-list pub-list-selected">{% for p in selected %}{% include pub.html pub=p %}{% endfor %}</ol>
+</section>
+
+<section class="all-pubs" data-pub-filter>
+  <div class="filter-bar">
+    <h2 class="h-sub">All publications <span class="count" data-count>{{ pubs.size }}</span></h2>
+    <div class="filter-controls">
+      <label class="search">
+        {% include icon.html name="search" %}
+        <span class="sr-only">Search publications</span>
+        <input type="search" placeholder="Search title, author, venue" data-search autocomplete="off">
+      </label>
+      <div class="chips" role="group" aria-label="Filter by type">
+        <button type="button" class="chip" aria-pressed="true" data-type="all">All</button>
+        <button type="button" class="chip" aria-pressed="false" data-type="journal">Published</button>
+        <button type="button" class="chip" aria-pressed="false" data-type="preprint">Preprints</button>
+      </div>
+    </div>
+  </div>
+  {%- assign groups = pubs | group_by: "year" -%}
+  {%- for g in groups %}
+  <section class="year-group" data-year-group>
+    <h3 class="year">{% if g.name == "" or g.name == nil %}Undated{% else %}{{ g.name }}{% endif %}</h3>
+    <ol class="pub-list">{% for p in g.items %}{% include pub.html pub=p hide_year=true %}{% endfor %}</ol>
+  </section>
+  {%- endfor %}
+  <p class="empty" data-empty hidden>No publications match your search.</p>
+</section>

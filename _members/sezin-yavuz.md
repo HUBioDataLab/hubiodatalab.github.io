@@ -1,6 +1,6 @@
 ---
 name: Sezin Yavuz
-image: images/team/sezin-yavuz.jpg
+image: /images/team/sezin-yavuz.jpg
 role: undergrad
 aliases:
   - S Yavuz

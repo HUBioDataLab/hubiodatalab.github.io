@@ -1,0 +1,600 @@
+# Publications shown on /publications. Fields: title, authors, venue, year, url, doi, code,
+# selected (show in "Selected"), preprint, projects (project slugs), hidden (keep but do not show).
+- title: 'SELFormerMM: multimodal molecular representation learning via SELFIES, structure, text, and knowledge graph integration'
+  authors: E Ulusoy, Ş Bostancı, BE Deniz, T Doğan
+  venue: Bioinformatics 42 (Supplement_2), btag451
+  year: 2026
+  scholar_id: tHnMNPEAAAAJ:sfnaS5RM6jYC
+  citations: 0
+- title: 'DTA-GNN: a toolkit for constructing target-specific drug–target affinity datasets and training graph neural networks'
+  authors: G Özsari, AS Rifaioğlu, AC Acar, T Doğan, MV Atalay
+  venue: SoftwareX 34, 102671
+  year: 2026
+  scholar_id: tHnMNPEAAAAJ:sJPMR1oEGYQC
+  citations: 0
+- title: 'On the state of protein function prediction: a report on the fourth CAFA challenge'
+  authors: R Ramola, MC De Paolis Kaluza, D Piovesan, Y Peng, P Joshi, ...
+  venue: 'Biorxiv: the Preprint Server for Biology'
+  year: 2026
+  scholar_id: tHnMNPEAAAAJ:Og1tA8FjbJAC
+  citations: 3
+  preprint: true
+- title: Advances in Protein Function Prediction from the Fifth CAFA Challenge
+  authors: MCDP Kaluza, R Ramola, P Joshi, D Piovesan, W Reade, S Orchard, ...
+  venue: bioRxiv
+  year: 2026
+  scholar_id: tHnMNPEAAAAJ:wSy_KLzO7YEC
+  citations: 6
+  preprint: true
+- title: 'ChemPile: A 250 GB Diverse and Curated Dataset for Chemical Foundation Models'
+  authors: A Mirza, N Alampara, M Ríos-García, M Abdelalim, J Butler, B Connolly, ...
+  venue: Advances in Neural Information Processing Systems 38
+  year: 2026
+  scholar_id: tHnMNPEAAAAJ:lYAcb2jw7qUC
+  citations: 14
+- title: 'CROssBARv2: A Unified Computational Framework for Heterogeneous Biomedical Data Representation and LLM-Driven Exploration'
+  authors: B Sen, E Ulusoy, M Darcan, M Ergun, S Lobentanzer, AS Rifaioglu, ...
+  venue: bioRxiv, 2026.04. 12.718028
+  year: 2026
+  scholar_id: tHnMNPEAAAAJ:wLxue7F8ec0C
+  citations: 1
+  preprint: true
+  projects:
+  - crossbarv2
+- title: Molecular contrastive learning with graph attention network (MoCL-GAT) for enhanced molecular representation
+  authors: A Dalkıran, AS Rifaioglu, R Cetin-Atalay, AC Acar, T Doğan, MV Atalay
+  venue: BMC Bioinformatics
+  year: 2026
+  scholar_id: tHnMNPEAAAAJ:BOlwja0KXvYC
+  citations: 3
+  url: https://doi.org/g939mb
+  doi: 10.1101/2025.09.17.676724
+- title: 'SELFormerMM: multimodal molecular representation learning via SELFIES, structure, text, and knowledge graph integration'
+  authors: E Ulusoy, Ş Bostancı, BE Deniz, T Doğan
+  venue: bioRxiv, 2026.03. 17.712340
+  year: 2026
+  scholar_id: tHnMNPEAAAAJ:4e5Qn2KL_jwC
+  citations: 0
+  preprint: true
+- title: 'GLaDiGAtor: Language-Model-Augmented Multi-Relation Graph Learning for Predicting Disease-Gene Associations'
+  authors: OO Kuzucu, T Doğan
+  venue: arXiv preprint arXiv:2602.18769
+  year: 2026
+  scholar_id: tHnMNPEAAAAJ:QVtou7C4vgoC
+  citations: 1
+  preprint: true
+- title: 'OmniPath: integrated knowledgebase for multi-omics analysis'
+  authors: D Türei, J Schaul, N Palacio-Escat, B Bohár, Y Bai, F Ceccarelli, E Çevrim, ...
+  venue: Nucleic Acids Research 54 (D1), D652-D660
+  year: 2026
+  scholar_id: tHnMNPEAAAAJ:z8nqeaKD1nsC
+  citations: 38
+- title: AI-driven discovery of antiretroviral drug bictegravir and etravirine as inhibitors against monkeypox and related poxviruses
+  authors: Y Wang, A Ünlü, X Wang, E Çevrim, DM Offermans, MP Flesseman, ...
+  venue: Communications Biology 8 (1), 1734
+  year: 2025
+  scholar_id: tHnMNPEAAAAJ:jmjb1lOE9QIC
+  citations: 5
+  selected: true
+- title: 'ECLIPSE: Exploration of Complex Ligand-Protein Interactions through Learning from Systems-level Heterogeneous Biomedical Knowledge Graphs'
+  authors: H Atas Guvenilir, T Doğan
+  venue: bioRxiv, 2025.11. 05.686382
+  year: 2025
+  scholar_id: tHnMNPEAAAAJ:c59VksA5Vz4C
+  citations: 2
+  url: https://doi.org/g99tmt
+  doi: 10.1101/2025.11.05.686382
+  preprint: true
+- title: Target-specific de novo design of drug candidate molecules with graph-transformer-based generative adversarial networks
+  authors: A Ünlü, E Çevrim, MG Yiğit, A Sarıgün, H Çelikbilek, O Bayram, ...
+  venue: Nature Machine Intelligence 7 (9), 1524-1540
+  year: 2025
+  scholar_id: tHnMNPEAAAAJ:nqdriD65xNoC
+  citations: 30
+  url: https://doi.org/g9xsh2
+  doi: 10.48550/ARXIV.2302.07868
+  selected: true
+  projects:
+  - druggen
+- title: 'Mpox: disease manifestations and therapeutic development'
+  authors: Y Wang, X Wang, T Doğan, NA Sam-Agudu, JA Al-Tawfiq, Q Pan
+  venue: Journal of Virology 99 (9), e00152-25
+  year: 2025
+  scholar_id: tHnMNPEAAAAJ:jtI9f0ekYq0C
+  citations: 15
+  url: https://doi.org/g9x39h
+  doi: 10.1128/jvi.00152-25
+- title: A Benchmarking Platform for Assessing Protein Language Models on Function-related Prediction Tasks
+  authors: E Çevrim, MG Yiğit, E Ulusoy, A Yılmaz, T Doğan
+  venue: 'Protein Function Prediction: Methods and Protocols, 241-268'
+  year: 2025
+  scholar_id: tHnMNPEAAAAJ:X0DADzN9RKwC
+  citations: 8
+  url: https://doi.org/g9xshq
+  doi: 10.1101/2025.04.10.648084
+- title: 'ProtHGT: Heterogeneous Graph Transformers for Automated Protein Function Prediction Using Biological Knowledge Graphs and Language Models'
+  authors: E Ulusoy, T Doğan
+  venue: bioRxiv, 2025.04. 19.649272
+  year: 2025
+  scholar_id: tHnMNPEAAAAJ:_AeoHAGD03cC
+  citations: 3
+  url: https://doi.org/g9xshp
+  doi: 10.1101/2025.04.19.649272
+  preprint: true
+- title: 'Protein language models for predicting drug–target interactions: Novel approaches, emerging methods, and future directions'
+  authors: A Ünlü, E Ulusoy, MG Yiğit, M Darcan, T Doğan
+  venue: Current Opinion in Structural Biology 91, 103017
+  year: 2025
+  scholar_id: tHnMNPEAAAAJ:zUl2_INMlC4C
+  citations: 19
+  url: https://doi.org/g9qdzb
+  doi: 10.1016/j.sbi.2025.103017
+- title: Multi-modal Representation Learning Enables Accurate Protein Function Prediction in Low-Data Setting
+  authors: S Ünsal, S Özdemir, B Kasap, ME Kalaycı, K Turhan, T Doğan, AC Acar
+  venue: arXiv preprint arXiv:2412.08649
+  year: 2024
+  scholar_id: tHnMNPEAAAAJ:BmWJbWwHJAwC
+  citations: 3
+  preprint: true
+- title: Design, synthesis, and evaluation of novel Indole‐Based small molecules as sirtuin inhibitors with anticancer activities
+  authors: B Binarci, EK Kilic, T Dogan, R Cetin Atalay, DC Kahraman, ...
+  venue: Drug Development Research 85 (7), e70008
+  year: 2024
+  scholar_id: tHnMNPEAAAAJ:G1UMdFYMoxkC
+  citations: 8
+  url: https://doi.org/g9xshr
+  doi: 10.1002/ddr.70008
+- title: A Method for Predicting Protein Functions Using Limited Training Datasets
+  authors: Serbülent Ünsal, Kemal Turhan, Tunca Doğan, Aybar Can Acar, Efe Sezgin ...
+  venue: TR Patent TR 2022 014783  B
+  year: 2024
+  scholar_id: tHnMNPEAAAAJ:hvmnpdAuIbkC
+  citations: 0
+- title: Mutual annotation‐based prediction of protein domain functions with Domain2GO
+  authors: E Ulusoy, T Doğan
+  venue: Protein Science 33 (6), e4988
+  year: 2024
+  scholar_id: tHnMNPEAAAAJ:AzKEL7Gb_04C
+  citations: 10
+- title: An integrative framework for clinical diagnosis and knowledge discovery from exome sequencing data
+  authors: M Shojaei, N Mohammadvand, T Doğan, C Alkan, RÇ Atalay, AC Acar
+  venue: Computers in Biology and Medicine 169, 107810
+  year: 2024
+  scholar_id: tHnMNPEAAAAJ:c1e4I3QdEKYC
+  citations: 1
+- title: 'DeepResponse: Large Scale Prediction of Cancer Cell Line Drug Response with Deep Learning Based Pharmacogenomic Modelling'
+  authors: B Izmirli, UO Ozcan, E Akar, DC Kahraman, T Doğan
+  venue: ''
+  year: 2023
+  scholar_id: tHnMNPEAAAAJ:YTuZlYwrTOUC
+  citations: 0
+  projects:
+  - deepresponse
+- title: 'ASCARIS: Positional feature annotation and protein structure-based representation of single amino acid variations'
+  authors: F Cankara, T Doğan
+  venue: Computational and Structural Biotechnology Journal 21, 4743-4758
+  year: 2023
+  scholar_id: tHnMNPEAAAAJ:X9ykpCP0fEIC
+  citations: 1
+  url: https://doi.org/g9xshw
+  doi: 10.1016/j.csbj.2023.09.017
+- title: Democratizing knowledge representation with BioCypher
+  authors: S Lobentanzer, P Aloy, J Baumbach, B Bohar, VJ Carey, P Charoentong, ...
+  venue: Nature Biotechnology, 1-4
+  year: 2023
+  scholar_id: tHnMNPEAAAAJ:T_ojBgVMvoEC
+  citations: 115
+  url: https://doi.org/gszqjr
+  doi: 10.1038/s41587-023-01848-y
+- title: Transfer learning for drug–target interaction prediction
+  authors: A Dalkıran, A Atakan, AS Rifaioğlu, MJ Martin, RÇ Atalay, AC Acar, ...
+  venue: Bioinformatics 39 (Supplement_1), i103-i110
+  year: 2023
+  scholar_id: tHnMNPEAAAAJ:L_l9e5I586QC
+  citations: 81
+  url: https://doi.org/g9dhzh
+  doi: 10.1093/bioinformatics/btad234
+- title: 'SELFormer: Molecular Representation Learning via SELFIES Language Models'
+  authors: A Yüksel, E Ulusoy, A Ünlü, T Doğan
+  venue: 'Machine Learning: Science and Technology'
+  year: 2023
+  scholar_id: tHnMNPEAAAAJ:-6RzNnnwWf8C
+  citations: 182
+  url: https://doi.org/g9xshx
+  doi: 10.1088/2632-2153/acdb30
+  selected: true
+- title: How to approach machine learning-based prediction of drug/compound–target interactions
+  authors: H Atas Guvenilir, T Doğan
+  venue: Journal of Cheminformatics 15 (1), 1-36
+  year: 2023
+  scholar_id: tHnMNPEAAAAJ:RJOyoaXV5v8C
+  citations: 71
+  url: https://doi.org/g9xsh3
+  doi: 10.1186/s13321-023-00689-w
+- title: ProFAB–Open Protein Functional Annotation Benchmark
+  authors: AS Özdilek, A Atakan, G Özsarı, A Acar, MV Atalay, T Doğan, AS Rifaioğlu
+  venue: Briefings in Bioinformatics, bbac627
+  year: 2023
+  scholar_id: tHnMNPEAAAAJ:Wq2b2clWBLsC
+  citations: 1
+  url: https://doi.org/g9xshz
+  doi: 10.1093/bib/bbac627
+- title: 'UniProt: the universal protein knowledgebase in 2023'
+  authors: ''
+  venue: Nucleic acids research 51 (D1), D523-D531
+  year: 2023
+  scholar_id: tHnMNPEAAAAJ:Zh0EY9V9P6UC
+  citations: 8449
+  hidden: true
+- title: Machine learning-based prediction of drug approvals using molecular, physicochemical, clinical trial and patent related features
+  authors: F Ciray, T Doğan
+  venue: Expert Opinion on Drug Discovery
+  year: 2022
+  scholar_id: tHnMNPEAAAAJ:zdjWy_NXXwUC
+  citations: 16
+  url: https://doi.org/g9xsh4
+  doi: 10.1080/17460441.2023.2153830
+- title: 'SLPred: A Multi-view Subcellular Localization Prediction Tool for Multi-location Human Proteins'
+  authors: G Özsarı, AS Rifaioglu, A Atakan, T Doğan, MJ Martin, RÇ Atalay, V Atalay
+  venue: Bioinformatics, btac458
+  year: 2022
+  scholar_id: tHnMNPEAAAAJ:27LrP4qxOz0C
+  citations: 9
+  url: https://doi.org/g9xsh6
+  doi: 10.1093/bioinformatics/btac458
+- title: Automated prediction of drug response in HCC cell lines with deep learning-based bioactivity modeling and experimental validation
+  authors: DC Kahraman, E AKAR, T DOĞAN
+  venue: ''
+  year: 2022
+  scholar_id: tHnMNPEAAAAJ:Ic1VZgkJnDsC
+  citations: 0
+  projects:
+  - deepresponse
+- title: Learning functional properties of proteins with language models
+  authors: S Unsal, H Atas, M Albayrak, K Turhan, AC Acar, T Doğan
+  venue: Nature Machine Intelligence 4 (3), 227-245
+  year: 2022
+  scholar_id: tHnMNPEAAAAJ:SIv7DqKytYAC
+  citations: 260
+  url: https://doi.org/grckz2
+  doi: 10.1038/s42256-022-00457-9
+  selected: true
+- title: 'Hnet-DTI: Incorporating heterogeneous information network for drug-target interaction prediction'
+  authors: G Özsarı, AS Rifaioğlu, T Doğan, V Atalay
+  venue: 15th International Symposium on Health Informatics and Bioinformatics HIBIT …
+  year: 2022
+  scholar_id: tHnMNPEAAAAJ:isU91gLudPYC
+  citations: 0
+- title: A Multi-Omics and Machine Learning-Based Predictor of Drug Sensitivity in Cancer
+  authors: UO Ozcan, N Mohammadvand, B Izmirli, E Akar, DC Kahraman, T Doğan
+  venue: 15th International Symposium on Health Informatics and Bioinformatics HIBIT …
+  year: 2022
+  scholar_id: tHnMNPEAAAAJ:0aBXIfxlw9sC
+  citations: 0
+- title: A Protein Representation Model for Low-Data Protein Function Prediction
+  authors: S Unsal, S Özdemir, I Özdinç, A Bayraklı, M Albayrak, K Turhan, T Dogan, ...
+  venue: 15th International Symposium on Health Informatics and Bioinformatics HIBIT …
+  year: 2022
+  scholar_id: tHnMNPEAAAAJ:eGYfIraVYiQC
+  citations: 0
+- title: Machine learning-based prediction of survival in cancer using multi-omics data
+  authors: AN Çoruh, T Doğan
+  venue: 15th International Symposium on Health Informatics and Bioinformatics HIBIT …
+  year: 2022
+  scholar_id: tHnMNPEAAAAJ:1tZ8xJnm2c8C
+  citations: 0
+- title: Disease Centric Large Scale De Novo Design of Drug Candidate Molecules with Graph Generative Deep Adversarial Networks
+  authors: A Ünlü, E Çevrim, A Sarıgün, H Ataş, A Koyaş, H Çelikbilek, ...
+  venue: 15th International Symposium on Health Informatics and Bioinformatics HIBIT …
+  year: 2022
+  scholar_id: tHnMNPEAAAAJ:ghEM2AJqZyQC
+  citations: 0
+  projects:
+  - druggen
+- title: A crowdsourcing open platform for literature curation in UniProt
+  authors: Y Wang, Q Wang, H Huang, W Huang, Y Chen, PB McGarvey, CH Wu, ...
+  venue: PLoS biology 19 (12), e3001464
+  year: 2021
+  scholar_id: tHnMNPEAAAAJ:LXmCCkuhhTsC
+  citations: 171
+  hidden: true
+- title: Machine Learning Methodologies To Study Molecular Interactions
+  authors: E Ozkirimli, A Yakimovich, T Dogan, A Ozgur
+  venue: Frontiers in Molecular Biosciences, 1174
+  year: 2021
+  scholar_id: tHnMNPEAAAAJ:k_7cPK9k7w8C
+  citations: 1
+- title: Data centric molecular analysis and evaluation of hepatocellular carcinoma therapeutics using machine intelligence-based tools
+  authors: R Cetin-Atalay, DC Kahraman, E Nalbat, AS Rifaioglu, A Atakan, ...
+  venue: Journal of Gastrointestinal Cancer 52 (4), 1266-1276
+  year: 2021
+  scholar_id: tHnMNPEAAAAJ:Hck25ST_3aIC
+  citations: 3
+  url: https://doi.org/g9xsh9
+  doi: 10.1007/s12029-021-00768-x
+- title: Protein domain-based prediction of drug/compound–target interactions and experimental validation on LIM kinases
+  authors: T Doğan, E Akhan Güzelcan, M Baumann, A Koyas, H Atas, IR Baxendale, ...
+  venue: PLOS Computational Biology 17 (11), e1009171
+  year: 2021
+  scholar_id: tHnMNPEAAAAJ:PkcyUWeTMh0C
+  citations: 29
+  url: https://doi.org/g9xsjb
+  doi: 10.1371/journal.pcbi.1009171
+- title: Drug-target interaction prediction using transfer learning
+  authors: A Dalkıran, AS Rifaioglu, AC Acar, T Dogan, R Atalay, V Atalay
+  venue: The 14th International Symposium on Health Informatics and Bioinformatics, 104
+  year: 2021
+  scholar_id: tHnMNPEAAAAJ:EsEWqaRxkBgC
+  citations: 0
+- title: 'CROssBAR: comprehensive resource of biomedical relations with knowledge graph representations'
+  authors: T Doğan, H Atas, V Joshi, A Atakan, AS Rifaioglu, E Nalbat, A Nightingale, ...
+  venue: Nucleic Acids Research, gkab543
+  year: 2021
+  scholar_id: tHnMNPEAAAAJ:SnGPuo6Feq8C
+  citations: 51
+  url: https://doi.org/gndrgn
+  doi: 10.1093/nar/gkab543
+  selected: true
+  projects:
+  - crossbar
+- title: Crowdsourced mapping of unexplored target space of kinase inhibitors
+  authors: A Cichońska, B Ravikumar, RJ Allaway, F Wan, S Park, O Isayev, S Li, ...
+  venue: Nature communications 12 (1), 1-18
+  year: 2021
+  scholar_id: tHnMNPEAAAAJ:mWEH9CqjF64C
+  citations: 108
+  hidden: true
+- title: 'UniProt: the universal protein knowledgebase in 2021'
+  authors: UP Consortium
+  venue: Nucleic acids research 49 (D1), D480-D489
+  year: 2021
+  scholar_id: tHnMNPEAAAAJ:tHtfpZlB6tUC
+  citations: 7502
+  hidden: true
+- title: 'MDeePred: Novel Multi-Channel protein featurization for deep learning based binding affinity prediction in drug discovery'
+  authors: AS Rifaioglu, R Cetin Atalay, D Cansen Kahraman, T Doğan, M Martin, ...
+  venue: Bioinformatics, btaa858
+  year: 2020
+  scholar_id: tHnMNPEAAAAJ:w0F2JDEymm0C
+  citations: 135
+  url: https://doi.org/g9kf9x
+  doi: 10.1093/bioinformatics/btaa858
+- title: In vitro validation of drug-target interactions revealed in silico by Comprehensive Resource of Biomedical Relations with Network Representations and Deep …
+  authors: E Nalbat, AS Rifaioglu, T Dogan, MJ Martin, R Cetin-Atalay, V Atalay
+  venue: Cancer Research 80 (16_Supplement), 5235-5235
+  year: 2020
+  scholar_id: tHnMNPEAAAAJ:jSAVyFp_754C
+  citations: 0
+  projects:
+  - crossbar
+- title: 'iBioProVis: Interactive Visualization and Analysis of Compound Bioactivity Space'
+  authors: A Donmez, AS Rifaioglu, A Acar, T Doğan, R Cetin-Atalay, V Atalay
+  venue: Bioinformatics, btaa496
+  year: 2020
+  scholar_id: tHnMNPEAAAAJ:-95Q15plzcUC
+  citations: 15
+  url: https://doi.org/g9xsjd
+  doi: 10.1093/bioinformatics/btaa496
+- title: 'DEEPScreen: High Performance Drug-Target Interaction Prediction with Convolutional Neural Networks Using 2-D Structural Compound Representations'
+  authors: A Rifaioglu, E Sinoplu, V Atalay, M Martin, R Cetin-Atalay, T Dogan
+  venue: Chemical Science 11 (9), 2531-2557
+  year: 2020
+  scholar_id: tHnMNPEAAAAJ:Aul-kAQHnToC
+  citations: 302
+- title: The CAFA challenge reports improved protein function prediction and new functional annotations for hundreds of genes through experimental screens
+  authors: N Zhou, Y Jiang, TR Bergquist, AJ Lee, BZ Kacsoh, AW Crocker, ...
+  venue: Genome Biology 20, 244
+  year: 2019
+  scholar_id: tHnMNPEAAAAJ:KaMxkj08jr0C
+  citations: 633
+  hidden: true
+- title: FAIR adoption, assessment and challenges at UniProt
+  authors: L Garcia, J Bolleman, S Gehant, N Redaschi, M Martin, UP Consortium
+  venue: Scientific data 6 (1), 1-4
+  year: 2019
+  scholar_id: tHnMNPEAAAAJ:U_HPUtbDl20C
+  citations: 32
+  hidden: true
+- title: 'Recent applications of deep learning and machine intelligence on in silico drug discovery: methods, tools and databases'
+  authors: AS Rifaioglu, H Atas, MJ Martin, R Cetin-Atalay, V Atalay, T Doğan
+  venue: Briefings in bioinformatics 20 (5), 1878–1912
+  year: 2019
+  scholar_id: tHnMNPEAAAAJ:yFnVuubrUp4C
+  citations: 672
+  url: https://doi.org/gd2cqc
+  doi: 10.1093/bib/bby061
+- title: 'DEEPred: automated protein function prediction with multi-task feed-forward deep neural networks'
+  authors: A Sureyya Rifaioglu, T Doğan, M Jesus Martin, R Cetin-Atalay, V Atalay
+  venue: Scientific reports 9 (1), 7344
+  year: 2019
+  scholar_id: tHnMNPEAAAAJ:1yWc8FF-_SYC
+  citations: 196
+  url: https://doi.org/g9xsjg
+  doi: 10.1038/s41598-019-43708-3
+- title: 'UniProt: a worldwide hub of protein knowledge'
+  authors: UniProt Consortium
+  venue: Nucleic acids research 47 (D1), D506-D515
+  year: 2019
+  scholar_id: tHnMNPEAAAAJ:NDuN12AVoxsC
+  citations: 8219
+- title: 'ECPred: a tool for the prediction of the enzymatic functions of protein sequences based on the EC nomenclature'
+  authors: A Dalkiran, AS Rifaioglu, MJ Martin, R Cetin-Atalay, V Atalay, T Doğan
+  venue: BMC bioinformatics 19 (1), 334
+  year: 2018
+  scholar_id: tHnMNPEAAAAJ:sNmaIFBj_lkC
+  citations: 250
+  url: https://doi.org/g4jbgs
+  doi: 10.1186/s12859-018-2368-y
+- title: Drug-Target Interaction Prediction with Deep Convolutional Neural Networks Using Compound Images
+  authors: AS Rifaioğlu, MV Atalay, MJ Martin, R Atalay, T Doğan
+  venue: ''
+  year: 2018
+  scholar_id: tHnMNPEAAAAJ:hSRAE-fF4OAC
+  citations: 0
+- title: Automated Negative Gene Ontology Based Functional Predictions for Proteins with UniGOPred
+  authors: T Doğan, AS Rifaioğlu, R Saidi, MJ Martin, MV Atalay, R Atalay
+  venue: ''
+  year: 2018
+  scholar_id: tHnMNPEAAAAJ:DrR-2ekChdkC
+  citations: 0
+- title: 'SPIN: Submitting sequences determined at protein level to uniprot'
+  authors: K Pichler, K Warner, M Magrane, UniProt Consortium
+  venue: Current protocols in bioinformatics 62 (1), e52
+  year: 2018
+  scholar_id: tHnMNPEAAAAJ:9pM33mqn1YgC
+  citations: 26
+- title: Large‐scale automated function prediction of protein sequences and an experimental case study validation on PTEN transcript variants
+  authors: AS Rifaioglu, T Doğan, ÖS Saraç, T Ersahin, R Saidi, MV Atalay, ...
+  venue: 'Proteins: Structure, Function, and Bioinformatics 86 (2), 135-151'
+  year: 2018
+  scholar_id: tHnMNPEAAAAJ:uc_IGeMz5qoC
+  citations: 20
+  url: https://doi.org/gcv23x
+  doi: 10.1002/prot.25416
+- title: 'HPO2GO: prediction of human phenotype ontology term associations for proteins using cross ontology annotation co-occurrences'
+  authors: T Doğan
+  venue: PeerJ 6 (e5298)
+  year: 2018
+  scholar_id: tHnMNPEAAAAJ:ClCfbGk0d_YC
+  citations: 45
+- title: A Structural Perspective on Modulation of Protein-Protein Interactions with Small Molecules
+  authors: HC Demirel, T Doğan, N Tuncbag
+  venue: Current Topics in Medicinal Chemistry 18 (8), 700-713
+  year: 2018
+  scholar_id: tHnMNPEAAAAJ:edDO8Oi4QzsC
+  citations: 13
+- title: Phylogenetic and other conservation-based approaches to predict protein functional sites
+  authors: H Atas, N Tuncbag, T Doğan
+  venue: Computational Drug Discovery and Design, 51-69
+  year: 2018
+  scholar_id: tHnMNPEAAAAJ:k8Z6L05lTy4C
+  citations: 9
+  url: https://doi.org/g9xsjk
+  doi: 10.1007/978-1-4939-7756-7_4
+- title: 'On expert curation and scalability: UniProtKB/Swiss-Prot as a case study'
+  authors: S Poux, CN Arighi, M Magrane, A Bateman, CH Wei, Z Lu, E Boutet, ...
+  venue: Bioinformatics 33 (21), 3454-3460
+  year: 2017
+  scholar_id: tHnMNPEAAAAJ:bz8QjSJIRt4C
+  citations: 170
+- title: 'From the research laboratory to the database: the Caenorhabditis elegans kinome in UniProtKB'
+  authors: R Zaru, M Magrane, C O'Donovan, UniProt Consortium
+  venue: Biochemical Journal 474 (4), 493-515
+  year: 2017
+  scholar_id: tHnMNPEAAAAJ:4fGpz3EwCPoC
+  citations: 14
+  hidden: true
+- title: 'UniProt: the universal protein knowledgebase'
+  authors: UP Consortium
+  venue: Nucleic acids research 45 (D1), D158-D169
+  year: 2017
+  scholar_id: tHnMNPEAAAAJ:oi2SiIJ9l4AC
+  citations: 6919
+  hidden: true
+- title: An expanded evaluation of protein function prediction methods shows an improvement in accuracy
+  authors: Y Jiang, TR Oron, WT Clark, AR Bankapur, D D’Andrea, R Lepore, ...
+  venue: Genome biology 17 (1), 184
+  year: 2016
+  scholar_id: tHnMNPEAAAAJ:u9iWguZQMMsC
+  citations: 532
+  hidden: true
+- title: 'UniProt-DAAC: domain architecture alignment and classification, a new method for automatic functional annotation in UniProtKB'
+  authors: T Doğan, A MacDougall, R Saidi, D Poggioli, A Bateman, C O’Donovan, ...
+  venue: Bioinformatics 32 (15), 2264-2271
+  year: 2016
+  scholar_id: tHnMNPEAAAAJ:WbkHhVStYXYC
+  citations: 48
+  url: https://doi.org/f83r9b
+  doi: 10.1093/bioinformatics/btw114
+- title: 'Tools and data services registry: a community effort to document bioinformatics resources'
+  authors: J Ison, K Rapacki, H Ménager, M Kalaš, E Rydza, P Chmura, C Anthon, ...
+  venue: Nucleic acids research 44 (D1), D38-D47
+  year: 2016
+  scholar_id: tHnMNPEAAAAJ:p2g8aNsByqUC
+  citations: 228
+  hidden: true
+- title: The UniProtKB guide to the human proteome
+  authors: L Breuza, S Poux, A Estreicher, ML Famiglietti, M Magrane, M Tognolli, ...
+  venue: Database 2016, bav120
+  year: 2016
+  scholar_id: tHnMNPEAAAAJ:Tiz5es2fbqcC
+  citations: 218
+  hidden: true
+- title: Unsupervised identification of redundant domain entries in InterPro database using clustering techniques
+  authors: AS Rifaioğlu, T Doğan, T Can
+  venue: Proceedings of the 6th ACM Conference on Bioinformatics, Computational …
+  year: 2015
+  scholar_id: tHnMNPEAAAAJ:OU6Ihb5iCvQC
+  citations: 0
+  hidden: true
+- title: 'UniProt: a hub for protein information'
+  authors: UniProt Consortium
+  venue: Nucleic acids research 43 (D1), D204-D212
+  year: 2015
+  scholar_id: tHnMNPEAAAAJ:PyEswDtIyv0C
+  citations: 5687
+  hidden: true
+- title: The role of UniProt's protein sequence databases in biomedical research
+  authors: A Nightingale, T Dogan, D Poggioli, M Martin, UniProt Consortium
+  venue: F1000Research 5
+  year: 2014
+  scholar_id: tHnMNPEAAAAJ:pS0ncopqnHgC
+  citations: 0
+- title: Activities at the universal protein resource (UniProt)
+  authors: R Apweiler, A Bateman, MJ Martin, C O'Donovan, M Magrane, ...
+  venue: Nucleic acids research 42 (D 1), D191-D198
+  year: 2014
+  scholar_id: tHnMNPEAAAAJ:pQTOvowfQioC
+  citations: 0
+  hidden: true
+- title: Activities at the universal protein resource (UniProt)
+  authors: UniProt Consortium
+  venue: Nucleic acids research 42 (D1), D191-D198
+  year: 2014
+  scholar_id: tHnMNPEAAAAJ:-jrNzM816MMC
+  citations: 1453
+  hidden: true
+- title: Automatic identification of highly conserved family regions and relationships in genome wide datasets including remote protein sequences
+  authors: T Doğan, B Karaçalı
+  venue: PloS one 8 (9), e75458
+  year: 2013
+  scholar_id: tHnMNPEAAAAJ:XiSMed-E-HIC
+  citations: 14
+  hidden: true
+- title: 2-D Thresholding of the Connectivity Map Following the Multiple Sequence Alignments of Diverse Datasets
+  authors: T Doğan, B Karaçalı
+  venue: The 10th IASTED International Conference on Biomedical Engineering
+  year: 2013
+  scholar_id: tHnMNPEAAAAJ:d1gkVwhDpl0C
+  citations: 0
+  hidden: true
+- title: Evolutionary relationships between gene sequences via nonlinear embedding
+  authors: T Dogan, B Karaçalı
+  venue: Biomedical Engineering Meeting (BIYOMUT), 2010 15th National, 1-4
+  year: 2010
+  scholar_id: tHnMNPEAAAAJ:qjMakFHDy7sC
+  citations: 0
+  hidden: true
+- title: 'Deep Learning for Antimicrobial Peptide Recognition: Application to Trichoderma reesei Genome'
+  authors: H Soykam, T Doğan, S Ünsal, G Bayram Akçapınar
+  venue: ''
+  year: null
+  scholar_id: tHnMNPEAAAAJ:iyewoVqAXLQC
+  citations: 0
+- title: Target Specific De Novo Design of Drug Candidate Molecules with Graph Transformer-based Generative Adversarial Networks. 2023; arXiv. org
+  authors: DT Atabey, Ünlü, Çevrim Elif, Sarigün Ahmet, Çelikbilek Hayriye, Güvenilir ...
+  venue: ''
+  year: null
+  scholar_id: tHnMNPEAAAAJ:m4fbC6XIj1kC
+  citations: 0
+  projects:
+  - druggen
+  hidden: true
+- title: 'FlowProt: Classifier-Guided Flow Matching for Targeted Protein Backbone Generation in the de novo DNA Methyltransfarase Family'
+  authors: ALİ TAŞDEMİR, A Barlas, A OLĞAÇ, E KARACA EREK, T DOĞAN
+  venue: ''
+  year: null
+  scholar_id: tHnMNPEAAAAJ:c_xDhezhKKUC
+  citations: 0
+  projects:
+  - protgen

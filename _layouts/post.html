@@ -1,24 +1,14 @@
 ---
 layout: default
 ---
-
-{% include section.html background=page.image %}
-
-<h1 class="center">{{ page.title }}</h1>
-
-{%
-  include post-info.html
-  author=page.author
-  member=page.member
-  published=page.date
-  updated=page.last_modified_at
-  tags=page.tags
-%}
-
-{% include section.html %}
-
-{{ content }}
-
-{% include section.html %}
-
-{% include post-nav.html post=page %}
+<article class="wrap post">
+  <header class="post-head">
+    <p class="eyebrow"><a href="{{ '/news/' | relative_url }}">News</a> / <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <div class="prose">{{ content }}</div>
+  <nav class="post-nav" aria-label="More news">
+    {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span class="eyebrow">Older</span>{{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
+    {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span class="eyebrow">Newer</span>{{ page.next.title }}</a>{% endif %}
+  </nav>
+</article>

@@ -1,7 +1,9 @@
 ---
 name: Burakcan Izmirli
-image: images/team/burakcan-izmirli.jpg
+image: /images/team/burakcan-izmirli.jpg
 role: alumni
+degree: MSc
+now: Senior Machine Learning Engineer, VITO (Belgium)
 aliases:
   - B Izmirli
   - B. Izmirli

@@ -1,6 +1,6 @@
 ---
 name: Arya Zeynep Mete
-image: images/team/arya-zeynep-mete.jpg
+image: /images/team/arya-zeynep-mete.jpg
 role: undergrad
 aliases:
   - A Mete

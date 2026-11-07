@@ -1,6 +1,6 @@
 ---
 name: Elif Çevrim
-image: images/team/elif-cevrim.jpg
+image: /images/team/elif-cevrim.jpg
 role: phd
 aliases:
   - E Çevrim

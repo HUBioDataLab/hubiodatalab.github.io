@@ -1,0 +1,41 @@
+---
+layout: default
+---
+{%- assign pr = page -%}
+{%- assign related = site.data.publications | where_exp: "p", "p.projects contains pr.slug" | where_exp: "p", "p.hidden != true" -%}
+<article>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow"><a href="{{ '/projects/' | relative_url }}">Projects</a> / {{ pr.theme }}</p>
+      <h1>{{ pr.title }}</h1>
+      <p class="lede">{{ pr.full_title }}</p>
+    </div>
+  </section>
+  <div class="wrap detail">
+    <div class="detail-main">
+      {%- if pr.image %}
+      <figure class="figure-panel"><img src="{{ pr.image | relative_url }}" alt="Overview figure for {{ pr.title }}"></figure>
+      {%- endif %}
+      <div class="prose">{{ content }}</div>
+      {%- if related.size > 0 %}
+      <section class="related">
+        <h2 class="h-sub">Publications from this project</h2>
+        <ol class="pub-list">{% for p in related %}{% include pub.html pub=p %}{% endfor %}</ol>
+      </section>
+      {%- endif %}
+    </div>
+    <aside class="detail-side">
+      <dl class="meta-list">
+        {%- if pr.funding.program %}<div><dt>Funded by</dt><dd>{{ pr.funding.program }}</dd></div>{% endif -%}
+        {%- if pr.funding.number %}<div><dt>Project no.</dt><dd>{{ pr.funding.number }}</dd></div>{% endif -%}
+        {%- if pr.funding.role %}<div><dt>Our role</dt><dd>{{ pr.funding.role }}</dd></div>{% endif -%}
+        {%- if pr.partners %}<div><dt>Partners</dt><dd>{% for p in pr.partners %}{{ p }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</dd></div>{% endif -%}
+      </dl>
+      {%- if pr.links %}
+      <ul class="side-links">
+        {%- for l in pr.links %}<li><a class="btn btn-ghost btn-block" href="{{ l[1] }}">{{ l[0] }} {% include icon.html name="ext" %}</a></li>{% endfor %}
+      </ul>
+      {%- endif %}
+    </aside>
+  </div>
+</article>

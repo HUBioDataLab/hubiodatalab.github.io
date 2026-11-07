@@ -1,6 +1,6 @@
 ---
 name: Muhammed Yıldız
-image: images/team/muhammed-yildiz.jpg
+image: /images/team/muhammed-yildiz.jpg
 role: undergrad
 aliases:
   - Muhammed Yildiz

@@ -1,0 +1,83 @@
+title: Hacettepe Biological Data Science Lab
+short_title: HU BioDataLab
+description: >-
+  We develop machine learning methods for biomedical data integration,
+  protein function prediction and the design of new drug candidate molecules.
+url: https://hubiodatalab.github.io
+baseurl: ""
+lang: en
+
+lab:
+  pi: Prof. Dr. Tunca Doğan
+  department: Department of Computer Engineering
+  university: Hacettepe University
+  address:
+    - Department of Computer Engineering, Beytepe Campus
+    - Hacettepe University
+    - 06800 Çankaya, Ankara, Türkiye
+  email: hubiodatascilab@gmail.com
+  pi_email: tuncadogan@hacettepe.edu.tr
+  github: HUBioDataLab
+  huggingface: HUBioDataLab
+  scholar: tHnMNPEAAAAJ
+  maps: https://maps.app.goo.gl/gdG4ZcpuSvUXQoCc7
+
+nav:
+  - { title: Projects, url: /projects/ }
+  - { title: Publications, url: /publications/ }
+  - { title: Team, url: /team/ }
+  - { title: News, url: /news/ }
+  - { title: Contact, url: /contact/ }
+
+# Team page sections, in display order
+roles:
+  - { key: principal-investigator, title: Principal Investigator }
+  - { key: postdoc, title: Postdoctoral Researchers }
+  - { key: phd, title: PhD Students }
+  - { key: msc, title: MSc Students }
+  - { key: undergrad, title: Undergraduate Researchers }
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  members:
+    output: true
+    permalink: /team/:name/
+
+permalink: /news/:year/:month/:title/
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: page, image: /images/share.png }
+  - scope: { type: projects }
+    values: { layout: project }
+  - scope: { type: members }
+    values: { layout: member }
+  - scope: { type: posts }
+    values: { layout: post }
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+feed:
+  path: news/feed.xml
+
+exclude:
+  - README.md
+  - LICENSE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts
+

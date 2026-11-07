@@ -1,5 +1,6 @@
 ---
 title: ISMB/ECCB 2025 Participation
+image: /images/news/ismb2025.jpg
 author: research-group
 tags:
   - conference

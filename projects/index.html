@@ -1,0 +1,32 @@
+---
+title: Projects
+eyebrow: Projects
+heading: Funded research projects
+lede: Each project pairs a methodological question with a concrete biomedical application, and ships open code, data or a web service.
+---
+{%- assign projects = site.projects | sort: "order" -%}
+<ol class="project-list">
+  {%- for pr in projects %}
+  {%- assign related = site.data.publications | where_exp: "p", "p.projects contains pr.slug" | where_exp: "p", "p.hidden != true" %}
+  <li class="project-row">
+    <a class="project-media{% unless pr.image %} card-media-empty{% endunless %}" href="{{ pr.url | relative_url }}" tabindex="-1" aria-hidden="true">
+      {%- if pr.image %}<img src="{{ pr.image | relative_url }}" alt="" loading="lazy">{% else %}{% include mark.html class="mark-placeholder" stroke="0.9" %}{% endif -%}
+    </a>
+    <div class="project-copy">
+      <p class="eyebrow">{{ pr.theme }}</p>
+      <h2><a href="{{ pr.url | relative_url }}">{{ pr.title }}</a></h2>
+      <p class="project-full">{{ pr.full_title }}</p>
+      <p>{{ pr.summary }}</p>
+      <dl class="meta-inline">
+        {%- if pr.funding.program %}<div><dt>Funding</dt><dd>{{ pr.funding.program }}{% if pr.funding.number %} · {{ pr.funding.number }}{% endif %}</dd></div>{% endif -%}
+        {%- if pr.partners %}<div><dt>Partners</dt><dd>{{ pr.partners | join: "; " }}</dd></div>{% endif -%}
+      </dl>
+      <ul class="link-row">
+        <li><a class="link-arrow" href="{{ pr.url | relative_url }}">Read more {% include icon.html name="arrow" %}</a></li>
+        {%- for l in pr.links %}<li><a class="link-arrow" href="{{ l[1] }}">{{ l[0] }} {% include icon.html name="ext" %}</a></li>{% endfor -%}
+        {%- if related.size > 0 %}<li class="muted">{{ related.size }} paper{% if related.size > 1 %}s{% endif %}</li>{% endif -%}
+      </ul>
+    </div>
+  </li>
+  {%- endfor %}
+</ol>

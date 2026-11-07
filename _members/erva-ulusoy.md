@@ -1,6 +1,6 @@
 ---
 name: Erva Ulusoy
-image: images/team/erva-ulusoy.jpg
+image: /images/team/erva-ulusoy.jpg
 role: phd
 aliases:
   - E Ulusoy

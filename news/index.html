@@ -1,0 +1,24 @@
+---
+title: News
+eyebrow: News
+heading: Lab news
+lede: Papers, talks, conferences and other updates from the lab.
+---
+{%- assign years = site.posts | group_by_exp: "p", "p.date | date: '%Y'" -%}
+{%- for y in years %}
+<section class="year-group">
+  <h2 class="year">{{ y.name }}</h2>
+  <ol class="news-feed">
+    {%- for post in y.items %}
+    <li class="news-item">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b" }}</time>
+      <div class="news-copy">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 38 }}</p>
+      </div>
+      {%- if post.image %}<a class="news-thumb" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ post.image | relative_url }}" alt="" loading="lazy"></a>{% endif %}
+    </li>
+    {%- endfor %}
+  </ol>
+</section>
+{%- endfor %}
