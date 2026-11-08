@@ -2,6 +2,7 @@
 name: Ufuk Tanrıverdi
 image: /images/team/ufuk-tanriverdi.jpg
 role: undergrad
+redirect_from: /team/ufuk-tanriverdi/
 aliases:
   - Ufuk T.
   - U. Tanrıverdi

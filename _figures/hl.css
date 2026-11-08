@@ -1,0 +1,22 @@
+/* Home-page slider figures (hl-*.html). Loaded after fig.css; fig.css stays unchanged.
+
+   These are shown at ~520 px wide, so they are authored at 900 CSS px (not 1200) with
+   fewer boxes and larger type: titles 27 px, notes 21 px, heads 18 px. At 520 px that is
+   ~15.5 / 12 / 10.5 px on screen. The outer margin is small because the slider panel
+   adds its own white padding. Same palette, grid, box and arrow rules as fig.css.
+
+   Geometry: 3 stages of 4 columns (.g3) on the same 12-column grid. A box note may run
+   to two lines (explicit <br>), so the uniform box height is set for title + 2 lines;
+   one-line boxes centre their text in that height. */
+:root{
+  --M: 16px;
+  --G: 34px;          /* column gutter: arrow room between stages */
+  --RG: 22px;         /* room for a short vertical arrow */
+  --BH: 94px;         /* title 27px + two 21px note lines         */
+}
+body{width:900px}
+.head{font-size:18px;padding-bottom:8px;margin-bottom:8px}
+.box{padding:0 10px 0 13px}
+.t{font-size:27px;line-height:1.15}
+.n{font-size:21px;line-height:1.22;margin-top:3px}
+.foot{font-size:21px;margin-top:18px;padding-top:12px;line-height:1.35}

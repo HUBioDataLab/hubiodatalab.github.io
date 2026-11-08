@@ -1,0 +1,223 @@
+# Research directions shown on /research. Each direction: id (matches `topics` in publications.yml),
+# title, body (paragraphs), projects (slugs from _projects), tools (names, linked to /software/),
+# figure (schematic authored in _figures/research-<id>.html),
+# figure_size ([width, height] of the SVG viewBox), figure_alt, figure_caption.
+
+overview_figure: /images/figures/overview.svg
+overview_size: [1800, 860]
+overview_alt: >-
+  Five research areas surround shared biomedical evidence and learned models: a teal knowledge
+  graph, a blue protein fold for protein function, rose molecule and protein designs, a violet
+  molecular representation manifold, and amber molecular and cellular drug-response illustrations.
+  Curved coloured connections show how the topics relate. All structures and geometry are illustrative.
+overview_caption: >-
+  Five connected research directions, from integrated biomedical evidence and reusable
+  representations to biological prediction and generative design.
+
+# Short funding labels used in the "Projects:" lines.
+programs:
+  crossbar: British Council & TÜBİTAK Newton–Kâtip Çelebi
+  crossbarv2: TÜBİTAK 3501
+  contvar: TÜBİTAK 1001
+  deepresponse: TÜSEB
+  druggen: TÜBİTAK 2247-A
+  protgen: TÜBİTAK 1001
+  turmind: MareNostrum 5 Pilot Access
+
+
+directions:
+  - id: knowledge-graphs
+    title: Biomedical knowledge graphs and data integration
+    short: Integrating dozens of biomedical databases into knowledge graphs, and learning on them.
+    figure: /images/figures/knowledge-graphs.svg
+    figure_size: [1800, 820]
+    figure_alt: >-
+      A biomedical network contains coloured neighbourhoods for genes, proteins, compounds,
+      diseases and pathways. A highlighted query path crosses several neighbourhoods; a dashed
+      relation illustrates prediction of a missing link. Source connections retain provenance.
+    figure_caption: >-
+      Biomedical records become a graph that preserves provenance and supports querying and
+      prediction of missing biological relations.
+    body:
+      - >-
+        Biomedical knowledge is spread over databases that use different identifiers, data models
+        and file formats, so questions that cross layers — a gene, its protein product, the pathways
+        it belongs to, the compounds that bind it, the diseases it is linked to — cannot be answered
+        from any single resource. We build integrated knowledge graphs that place these entity types
+        in one graph and keep the provenance of every relation.
+      - >-
+        CROssBAR collects biomedical relations and builds interactive knowledge graphs on the fly
+        from user queries. Its successor, CROssBARv2, integrates 34 sources with pypath and
+        BioCypher into a graph of about 2.7 million nodes of 14 types and 12.6 million edges of
+        51 types, and adds an LLM interface that translates natural-language questions into Cypher
+        queries. On top of such graphs we train heterogeneous graph neural networks to predict
+        relations that are missing from the data. ProtHGT infers function annotations for more than
+        300,000 Swiss-Prot proteins, GLaDiGAtor predicts disease–gene associations, and ECLIPSE
+        learns ligand–protein interactions from systems-level heterogeneous data. Selected
+        predictions have been checked experimentally.
+    projects:
+      - crossbarv2
+      - crossbar
+    tools:
+      - CROssBARv2
+      - CROssBAR-LLM
+      - ProtHGT
+      - ECLIPSE
+      - GLaDiGAtor
+      - CROssBAR
+
+  - id: protein-function
+    title: Protein function prediction and representation
+    short: Predicting what proteins do from sequence, domains and graph context, and how variants change it.
+    figure: /images/figures/protein-function.svg
+    figure_size: [1800, 840]
+    figure_alt: >-
+      An illustrative amino acid substitution is linked to a shaded protein ribbon. Branching
+      annotations represent molecular function, biological process and cellular location. Two
+      overlaid folds illustrate interpretation of variant effects. The sequence and fold are schematic.
+    figure_caption: >-
+      Sequence, structure and biological context support protein function prediction and
+      interpretation of amino acid variants.
+    body:
+      - >-
+        Sequencing produces protein records far faster than they can be characterised
+        experimentally, and most entries in protein databases carry no manually curated functional
+        annotation. We develop methods that assign function terms — Gene Ontology terms, enzyme
+        classes, subcellular locations, phenotype associations — to uncharacterised sequences, and
+        representation learning methods that keep these predictions usable when only a few
+        annotated examples exist.
+      - >-
+        Our models span multi-task feed-forward networks over ontology subsets (DEEPred),
+        hierarchical enzyme classification (ECPred), multi-view subcellular localisation (SLPred),
+        cross-ontology phenotype association (HPO2GO) and domain-level function assignment
+        (Domain2GO). PROBE examines what protein language models learn about functional properties,
+        and a related benchmarking platform together with ProFAB provides datasets and evaluation
+        protocols for these tasks. ASCARIS represents single amino acid variations through
+        positional features and structure, and the ContVAR project extends this with contrastive
+        and graph representation learning on predicted structures in order to identify which
+        specific functions a variant alters. The lab also takes part in the community CAFA
+        assessments of protein function prediction.
+    projects:
+      - contvar
+    tools:
+      - PROBE
+      - ProtHGT
+      - Domain2GO
+      - ASCARIS
+      - ContVAR
+      - DEEPred
+      - ECPred
+      - SLPred
+      - HPO2GO
+      - ProFAB
+
+  - id: drug-target
+    title: Drug–target interactions and drug response
+    short: Predicting which compounds act on which targets, how strongly, and how cells respond.
+    figure: /images/figures/drug-target.svg
+    figure_size: [1800, 800]
+    figure_alt: >-
+      At left, a ligand and an illustrative protein pocket represent compound–target binding.
+      At centre, a cell and coloured multi-omics profiles represent cellular context. At right,
+      three schematic dose-response curves illustrate differences in drug response. These are
+      conceptual illustrations, not measured structures, docking poses or experimental curves.
+    figure_caption: >-
+      Binding to a protein and response in a cell are complementary prediction tasks, using
+      molecular evidence and cellular context respectively.
+    body:
+      - >-
+        Determining which compounds bind which proteins, and how a tumour responds to a given drug,
+        is where computational drug discovery is usually limited by data rather than by chemistry.
+        We build predictive models of drug–target interaction and of drug response, and we study
+        how such models should be trained and evaluated so that reported performance holds under
+        realistic, non-random data splits.
+      - >-
+        DEEPScreen predicts interactions from 2-D structural images of compounds with convolutional
+        neural networks, MDeePred uses multi-channel protein featurisation for binding affinity
+        prediction, and DRUIDom assigns interactions at the level of protein domains, with
+        experimental validation on LIM kinases. We have examined transfer learning and protein
+        language models as sources of representation for this task, and set out methodological
+        guidance in "How to approach machine learning-based prediction of drug/compound–target
+        interactions". On the response side, DeepResponse predicts pIC50 from multi-omics cell-line
+        features combined with drug features, with in vitro validation in hepatocellular carcinoma;
+        related work covers multi-omics drug sensitivity, prediction of drug approvals and
+        computational repurposing against poxviruses.
+    projects:
+      - deepresponse
+    tools:
+      - DEEPScreen2
+      - DEEPScreen
+      - MDeePred
+      - DRUIDom
+      - TransferLearning4DTI
+
+  - id: generative-design
+    title: Generative design of molecules and proteins
+    short: Designing new drug candidate molecules and proteins with generative models.
+    figure: /images/figures/generative-design.svg
+    figure_size: [1800, 840]
+    figure_alt: >-
+      A biological objective branches into small-molecule and protein design. Molecular examples
+      lie across an amber contour landscape and connect to an assay plate. Below, a point cloud
+      and flowing trajectories lead to a protein ribbon and physical evaluation. All molecules,
+      folds and design spaces are illustrative, rather than outputs of the named models.
+    figure_caption: >-
+      Generative models propose new molecules and proteins. Evaluation includes experiments on
+      selected small molecules and structure- and physics-based assessment of protein designs.
+    body:
+      - >-
+        Chemical space and protein sequence space are too large to search exhaustively, so instead
+        of screening existing libraries we train generative models to propose new molecules and new
+        protein structures that satisfy a stated target or function. What matters is whether the
+        designs hold up outside the model, so these projects run through synthesis, assays and
+        physics-based evaluation.
+      - >-
+        DrugGEN performs target-conditioned de novo design of small molecules with a
+        graph-transformer generative adversarial network. For AKT1, five designed molecules were
+        synthesised and two inhibited the target in vitro. ProtGEN addresses the protein side with
+        four generative regimes — flow matching over backbones, an autoregressive transformer over
+        sequences, a language-model GAN and a state-space (Mamba) autoregressor — applied to DNA
+        methyltransferases. Within it, FlowProt uses classifier-guided flow matching to generate
+        protein backbones in the DNMT family.
+    projects:
+      - druggen
+      - protgen
+    tools:
+      - DrugGEN
+      - Prot2Mol
+      - FlowProt
+
+  - id: representation-learning
+    title: Molecular representation learning and foundation models
+    short: Pre-trained chemical language and multimodal models that turn molecules into reusable embeddings.
+    figure: /images/figures/representation-learning.svg
+    figure_size: [1800, 840]
+    figure_alt: >-
+      SELFIES strings, molecular graphs, text and knowledge graphs feed coloured connections
+      into a shared three-dimensional molecular representation. The illustrative manifold
+      connects to property prediction, interaction prediction and molecular generation. The
+      geometry is conceptual and does not show embeddings from an experiment.
+    figure_caption: >-
+      Pre-training and multimodal alignment turn complementary molecular views into
+      representations that can be reused across downstream tasks.
+    body:
+      - >-
+        Every model above depends on how molecules and proteins are represented numerically. We
+        pre-train models on large unlabelled corpora so that these representations can be reused
+        across downstream tasks — property prediction, interaction prediction, generation — instead
+        of being learned from scratch for each one.
+      - >-
+        SELFormer is a chemical language model pre-trained on two million drug-like compounds in
+        SELFIES notation; SELFormerMM extends it by contrastively aligning SELFIES, structural
+        graphs, text and knowledge-graph modalities. MoCL-GAT applies contrastive learning with
+        graph attention networks to molecular graphs. We contributed to ChemPile, a 250 GB curated
+        chemistry dataset for chemical foundation models (NeurIPS 2025), and the TURMIND project
+        works towards a multimodal foundation model covering DNA, RNA, proteins, small-molecule
+        ligands and metabolites.
+    projects:
+      - turmind
+    tools:
+      - SELFormer
+      - SELFormerMM
+      - MoCL-GAT
+      - ChemPile

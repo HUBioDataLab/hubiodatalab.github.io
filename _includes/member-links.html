@@ -1,10 +1,30 @@
+{%- comment -%}
+  Labelled text links for a member.
+  include.links  the member's `links` front matter
+  include.style  "inline" (Website · Email · ...) or "list" (label + value rows, member page)
+{%- endcomment -%}
 {%- assign l = include.links -%}
-<ul class="links-inline" aria-label="Links">
-{%- if l.home-page %}<li><a href="{{ l.home-page }}" title="Website" aria-label="Website">{% include icon.html name="web" %}</a></li>{% endif -%}
-{%- if l.email %}<li><a href="mailto:{{ l.email }}" title="Email" aria-label="Email">{% include icon.html name="email" %}</a></li>{% endif -%}
-{%- if l.google-scholar %}<li><a href="https://scholar.google.com/citations?user={{ l.google-scholar }}" title="Google Scholar" aria-label="Google Scholar">{% include icon.html name="scholar" %}</a></li>{% endif -%}
-{%- if l.orcid %}<li><a href="https://orcid.org/{{ l.orcid }}" title="ORCID" aria-label="ORCID">{% include icon.html name="orcid" %}</a></li>{% endif -%}
-{%- if l.github %}<li><a href="https://github.com/{{ l.github }}" title="GitHub" aria-label="GitHub">{% include icon.html name="github" %}</a></li>{% endif -%}
-{%- if l.linkedin %}<li><a href="https://www.linkedin.com/in/{{ l.linkedin }}" title="LinkedIn" aria-label="LinkedIn">{% include icon.html name="linkedin" %}</a></li>{% endif -%}
-{%- if l.medium %}<li><a href="https://medium.com/@{{ l.medium }}" title="Medium" aria-label="Medium">{% include icon.html name="medium" %}</a></li>{% endif -%}
+{%- if l -%}
+{%- if l.home-page -%}{%- assign site_text = l.home-page | remove: "https://" | remove: "http://" | remove: "www." -%}{%- assign last = site_text | slice: -1, 1 -%}{%- if last == "/" -%}{%- assign site_text = site_text | split: "" | pop | join: "" -%}{%- endif -%}{%- endif -%}
+{%- if include.style == "list" %}
+<dl class="member-links">
+  {%- if l.email %}<div><dt>Email</dt><dd><a href="mailto:{{ l.email }}">{{ l.email }}</a></dd></div>{% endif %}
+  {%- if l.home-page %}<div><dt>Website</dt><dd><a href="{{ l.home-page }}">{{ site_text }}</a></dd></div>{% endif %}
+  {%- if l.google-scholar %}<div><dt>Google Scholar</dt><dd><a href="https://scholar.google.com/citations?user={{ l.google-scholar }}">Profile</a></dd></div>{% endif %}
+  {%- if l.orcid %}<div><dt>ORCID</dt><dd><a href="https://orcid.org/{{ l.orcid }}">{{ l.orcid }}</a></dd></div>{% endif %}
+  {%- if l.github %}<div><dt>GitHub</dt><dd><a href="https://github.com/{{ l.github }}">{{ l.github }}</a></dd></div>{% endif %}
+  {%- if l.linkedin %}<div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/{{ l.linkedin }}">Profile</a></dd></div>{% endif %}
+  {%- if l.medium %}<div><dt>Medium</dt><dd><a href="https://medium.com/@{{ l.medium }}">@{{ l.medium }}</a></dd></div>{% endif %}
+</dl>
+{%- else %}
+<ul class="text-links" aria-label="Links">
+  {%- if l.home-page %}<li><a href="{{ l.home-page }}">Website</a></li>{% endif %}
+  {%- if l.email %}<li><a href="mailto:{{ l.email }}">Email</a></li>{% endif %}
+  {%- if l.google-scholar %}<li><a href="https://scholar.google.com/citations?user={{ l.google-scholar }}">Google Scholar</a></li>{% endif %}
+  {%- if l.orcid %}<li><a href="https://orcid.org/{{ l.orcid }}">ORCID</a></li>{% endif %}
+  {%- if l.github %}<li><a href="https://github.com/{{ l.github }}">GitHub</a></li>{% endif %}
+  {%- if l.linkedin %}<li><a href="https://www.linkedin.com/in/{{ l.linkedin }}">LinkedIn</a></li>{% endif %}
+  {%- if l.medium %}<li><a href="https://medium.com/@{{ l.medium }}">Medium</a></li>{% endif %}
 </ul>
+{%- endif -%}
+{%- endif -%}

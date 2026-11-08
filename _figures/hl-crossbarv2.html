@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>CROssBARv2</title>
+<link rel="stylesheet" href="font.css"><link rel="stylesheet" href="fig.css"><link rel="stylesheet" href="hl.css">
+<script src="fig.js"></script></head>
+<body>
+<!-- Home slider: CROssBARv2. Content: _data/highlights.yml, _data/software.yml, CROssBARv2-KG README only. -->
+<div class="fig" data-links="src ont > adp; adp v kg; kg v emb; kg > web llm; emb > sim">
+ <div class="grid g3">
+  <div class="head c1" style="grid-row:1">Sources</div>
+  <div class="head c2" style="grid-row:1">Knowledge graph</div>
+  <div class="head c3" style="grid-row:1">Access</div>
+
+  <div class="box c1" id="src" style="grid-row:2"><div class="t">34 data sources</div><div class="n">proteins, genes, drugs,<br>diseases, pathways</div></div>
+  <div class="box c1" id="ont" style="grid-row:3"><div class="t">Ontologies</div><div class="n">Gene Ontology,<br>Mondo Disease Ontology</div></div>
+
+  <div class="box ours c2" id="adp" style="grid-row:2"><div class="t">Adapters</div><div class="n">pypath and BioCypher</div></div>
+  <div class="box ours c2" id="kg"  style="grid-row:3"><div class="t">CROssBARv2</div><div class="n">~2.7 M nodes, 14 types<br>~12.6 M edges, 51 types</div></div>
+  <div class="box ours c2" id="emb" style="grid-row:4"><div class="t">Embeddings</div><div class="n">proteins, drugs, GO terms<br>in a Neo4j vector index</div></div>
+
+  <div class="box out c3" id="web" style="grid-row:2"><div class="t">Web service</div><div class="n">explore and download</div></div>
+  <div class="box out c3" id="llm" style="grid-row:3"><div class="t">Plain-language Q&amp;A</div><div class="n">an LLM writes<br>Cypher queries</div></div>
+  <div class="box out c3" id="sim" style="grid-row:4"><div class="t">Semantic search</div><div class="n">similarity over<br>embeddings</div></div>
+ </div>
+</div>
+</body></html>

@@ -1,16 +1,23 @@
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}, home">
-      {% include mark.html %}
+    <div class="brand-wrap">
+    <a class="hu-logo" href="https://www.hacettepe.edu.tr/" title="Hacettepe University"><img src="{{ '/images/hacettepe-logo.svg' | relative_url }}" width="29" height="42" alt="Hacettepe University"></a>
+    <span class="brand-divider" aria-hidden="true"></span>
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img class="brand-logo" src="{{ '/images/logo-icon.png' | relative_url }}" srcset="{{ '/images/logo-icon@2x.png' | relative_url }} 2x" width="49" height="36" alt="">
       <span class="brand-text"><span class="brand-top">Hacettepe University</span><span class="brand-name">Biological Data Science Lab</span></span>
     </a>
+    </div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span></button>
     <nav id="site-nav" class="site-nav" aria-label="Main">
       <ul>
         {%- for item in site.nav %}
         {%- assign active = false -%}
-        {%- if page.url == item.url or page.url contains item.url %}{% assign active = true %}{% endif -%}
-        {%- if item.url == "/news/" and page.collection == "posts" %}{% assign active = true %}{% endif %}
+        {%- if item.url == "/" -%}
+          {%- if page.url == "/" or page.url == "/index.html" %}{% assign active = true %}{% endif -%}
+        {%- elsif page.url == item.url or page.url contains item.url -%}
+          {%- assign active = true -%}
+        {%- endif -%}
         <li><a href="{{ item.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
         {%- endfor %}
       </ul>

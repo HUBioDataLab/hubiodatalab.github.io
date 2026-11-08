@@ -1,26 +1,28 @@
 <footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-brand">
-      {% include mark.html class="mark-lg" %}
-      <p><strong>{{ site.title }}</strong><br>{{ site.lab.department }}, {{ site.lab.university }}</p>
+  <div class="wrap footer-inner">
+    <div class="footer-lab">
+      <p class="footer-name">Biological Data Science Lab</p>
+      <address>{% for line in site.lab.address %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</address>
+      <p class="footer-mail"><a href="mailto:{{ site.lab.email }}">{{ site.lab.email }}</a></p>
     </div>
     <div>
-      <h2 class="eyebrow">Visit</h2>
-      <address>{% for line in site.lab.address %}{{ line }}<br>{% endfor %}</address>
-      <a class="link-arrow" href="{{ site.lab.maps }}">Open in Maps {% include icon.html name="ext" %}</a>
-    </div>
-    <div>
-      <h2 class="eyebrow">Elsewhere</h2>
+      <p class="footer-h">Pages</p>
       <ul class="footer-links">
-        <li><a href="mailto:{{ site.lab.email }}">{% include icon.html name="email" %} {{ site.lab.email }}</a></li>
-        <li><a href="https://github.com/{{ site.lab.github }}">{% include icon.html name="github" %} GitHub</a></li>
-        <li><a href="https://huggingface.co/{{ site.lab.huggingface }}">{% include icon.html name="hf" %} Hugging Face</a></li>
-        <li><a href="https://scholar.google.com/citations?user={{ site.lab.scholar }}">{% include icon.html name="scholar" %} Google Scholar</a></li>
+        {%- for item in site.nav %}{% unless item.url == "/" %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {%- endunless %}{% endfor %}
+        <li><a href="{{ '/news/' | relative_url }}">News</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-h">Elsewhere</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/{{ site.lab.github }}">GitHub</a></li>
+        <li><a href="https://huggingface.co/{{ site.lab.huggingface }}">Hugging Face</a></li>
+        <li><a href="https://scholar.google.com/citations?user={{ site.lab.scholar }}">Google Scholar</a></li>
+        <li><a href="https://www.cs.hacettepe.edu.tr/">Computer Engineering, Hacettepe</a></li>
       </ul>
     </div>
   </div>
-  <div class="wrap"><div class="footer-base">
-    <span>© {{ site.time | date: "%Y" }} HU BioDataLab</span>
-    <span><a href="https://www.hacettepe.edu.tr/">Hacettepe University</a> · <a href="https://www.cs.hacettepe.edu.tr/">Computer Engineering</a> · <a href="https://biyoinformatik.hacettepe.edu.tr/">Bioinformatics</a></span>
-  </div></div>
+  <div class="wrap"><p class="footer-copy"><span>© {{ site.time | date: "%Y" }} {{ site.title }}</span><span>Hacettepe University, Ankara</span></p></div>
 </footer>

@@ -6,12 +6,16 @@
   year: 2026
   scholar_id: tHnMNPEAAAAJ:sfnaS5RM6jYC
   citations: 0
+  topics:
+  - representation-learning
 - title: 'DTA-GNN: a toolkit for constructing target-specific drug–target affinity datasets and training graph neural networks'
   authors: G Özsari, AS Rifaioğlu, AC Acar, T Doğan, MV Atalay
   venue: SoftwareX 34, 102671
   year: 2026
   scholar_id: tHnMNPEAAAAJ:sJPMR1oEGYQC
   citations: 0
+  topics:
+  - drug-target
 - title: 'On the state of protein function prediction: a report on the fourth CAFA challenge'
   authors: R Ramola, MC De Paolis Kaluza, D Piovesan, Y Peng, P Joshi, ...
   venue: 'Biorxiv: the Preprint Server for Biology'
@@ -19,6 +23,8 @@
   scholar_id: tHnMNPEAAAAJ:Og1tA8FjbJAC
   citations: 3
   preprint: true
+  topics:
+  - protein-function
 - title: Advances in Protein Function Prediction from the Fifth CAFA Challenge
   authors: MCDP Kaluza, R Ramola, P Joshi, D Piovesan, W Reade, S Orchard, ...
   venue: bioRxiv
@@ -26,12 +32,16 @@
   scholar_id: tHnMNPEAAAAJ:wSy_KLzO7YEC
   citations: 6
   preprint: true
+  topics:
+  - protein-function
 - title: 'ChemPile: A 250 GB Diverse and Curated Dataset for Chemical Foundation Models'
   authors: A Mirza, N Alampara, M Ríos-García, M Abdelalim, J Butler, B Connolly, ...
   venue: Advances in Neural Information Processing Systems 38
   year: 2026
   scholar_id: tHnMNPEAAAAJ:lYAcb2jw7qUC
   citations: 14
+  topics:
+  - representation-learning
 - title: 'CROssBARv2: A Unified Computational Framework for Heterogeneous Biomedical Data Representation and LLM-Driven Exploration'
   authors: B Sen, E Ulusoy, M Darcan, M Ergun, S Lobentanzer, AS Rifaioglu, ...
   venue: bioRxiv, 2026.04. 12.718028
@@ -41,6 +51,8 @@
   preprint: true
   projects:
   - crossbarv2
+  topics:
+  - knowledge-graphs
 - title: Molecular contrastive learning with graph attention network (MoCL-GAT) for enhanced molecular representation
   authors: A Dalkıran, AS Rifaioglu, R Cetin-Atalay, AC Acar, T Doğan, MV Atalay
   venue: BMC Bioinformatics
@@ -49,6 +61,8 @@
   citations: 3
   url: https://doi.org/g939mb
   doi: 10.1101/2025.09.17.676724
+  topics:
+  - representation-learning
 - title: 'SELFormerMM: multimodal molecular representation learning via SELFIES, structure, text, and knowledge graph integration'
   authors: E Ulusoy, Ş Bostancı, BE Deniz, T Doğan
   venue: bioRxiv, 2026.03. 17.712340
@@ -56,6 +70,9 @@
   scholar_id: tHnMNPEAAAAJ:4e5Qn2KL_jwC
   citations: 0
   preprint: true
+  topics:
+  - representation-learning
+  hidden: true
 - title: 'GLaDiGAtor: Language-Model-Augmented Multi-Relation Graph Learning for Predicting Disease-Gene Associations'
   authors: OO Kuzucu, T Doğan
   venue: arXiv preprint arXiv:2602.18769
@@ -63,12 +80,16 @@
   scholar_id: tHnMNPEAAAAJ:QVtou7C4vgoC
   citations: 1
   preprint: true
+  topics:
+  - knowledge-graphs
 - title: 'OmniPath: integrated knowledgebase for multi-omics analysis'
   authors: D Türei, J Schaul, N Palacio-Escat, B Bohár, Y Bai, F Ceccarelli, E Çevrim, ...
   venue: Nucleic Acids Research 54 (D1), D652-D660
   year: 2026
   scholar_id: tHnMNPEAAAAJ:z8nqeaKD1nsC
   citations: 38
+  topics:
+  - knowledge-graphs
 - title: AI-driven discovery of antiretroviral drug bictegravir and etravirine as inhibitors against monkeypox and related poxviruses
   authors: Y Wang, A Ünlü, X Wang, E Çevrim, DM Offermans, MP Flesseman, ...
   venue: Communications Biology 8 (1), 1734
@@ -76,6 +97,8 @@
   scholar_id: tHnMNPEAAAAJ:jmjb1lOE9QIC
   citations: 5
   selected: true
+  topics:
+  - drug-target
 - title: 'ECLIPSE: Exploration of Complex Ligand-Protein Interactions through Learning from Systems-level Heterogeneous Biomedical Knowledge Graphs'
   authors: H Atas Guvenilir, T Doğan
   venue: bioRxiv, 2025.11. 05.686382
@@ -85,6 +108,9 @@
   url: https://doi.org/g99tmt
   doi: 10.1101/2025.11.05.686382
   preprint: true
+  topics:
+  - knowledge-graphs
+  - drug-target
 - title: Target-specific de novo design of drug candidate molecules with graph-transformer-based generative adversarial networks
   authors: A Ünlü, E Çevrim, MG Yiğit, A Sarıgün, H Çelikbilek, O Bayram, ...
   venue: Nature Machine Intelligence 7 (9), 1524-1540
@@ -96,6 +122,8 @@
   selected: true
   projects:
   - druggen
+  topics:
+  - generative-design
 - title: 'Mpox: disease manifestations and therapeutic development'
   authors: Y Wang, X Wang, T Doğan, NA Sam-Agudu, JA Al-Tawfiq, Q Pan
   venue: Journal of Virology 99 (9), e00152-25
@@ -104,6 +132,8 @@
   citations: 15
   url: https://doi.org/g9x39h
   doi: 10.1128/jvi.00152-25
+  topics:
+  - drug-target
 - title: A Benchmarking Platform for Assessing Protein Language Models on Function-related Prediction Tasks
   authors: E Çevrim, MG Yiğit, E Ulusoy, A Yılmaz, T Doğan
   venue: 'Protein Function Prediction: Methods and Protocols, 241-268'
@@ -112,6 +142,8 @@
   citations: 8
   url: https://doi.org/g9xshq
   doi: 10.1101/2025.04.10.648084
+  topics:
+  - protein-function
 - title: 'ProtHGT: Heterogeneous Graph Transformers for Automated Protein Function Prediction Using Biological Knowledge Graphs and Language Models'
   authors: E Ulusoy, T Doğan
   venue: bioRxiv, 2025.04. 19.649272
@@ -121,6 +153,9 @@
   url: https://doi.org/g9xshp
   doi: 10.1101/2025.04.19.649272
   preprint: true
+  topics:
+  - protein-function
+  - knowledge-graphs
 - title: 'Protein language models for predicting drug–target interactions: Novel approaches, emerging methods, and future directions'
   authors: A Ünlü, E Ulusoy, MG Yiğit, M Darcan, T Doğan
   venue: Current Opinion in Structural Biology 91, 103017
@@ -129,6 +164,8 @@
   citations: 19
   url: https://doi.org/g9qdzb
   doi: 10.1016/j.sbi.2025.103017
+  topics:
+  - drug-target
 - title: Multi-modal Representation Learning Enables Accurate Protein Function Prediction in Low-Data Setting
   authors: S Ünsal, S Özdemir, B Kasap, ME Kalaycı, K Turhan, T Doğan, AC Acar
   venue: arXiv preprint arXiv:2412.08649
@@ -136,6 +173,8 @@
   scholar_id: tHnMNPEAAAAJ:BmWJbWwHJAwC
   citations: 3
   preprint: true
+  topics:
+  - protein-function
 - title: Design, synthesis, and evaluation of novel Indole‐Based small molecules as sirtuin inhibitors with anticancer activities
   authors: B Binarci, EK Kilic, T Dogan, R Cetin Atalay, DC Kahraman, ...
   venue: Drug Development Research 85 (7), e70008
@@ -144,24 +183,32 @@
   citations: 8
   url: https://doi.org/g9xshr
   doi: 10.1002/ddr.70008
+  topics:
+  - drug-target
 - title: A Method for Predicting Protein Functions Using Limited Training Datasets
   authors: Serbülent Ünsal, Kemal Turhan, Tunca Doğan, Aybar Can Acar, Efe Sezgin ...
   venue: TR Patent TR 2022 014783  B
   year: 2024
   scholar_id: tHnMNPEAAAAJ:hvmnpdAuIbkC
   citations: 0
+  topics:
+  - protein-function
 - title: Mutual annotation‐based prediction of protein domain functions with Domain2GO
   authors: E Ulusoy, T Doğan
   venue: Protein Science 33 (6), e4988
   year: 2024
   scholar_id: tHnMNPEAAAAJ:AzKEL7Gb_04C
   citations: 10
+  topics:
+  - protein-function
 - title: An integrative framework for clinical diagnosis and knowledge discovery from exome sequencing data
   authors: M Shojaei, N Mohammadvand, T Doğan, C Alkan, RÇ Atalay, AC Acar
   venue: Computers in Biology and Medicine 169, 107810
   year: 2024
   scholar_id: tHnMNPEAAAAJ:c1e4I3QdEKYC
   citations: 1
+  topics:
+  - knowledge-graphs
 - title: 'DeepResponse: Large Scale Prediction of Cancer Cell Line Drug Response with Deep Learning Based Pharmacogenomic Modelling'
   authors: B Izmirli, UO Ozcan, E Akar, DC Kahraman, T Doğan
   venue: ''
@@ -170,6 +217,8 @@
   citations: 0
   projects:
   - deepresponse
+  topics:
+  - drug-target
 - title: 'ASCARIS: Positional feature annotation and protein structure-based representation of single amino acid variations'
   authors: F Cankara, T Doğan
   venue: Computational and Structural Biotechnology Journal 21, 4743-4758
@@ -178,6 +227,8 @@
   citations: 1
   url: https://doi.org/g9xshw
   doi: 10.1016/j.csbj.2023.09.017
+  topics:
+  - protein-function
 - title: Democratizing knowledge representation with BioCypher
   authors: S Lobentanzer, P Aloy, J Baumbach, B Bohar, VJ Carey, P Charoentong, ...
   venue: Nature Biotechnology, 1-4
@@ -186,6 +237,8 @@
   citations: 115
   url: https://doi.org/gszqjr
   doi: 10.1038/s41587-023-01848-y
+  topics:
+  - knowledge-graphs
 - title: Transfer learning for drug–target interaction prediction
   authors: A Dalkıran, A Atakan, AS Rifaioğlu, MJ Martin, RÇ Atalay, AC Acar, ...
   venue: Bioinformatics 39 (Supplement_1), i103-i110
@@ -194,6 +247,8 @@
   citations: 81
   url: https://doi.org/g9dhzh
   doi: 10.1093/bioinformatics/btad234
+  topics:
+  - drug-target
 - title: 'SELFormer: Molecular Representation Learning via SELFIES Language Models'
   authors: A Yüksel, E Ulusoy, A Ünlü, T Doğan
   venue: 'Machine Learning: Science and Technology'
@@ -203,6 +258,8 @@
   url: https://doi.org/g9xshx
   doi: 10.1088/2632-2153/acdb30
   selected: true
+  topics:
+  - representation-learning
 - title: How to approach machine learning-based prediction of drug/compound–target interactions
   authors: H Atas Guvenilir, T Doğan
   venue: Journal of Cheminformatics 15 (1), 1-36
@@ -211,6 +268,8 @@
   citations: 71
   url: https://doi.org/g9xsh3
   doi: 10.1186/s13321-023-00689-w
+  topics:
+  - drug-target
 - title: ProFAB–Open Protein Functional Annotation Benchmark
   authors: AS Özdilek, A Atakan, G Özsarı, A Acar, MV Atalay, T Doğan, AS Rifaioğlu
   venue: Briefings in Bioinformatics, bbac627
@@ -219,6 +278,8 @@
   citations: 1
   url: https://doi.org/g9xshz
   doi: 10.1093/bib/bbac627
+  topics:
+  - protein-function
 - title: 'UniProt: the universal protein knowledgebase in 2023'
   authors: ''
   venue: Nucleic acids research 51 (D1), D523-D531
@@ -234,6 +295,8 @@
   citations: 16
   url: https://doi.org/g9xsh4
   doi: 10.1080/17460441.2023.2153830
+  topics:
+  - drug-target
 - title: 'SLPred: A Multi-view Subcellular Localization Prediction Tool for Multi-location Human Proteins'
   authors: G Özsarı, AS Rifaioglu, A Atakan, T Doğan, MJ Martin, RÇ Atalay, V Atalay
   venue: Bioinformatics, btac458
@@ -242,6 +305,8 @@
   citations: 9
   url: https://doi.org/g9xsh6
   doi: 10.1093/bioinformatics/btac458
+  topics:
+  - protein-function
 - title: Automated prediction of drug response in HCC cell lines with deep learning-based bioactivity modeling and experimental validation
   authors: DC Kahraman, E AKAR, T DOĞAN
   venue: ''
@@ -250,6 +315,8 @@
   citations: 0
   projects:
   - deepresponse
+  topics:
+  - drug-target
 - title: Learning functional properties of proteins with language models
   authors: S Unsal, H Atas, M Albayrak, K Turhan, AC Acar, T Doğan
   venue: Nature Machine Intelligence 4 (3), 227-245
@@ -259,30 +326,41 @@
   url: https://doi.org/grckz2
   doi: 10.1038/s42256-022-00457-9
   selected: true
+  topics:
+  - protein-function
 - title: 'Hnet-DTI: Incorporating heterogeneous information network for drug-target interaction prediction'
   authors: G Özsarı, AS Rifaioğlu, T Doğan, V Atalay
   venue: 15th International Symposium on Health Informatics and Bioinformatics HIBIT …
   year: 2022
   scholar_id: tHnMNPEAAAAJ:isU91gLudPYC
   citations: 0
+  topics:
+  - knowledge-graphs
+  - drug-target
 - title: A Multi-Omics and Machine Learning-Based Predictor of Drug Sensitivity in Cancer
   authors: UO Ozcan, N Mohammadvand, B Izmirli, E Akar, DC Kahraman, T Doğan
   venue: 15th International Symposium on Health Informatics and Bioinformatics HIBIT …
   year: 2022
   scholar_id: tHnMNPEAAAAJ:0aBXIfxlw9sC
   citations: 0
+  topics:
+  - drug-target
 - title: A Protein Representation Model for Low-Data Protein Function Prediction
   authors: S Unsal, S Özdemir, I Özdinç, A Bayraklı, M Albayrak, K Turhan, T Dogan, ...
   venue: 15th International Symposium on Health Informatics and Bioinformatics HIBIT …
   year: 2022
   scholar_id: tHnMNPEAAAAJ:eGYfIraVYiQC
   citations: 0
+  topics:
+  - protein-function
 - title: Machine learning-based prediction of survival in cancer using multi-omics data
   authors: AN Çoruh, T Doğan
   venue: 15th International Symposium on Health Informatics and Bioinformatics HIBIT …
   year: 2022
   scholar_id: tHnMNPEAAAAJ:1tZ8xJnm2c8C
   citations: 0
+  topics:
+  - knowledge-graphs
 - title: Disease Centric Large Scale De Novo Design of Drug Candidate Molecules with Graph Generative Deep Adversarial Networks
   authors: A Ünlü, E Çevrim, A Sarıgün, H Ataş, A Koyaş, H Çelikbilek, ...
   venue: 15th International Symposium on Health Informatics and Bioinformatics HIBIT …
@@ -291,6 +369,8 @@
   citations: 0
   projects:
   - druggen
+  topics:
+  - generative-design
 - title: A crowdsourcing open platform for literature curation in UniProt
   authors: Y Wang, Q Wang, H Huang, W Huang, Y Chen, PB McGarvey, CH Wu, ...
   venue: PLoS biology 19 (12), e3001464
@@ -304,6 +384,8 @@
   year: 2021
   scholar_id: tHnMNPEAAAAJ:k_7cPK9k7w8C
   citations: 1
+  topics:
+  - drug-target
 - title: Data centric molecular analysis and evaluation of hepatocellular carcinoma therapeutics using machine intelligence-based tools
   authors: R Cetin-Atalay, DC Kahraman, E Nalbat, AS Rifaioglu, A Atakan, ...
   venue: Journal of Gastrointestinal Cancer 52 (4), 1266-1276
@@ -312,6 +394,8 @@
   citations: 3
   url: https://doi.org/g9xsh9
   doi: 10.1007/s12029-021-00768-x
+  topics:
+  - drug-target
 - title: Protein domain-based prediction of drug/compound–target interactions and experimental validation on LIM kinases
   authors: T Doğan, E Akhan Güzelcan, M Baumann, A Koyas, H Atas, IR Baxendale, ...
   venue: PLOS Computational Biology 17 (11), e1009171
@@ -320,12 +404,16 @@
   citations: 29
   url: https://doi.org/g9xsjb
   doi: 10.1371/journal.pcbi.1009171
+  topics:
+  - drug-target
 - title: Drug-target interaction prediction using transfer learning
   authors: A Dalkıran, AS Rifaioglu, AC Acar, T Dogan, R Atalay, V Atalay
   venue: The 14th International Symposium on Health Informatics and Bioinformatics, 104
   year: 2021
   scholar_id: tHnMNPEAAAAJ:EsEWqaRxkBgC
   citations: 0
+  topics:
+  - drug-target
 - title: 'CROssBAR: comprehensive resource of biomedical relations with knowledge graph representations'
   authors: T Doğan, H Atas, V Joshi, A Atakan, AS Rifaioglu, E Nalbat, A Nightingale, ...
   venue: Nucleic Acids Research, gkab543
@@ -337,6 +425,8 @@
   selected: true
   projects:
   - crossbar
+  topics:
+  - knowledge-graphs
 - title: Crowdsourced mapping of unexplored target space of kinase inhibitors
   authors: A Cichońska, B Ravikumar, RJ Allaway, F Wan, S Park, O Isayev, S Li, ...
   venue: Nature communications 12 (1), 1-18
@@ -359,6 +449,8 @@
   citations: 135
   url: https://doi.org/g9kf9x
   doi: 10.1093/bioinformatics/btaa858
+  topics:
+  - drug-target
 - title: In vitro validation of drug-target interactions revealed in silico by Comprehensive Resource of Biomedical Relations with Network Representations and Deep …
   authors: E Nalbat, AS Rifaioglu, T Dogan, MJ Martin, R Cetin-Atalay, V Atalay
   venue: Cancer Research 80 (16_Supplement), 5235-5235
@@ -367,6 +459,9 @@
   citations: 0
   projects:
   - crossbar
+  topics:
+  - knowledge-graphs
+  - drug-target
 - title: 'iBioProVis: Interactive Visualization and Analysis of Compound Bioactivity Space'
   authors: A Donmez, AS Rifaioglu, A Acar, T Doğan, R Cetin-Atalay, V Atalay
   venue: Bioinformatics, btaa496
@@ -375,12 +470,16 @@
   citations: 15
   url: https://doi.org/g9xsjd
   doi: 10.1093/bioinformatics/btaa496
+  topics:
+  - drug-target
 - title: 'DEEPScreen: High Performance Drug-Target Interaction Prediction with Convolutional Neural Networks Using 2-D Structural Compound Representations'
   authors: A Rifaioglu, E Sinoplu, V Atalay, M Martin, R Cetin-Atalay, T Dogan
   venue: Chemical Science 11 (9), 2531-2557
   year: 2020
   scholar_id: tHnMNPEAAAAJ:Aul-kAQHnToC
   citations: 302
+  topics:
+  - drug-target
 - title: The CAFA challenge reports improved protein function prediction and new functional annotations for hundreds of genes through experimental screens
   authors: N Zhou, Y Jiang, TR Bergquist, AJ Lee, BZ Kacsoh, AW Crocker, ...
   venue: Genome Biology 20, 244
@@ -403,6 +502,8 @@
   citations: 672
   url: https://doi.org/gd2cqc
   doi: 10.1093/bib/bby061
+  topics:
+  - drug-target
 - title: 'DEEPred: automated protein function prediction with multi-task feed-forward deep neural networks'
   authors: A Sureyya Rifaioglu, T Doğan, M Jesus Martin, R Cetin-Atalay, V Atalay
   venue: Scientific reports 9 (1), 7344
@@ -411,6 +512,8 @@
   citations: 196
   url: https://doi.org/g9xsjg
   doi: 10.1038/s41598-019-43708-3
+  topics:
+  - protein-function
 - title: 'UniProt: a worldwide hub of protein knowledge'
   authors: UniProt Consortium
   venue: Nucleic acids research 47 (D1), D506-D515
@@ -425,18 +528,24 @@
   citations: 250
   url: https://doi.org/g4jbgs
   doi: 10.1186/s12859-018-2368-y
+  topics:
+  - protein-function
 - title: Drug-Target Interaction Prediction with Deep Convolutional Neural Networks Using Compound Images
   authors: AS Rifaioğlu, MV Atalay, MJ Martin, R Atalay, T Doğan
   venue: ''
   year: 2018
   scholar_id: tHnMNPEAAAAJ:hSRAE-fF4OAC
   citations: 0
+  topics:
+  - drug-target
 - title: Automated Negative Gene Ontology Based Functional Predictions for Proteins with UniGOPred
   authors: T Doğan, AS Rifaioğlu, R Saidi, MJ Martin, MV Atalay, R Atalay
   venue: ''
   year: 2018
   scholar_id: tHnMNPEAAAAJ:DrR-2ekChdkC
   citations: 0
+  topics:
+  - protein-function
 - title: 'SPIN: Submitting sequences determined at protein level to uniprot'
   authors: K Pichler, K Warner, M Magrane, UniProt Consortium
   venue: Current protocols in bioinformatics 62 (1), e52
@@ -451,18 +560,24 @@
   citations: 20
   url: https://doi.org/gcv23x
   doi: 10.1002/prot.25416
+  topics:
+  - protein-function
 - title: 'HPO2GO: prediction of human phenotype ontology term associations for proteins using cross ontology annotation co-occurrences'
   authors: T Doğan
   venue: PeerJ 6 (e5298)
   year: 2018
   scholar_id: tHnMNPEAAAAJ:ClCfbGk0d_YC
   citations: 45
+  topics:
+  - protein-function
 - title: A Structural Perspective on Modulation of Protein-Protein Interactions with Small Molecules
   authors: HC Demirel, T Doğan, N Tuncbag
   venue: Current Topics in Medicinal Chemistry 18 (8), 700-713
   year: 2018
   scholar_id: tHnMNPEAAAAJ:edDO8Oi4QzsC
   citations: 13
+  topics:
+  - drug-target
 - title: Phylogenetic and other conservation-based approaches to predict protein functional sites
   authors: H Atas, N Tuncbag, T Doğan
   venue: Computational Drug Discovery and Design, 51-69
@@ -471,6 +586,8 @@
   citations: 9
   url: https://doi.org/g9xsjk
   doi: 10.1007/978-1-4939-7756-7_4
+  topics:
+  - protein-function
 - title: 'On expert curation and scalability: UniProtKB/Swiss-Prot as a case study'
   authors: S Poux, CN Arighi, M Magrane, A Bateman, CH Wei, Z Lu, E Boutet, ...
   venue: Bioinformatics 33 (21), 3454-3460
@@ -506,6 +623,8 @@
   citations: 48
   url: https://doi.org/f83r9b
   doi: 10.1093/bioinformatics/btw114
+  topics:
+  - protein-function
 - title: 'Tools and data services registry: a community effort to document bioinformatics resources'
   authors: J Ison, K Rapacki, H Ménager, M Kalaš, E Rydza, P Chmura, C Anthon, ...
   venue: Nucleic acids research 44 (D1), D38-D47
@@ -581,6 +700,8 @@
   year: null
   scholar_id: tHnMNPEAAAAJ:iyewoVqAXLQC
   citations: 0
+  topics:
+  - protein-function
 - title: Target Specific De Novo Design of Drug Candidate Molecules with Graph Transformer-based Generative Adversarial Networks. 2023; arXiv. org
   authors: DT Atabey, Ünlü, Çevrim Elif, Sarigün Ahmet, Çelikbilek Hayriye, Güvenilir ...
   venue: ''
@@ -598,3 +719,5 @@
   citations: 0
   projects:
   - protgen
+  topics:
+  - generative-design

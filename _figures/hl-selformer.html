@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SELFormer</title>
+<link rel="stylesheet" href="font.css"><link rel="stylesheet" href="fig.css"><link rel="stylesheet" href="hl.css">
+<script src="fig.js"></script></head>
+<body>
+<!-- Home slider: SELFormer. Content: _data/highlights.yml, _data/software.yml, SELFormer README only. -->
+<div class="fig" data-links="mols > pre; lab > ft; pre v ft; pre > emb; ft > pred">
+ <div class="grid g3">
+  <div class="head c1" style="grid-row:1">Data</div>
+  <div class="head c2" style="grid-row:1">SELFormer</div>
+  <div class="head c3" style="grid-row:1">Use</div>
+
+  <div class="box c1" id="mols" style="grid-row:2"><div class="t">2 M molecules</div><div class="n">drug-like compounds<br>written as SELFIES</div></div>
+  <div class="box c1" id="lab"  style="grid-row:3"><div class="t">Property datasets</div><div class="n">classification and<br>regression tasks</div></div>
+
+  <div class="box ours c2" id="pre" style="grid-row:2"><div class="t">Pre-training</div><div class="n">RoBERTa encoder, masked<br>language modelling</div></div>
+  <div class="box ours c2" id="ft"  style="grid-row:3"><div class="t">Fine-tuning</div><div class="n">pre-trained encoder<br>plus a prediction head</div></div>
+
+  <div class="box out c3" id="emb"  style="grid-row:2"><div class="t">Embeddings</div><div class="n">for your own<br>molecules</div></div>
+  <div class="box out c3" id="pred" style="grid-row:3"><div class="t">Properties</div><div class="n">solubility, toxicity,<br>side effects</div></div>
+ </div>
+ <div class="foot"><span>SELFIES: a 100% valid string notation for molecules.</span></div>
+</div>
+</body></html>

@@ -2,6 +2,7 @@
 name: Bünyamin Şen
 image: /images/team/bunyamin-sen.jpg
 role: phd
+redirect_from: /team/bunyamin-sen/
 aliases:
   - Yucuklu Sumurta
   - Muhammet Bünyamin Şen

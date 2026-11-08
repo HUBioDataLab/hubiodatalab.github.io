@@ -2,23 +2,86 @@
 layout: default
 ---
 {%- assign role = site.roles | where: "key", page.role | first -%}
-<article class="wrap member">
-  <p class="eyebrow"><a href="{{ '/team/' | relative_url }}">Team</a> / {% if page.role == 'alumni' %}Alumni{% else %}{{ role.title }}{% endif %}</p>
-  <div class="member-grid">
-    <div class="member-photo">{% if page.image %}<img src="{{ page.image | relative_url }}" alt="Portrait of {{ page.name }}">{% endif %}</div>
-    <div class="member-copy">
+{%- case page.role -%}
+  {%- when 'principal-investigator' -%}{%- assign role_line = 'Principal Investigator' -%}{%- assign crumb = 'Principal Investigator' -%}
+  {%- when 'postdoc' -%}{%- assign role_line = 'Postdoctoral researcher' -%}{%- assign crumb = role.title -%}
+  {%- when 'phd' -%}{%- assign role_line = 'PhD student' -%}{%- assign crumb = 'PhD students' -%}
+  {%- when 'msc' -%}{%- assign role_line = 'MSc student' -%}{%- assign crumb = 'MSc students' -%}
+  {%- when 'undergrad' -%}{%- assign role_line = 'Undergraduate researcher' -%}{%- assign crumb = 'Undergraduate researchers' -%}
+  {%- when 'alumni' -%}{%- capture role_line -%}Former {% if page.degree %}{{ page.degree }} student{% else %}member{% endif %}{%- endcapture -%}{%- assign crumb = 'Alumni' -%}
+  {%- else -%}{%- assign role_line = role.title -%}{%- assign crumb = role.title -%}
+{%- endcase -%}
+{%- assign group = site.members | where: "role", page.role | sort: "name" -%}
+{%- for m in group -%}{%- if m.url == page.url -%}{%- assign idx = forloop.index0 -%}{%- endif -%}{%- endfor -%}
+{%- assign prev_m = nil -%}{%- assign next_m = nil -%}
+{%- if idx and group.size > 1 -%}
+  {%- if idx > 0 -%}{%- assign p_i = idx | minus: 1 -%}{%- assign prev_m = group[p_i] -%}{%- endif -%}
+  {%- assign n_i = idx | plus: 1 -%}{%- if n_i < group.size -%}{%- assign next_m = group[n_i] -%}{%- endif -%}
+{%- endif -%}
+<div class="page-hero member-hero">
+<div class="wrap">
+  <p class="breadcrumb"><a href="{{ '/people/' | relative_url }}">People</a> / <a href="{{ '/people/' | relative_url }}#{{ page.role }}">{{ crumb }}</a></p>
+  <header class="member-head">
+    <div class="member-photo">{% if page.image %}<img src="{{ page.image | relative_url }}" alt="Portrait of {{ page.name }}" width="240" height="300">{% endif %}</div>
+    <div class="member-intro">
       <h1>{{ page.name }}</h1>
-      {% if page.position %}<p class="person-role">{{ page.position }}</p>{% endif %}
-      {% include member-links.html links=page.links %}
-      <div class="prose">{{ content }}</div>
-      <section class="related" data-member-pubs="{{ page.aliases | jsonify | escape }}" hidden>
-        <h2 class="h-sub">Publications with the lab</h2>
-        <ol class="pub-list" data-list></ol>
-      </section>
+      <p class="member-role">
+        {%- if page.position -%}{{ page.position }}
+        {%- else -%}{{ role_line }}, {{ site.title }}{%- endif -%}
+      </p>
+      {%- if page.role == 'alumni' and page.now %}
+      <p class="member-now">Now: {{ page.now }}</p>
+      {%- endif %}
+      {%- if page.program %}
+      <p class="member-now">{{ page.program }}</p>
+      {%- endif %}
+      {%- if page.links %}
+      <h2 class="member-subhead">Contact and links</h2>
+      {% include member-links.html links=page.links style="list" %}
+      {%- endif %}
     </div>
-  </div>
+  </header>
+</div>
+</div>
+<article class="wrap page member">
+  <section class="member-section member-about">
+    <h2>About</h2>
+    <div class="prose">{{ content }}</div>
+  </section>
+
+  {%- if page.interests %}
+  <section class="member-section">
+    <h2>Research interests</h2>
+    <ul class="member-interests">
+      {%- for i in page.interests %}<li>{{ i }}</li>{% endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  <section class="member-section related" data-member-pubs="{{ page.aliases | jsonify | escape }}" hidden>
+    <h2>Publications with the lab <span class="member-count" data-count></span></h2>
+    <ol class="pub-list" data-list></ol>
+  </section>
+
+  <nav class="member-nav" aria-label="More people">
+    <span class="member-nav-prev">{% if prev_m %}<a href="{{ prev_m.url | relative_url }}" rel="prev">&lsaquo; {{ prev_m.name }}</a>{% endif %}</span>
+    <a class="member-nav-all" href="{{ '/people/' | relative_url }}">All people</a>
+    <span class="member-nav-next">{% if next_m %}<a href="{{ next_m.url | relative_url }}" rel="next">{{ next_m.name }} &rsaquo;</a>{% endif %}</span>
+  </nav>
 </article>
 <template id="all-pubs">
   {%- assign pubs = site.data.publications | where_exp: "p", "p.hidden != true" -%}
   {%- for p in pubs %}{% include pub.html pub=p %}{% endfor %}
 </template>
+<script>
+  (function () {
+    var s = document.querySelector("[data-member-pubs]");
+    if (!s || !window.MutationObserver) return;
+    new MutationObserver(function (_, obs) {
+      if (s.hidden) return;
+      var n = s.querySelectorAll("[data-list] > li").length;
+      s.querySelector("[data-count]").textContent = "(" + n + ")";
+      obs.disconnect();
+    }).observe(s, { attributes: true, attributeFilter: ["hidden"] });
+  })();
+</script>

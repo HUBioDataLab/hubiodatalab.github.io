@@ -2,6 +2,7 @@
 name: Atabey Ünlü
 image: /images/team/atabey-unlu.jpg
 role: phd
+redirect_from: /team/atabey-unlu/
 aliases:
   - A Ünlü
   - A. Ünlü
@@ -10,7 +11,7 @@ aliases:
 links:
   email: atabeyunlu@hacettepe.edu.tr
   orcid: 0000-0003-0078-6069
-  google-scholar: MtkxWv8AAAAJ&hl
+  google-scholar: MtkxWv8AAAAJ
   github: atabeyunlu
   linkedin: atabeyunlu
 ---

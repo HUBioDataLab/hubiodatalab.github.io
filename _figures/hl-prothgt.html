@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>ProtHGT</title>
+<link rel="stylesheet" href="font.css"><link rel="stylesheet" href="fig.css"><link rel="stylesheet" href="hl.css">
+<script src="fig.js"></script></head>
+<body>
+<!-- Home slider: ProtHGT. Content: _data/highlights.yml, _data/software.yml, ProtHGT README only. -->
+<div class="fig" data-links="kg feat > proj; proj v hgt; hgt v lp; lp > mf bp cc">
+ <div class="grid g3">
+  <div class="head c1" style="grid-row:1">Inputs</div>
+  <div class="head c2" style="grid-row:1">HGT model</div>
+  <div class="head c3" style="grid-row:1">GO term predictions</div>
+
+  <div class="box c1" id="kg"   style="grid-row:2"><div class="t">Knowledge graph</div><div class="n">proteins, pathways,<br>domains, GO terms</div></div>
+  <div class="box c1" id="feat" style="grid-row:3"><div class="t">Node features</div><div class="n">protein language<br>model embeddings</div></div>
+
+  <div class="box ours c2" id="proj" style="grid-row:2"><div class="t">Projection</div><div class="n">one linear layer<br>per node type</div></div>
+  <div class="box ours c2" id="hgt"  style="grid-row:3"><div class="t">HGT layers</div><div class="n">multi-head attention<br>across node types</div></div>
+  <div class="box ours c2" id="lp"   style="grid-row:4"><div class="t">Link prediction</div><div class="n">MLP scores each<br>protein–GO term pair</div></div>
+
+  <div class="box out c3" id="mf" style="grid-row:2"><div class="t">Molecular function</div></div>
+  <div class="box out c3" id="bp" style="grid-row:3"><div class="t">Biological process</div></div>
+  <div class="box out c3" id="cc" style="grid-row:4"><div class="t">Cellular component</div></div>
+ </div>
+ <div class="foot"><span>One model is trained for each GO sub-ontology.</span></div>
+</div>
+</body></html>

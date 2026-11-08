@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Knowledge graphs</title>
+<link rel="stylesheet" href="font.css"><link rel="stylesheet" href="fig.css">
+<script src="fig.js"></script></head>
+<body>
+<!-- Content: _data/research.yml + _data/software.yml only. Layout rules: fig.css header. -->
+<div class="fig" data-links="g1 g2 g3 g4 > integ; integ v kg; kg > m1 m2 m3 m4; m1 > o1; m2 > o2; m3 > o3; m4 > o4">
+ <div class="grid g4">
+  <div class="head c1" style="grid-row:1">Sources</div>
+  <div class="head c2" style="grid-row:1">Integration</div>
+  <div class="head c3" style="grid-row:1">Models and interface</div>
+  <div class="head c4" style="grid-row:1">Outputs</div>
+  <div class="box  c1" id="g1" style="grid-row:2"><div class="t">Genes and proteins</div><div class="n">sequences · GO terms</div></div>
+  <div class="box  c1" id="g2" style="grid-row:3"><div class="t">Pathways</div></div>
+  <div class="box  c1" id="g3" style="grid-row:4"><div class="t">Drugs and compounds</div></div>
+  <div class="box  c1" id="g4" style="grid-row:5"><div class="t">Diseases and phenotypes</div></div>
+  <div class="box ours c2" id="integ" style="grid-row:2"><div class="t">pypath · BioCypher</div><div class="n">34 sources, provenance kept</div></div>
+  <div class="box ours c2" id="kg" style="grid-row:4"><div class="t">CROssBARv2 graph</div><div class="n">~2.7 M nodes · 12.6 M edges</div></div>
+  <div class="box ours c3" id="m1" style="grid-row:2"><div class="t">ProtHGT</div><div class="n">heterogeneous GNN</div></div>
+  <div class="box ours c3" id="m2" style="grid-row:3"><div class="t">GLaDiGAtor</div><div class="n">graph neural network</div></div>
+  <div class="box ours c3" id="m3" style="grid-row:4"><div class="t">ECLIPSE</div><div class="n">heterogeneous GNN</div></div>
+  <div class="box ours c3" id="m4" style="grid-row:5"><div class="t">CROssBAR-LLM</div><div class="n">LLM writes Cypher queries</div></div>
+  <div class="box out c4" id="o1" style="grid-row:2"><div class="t">Protein function</div><div class="n">Gene Ontology terms</div></div>
+  <div class="box out c4" id="o2" style="grid-row:3"><div class="t">Disease–gene links</div><div class="n">predicted associations</div></div>
+  <div class="box out c4" id="o3" style="grid-row:4"><div class="t">Compound–protein</div><div class="n">bioactivity values</div></div>
+  <div class="box out c4" id="o4" style="grid-row:5"><div class="t">Answers</div><div class="n">to plain-language questions</div></div>
+ </div>
+ <div class="foot"><span>Selected predictions have been checked experimentally.</span><span class="legend"><span><i class="sw"></i>data</span><span><i class="sw ours"></i>lab methods and tools</span><span><i class="sw out"></i>outcome</span></span></div>
+</div></body></html>

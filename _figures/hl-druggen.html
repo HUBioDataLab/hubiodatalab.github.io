@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>DrugGEN</title>
+<link rel="stylesheet" href="font.css"><link rel="stylesheet" href="fig.css"><link rel="stylesheet" href="hl.css">
+<script src="fig.js"></script></head>
+<body>
+<!-- Home slider: DrugGEN. Content: _data/highlights.yml, _data/software.yml, DrugGEN README only. -->
+<div class="fig" data-links="chembl > gen; inhib > disc; gen v disc; gen > mols; mols v dock; dock v vitro">
+ <div class="grid g3">
+  <div class="head c1" style="grid-row:1">Training data</div>
+  <div class="head c2" style="grid-row:1">Graph transformer GAN</div>
+  <div class="head c3" style="grid-row:1">Results for AKT1</div>
+
+  <div class="box c1" id="chembl" style="grid-row:2"><div class="t">ChEMBL molecules</div><div class="n">drug-like compounds,<br>input to the generator</div></div>
+  <div class="box c1" id="inhib" style="grid-row:3"><div class="t">Known inhibitors</div><div class="n">bioactive molecules<br>of the target protein</div></div>
+
+  <div class="box ours c2" id="gen" style="grid-row:2"><div class="t">Generator</div><div class="n">graph transformer<br>encoder layers</div></div>
+  <div class="box ours c2" id="disc" style="grid-row:3"><div class="t">Discriminator</div><div class="n">real or fake, against<br>known inhibitors</div></div>
+
+  <div class="box out c3" id="mols" style="grid-row:2"><div class="t">De novo molecules</div><div class="n">candidate inhibitors<br>for the target</div></div>
+  <div class="box out c3" id="dock" style="grid-row:3"><div class="t">Docking and MD</div><div class="n">simulated binding<br>to AKT1</div></div>
+  <div class="box out c3" id="vitro" style="grid-row:4"><div class="t">In vitro assays</div><div class="n">5 synthesised,<br>2 inhibited AKT1</div></div>
+ </div>
+ <div class="foot"><span>Retrain for another protein with a dataset of its known bioactive molecules.</span></div>
+</div>
+</body></html>

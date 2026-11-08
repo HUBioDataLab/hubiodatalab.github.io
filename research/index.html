@@ -1,0 +1,103 @@
+---
+title: Research
+lede: >-
+  We develop machine learning methods for integrating heterogeneous biomedical data, predicting the
+  functional properties of genes and proteins, and designing new drug candidate molecules and
+  proteins.
+---
+
+<div class="research-layout">
+<nav class="research-toc" aria-label="Research directions" data-spy>
+  <p class="research-toc-title">Directions</p>
+  <ol>
+    {%- for d in site.data.research.directions %}
+    <li><a href="#{{ d.id }}">{{ d.title }}</a></li>
+    {%- endfor %}
+  </ol>
+  <p class="research-toc-extra"><a href="{{ '/software/' | relative_url }}">Software</a><a href="{{ '/publications/' | relative_url }}">Publications</a></p>
+</nav>
+<div class="research-main">
+<div class="prose research-intro">
+  <p>
+    Our work runs from data to design. We first bring scattered biomedical data into integrated
+    knowledge graphs and learned representations, then use those representations to predict what
+    proteins do and which compounds act on them, and finally to generate new molecules and proteins
+    that are tested experimentally with our collaborators. The five directions below describe this
+    in more detail; the software is listed on the <a href="{{ '/software/' | relative_url }}">Software</a> page and the
+    full list of papers on the <a href="{{ '/publications/' | relative_url }}">Publications</a> page.
+  </p>
+</div>
+
+{%- assign R = site.data.research %}
+{%- if R.overview_figure %}
+<figure class="figure research-figure research-overview">
+  <a href="{{ R.overview_figure | relative_url }}"><img src="{{ R.overview_figure | relative_url }}" alt="{{ R.overview_alt | escape }}" width="{{ R.overview_size[0] }}" height="{{ R.overview_size[1] }}"></a>
+  {%- if R.overview_caption %}<figcaption>{{ R.overview_caption }}</figcaption>{% endif %}
+</figure>
+{%- endif %}
+
+
+{%- for d in site.data.research.directions %}
+{%- assign visible = site.data.publications | where_exp: "p", "p.hidden != true" %}
+{%- assign topic_pubs = visible | where_exp: "p", "p.topics contains d.id" %}
+<section class="section research-area" id="{{ d.id }}">
+  <h2>{{ d.title }}</h2>
+  {%- if d.short %}<p class="research-short">{{ d.short }}</p>{% endif %}
+
+  {%- if d.figure %}
+  <figure class="figure research-figure">
+    <a href="{{ d.figure | relative_url }}"><img src="{{ d.figure | relative_url }}" alt="{{ d.figure_alt | escape }}"{% if d.figure_size %} width="{{ d.figure_size[0] }}" height="{{ d.figure_size[1] }}"{% endif %} loading="lazy" decoding="async"></a>
+    {%- if d.figure_caption %}<figcaption>{{ d.figure_caption }}</figcaption>{% endif %}
+  </figure>
+  {%- endif %}
+
+  <div class="prose">
+    {%- for para in d.body %}
+    <p>{{ para }}</p>
+    {%- endfor %}
+  </div>
+
+  <div class="research-rels">
+  {%- if d.projects and d.projects.size > 0 %}
+  <p class="research-rel">
+    <span class="research-rel-key">Projects</span><span class="research-rel-val">
+    {%- for slug in d.projects %}
+      {%- assign proj = site.projects | where_exp: "pr", "pr.slug == slug" | first %}
+      {%- if proj %}
+        {% unless forloop.first %}<span class="sep">·</span>{% endunless %}
+        <span class="research-rel-item">{{ proj.title }}
+          <span class="muted small">({{ site.data.research.programs[slug] }}{% if proj.funding.number %}, {{ proj.funding.number }}{% endif %})</span>
+        </span>
+      {%- endif %}
+    {%- endfor %}
+  </span></p>
+  {%- endif %}
+
+  {%- if d.tools and d.tools.size > 0 %}
+  <p class="research-rel">
+    <span class="research-rel-key">Tools</span><span class="research-rel-val">
+    {%- assign sw_ids = site.data.software.tools | map: "id" %}
+    {%- for t in d.tools %}
+      {%- assign tid = t | downcase | slugify %}
+      {% if sw_ids contains tid %}<a class="tool-tag" href="{{ '/software/#' | append: tid | relative_url }}">{{ t }}</a>{% else %}<span class="tool-tag">{{ t }}</span>{% endif %}
+    {%- endfor %}
+  </span></p>
+  {%- endif %}
+  </div>
+
+  {%- if topic_pubs.size > 0 %}
+  {%- assign recent = topic_pubs | slice: 0, 6 %}
+  <div class="research-pubs">
+    <h3>Selected papers</h3>
+    <ul class="pub-list">
+      {%- for p in recent %}
+        {% include pub.html pub=p %}
+      {%- endfor %}
+    </ul>
+    <p class="more"><a href="{{ '/publications/' | relative_url }}">All {{ topic_pubs.size }} papers on this topic</a></p>
+  </div>
+  {%- endif %}
+</section>
+{%- endfor %}
+</div>
+</div>

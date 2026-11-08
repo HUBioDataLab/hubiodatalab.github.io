@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Protein function</title>
+<link rel="stylesheet" href="font.css"><link rel="stylesheet" href="fig.css">
+<script src="fig.js"></script></head>
+<body>
+<!-- Content: _data/research.yml + _data/software.yml only. Layout rules: fig.css header. -->
+<div class="fig" data-links="dom > d2g; seq > dp ec sl; ann > hp; var > as cv; d2g dp > go; ec > eco; sl > loc; hp > hpo; as cv > fx">
+ <div class="grid g3">
+  <div class="head c1" style="grid-row:1">Inputs</div>
+  <div class="head c2" style="grid-row:1">Methods</div>
+  <div class="head c3" style="grid-row:1">Predicted</div>
+  <div class="lane-label" style="grid-row:2"><b>Annotating uncharacterised proteins</b></div>
+  <div class="box  c1" id="dom" style="grid-row:3"><div class="t">Protein domains</div><div class="n">domain annotations</div></div>
+  <div class="box  c1" id="seq" style="grid-row:4/span 3"><div class="t">Protein sequences</div><div class="n">without curated annotation</div></div>
+  <div class="box  c1" id="ann" style="grid-row:7"><div class="t">HPO and GO annotations</div><div class="n">two ontologies</div></div>
+  <div class="box ours c2" id="d2g" style="grid-row:3"><div class="t">Domain2GO</div><div class="n">domain-level function assignment</div></div>
+  <div class="box ours c2" id="dp" style="grid-row:4"><div class="t">DEEPred</div><div class="n">multi-task deep networks</div></div>
+  <div class="box ours c2" id="ec" style="grid-row:5"><div class="t">ECPred</div><div class="n">hierarchical enzyme classification</div></div>
+  <div class="box ours c2" id="sl" style="grid-row:6"><div class="t">SLPred</div><div class="n">multi-view localisation</div></div>
+  <div class="box ours c2" id="hp" style="grid-row:7"><div class="t">HPO2GO</div><div class="n">cross-ontology mapping</div></div>
+  <div class="box out c3" id="go" style="grid-row:3/span 2"><div class="t">Gene Ontology terms</div></div>
+  <div class="box out c3" id="eco" style="grid-row:5"><div class="t">Enzyme classes</div><div class="n">EC numbers</div></div>
+  <div class="box out c3" id="loc" style="grid-row:6"><div class="t">Subcellular locations</div></div>
+  <div class="box out c3" id="hpo" style="grid-row:7"><div class="t">Phenotype associations</div><div class="n">HPO terms</div></div>
+  <div class="lane-label" style="grid-row:8"><b>Variant effects</b></div>
+  <div class="box  c1" id="var" style="grid-row:9/span 2"><div class="t">Amino acid variants</div><div class="n">wild-type and variant structures</div></div>
+  <div class="box ours c2" id="as" style="grid-row:9"><div class="t">ASCARIS</div><div class="n">positional and structural features</div></div>
+  <div class="box ours c2" id="cv" style="grid-row:10"><div class="t">ContVAR</div><div class="n">contrastive and graph learning</div></div>
+  <div class="box out c3" id="fx" style="grid-row:9/span 2"><div class="t">Functions a variant alters</div><div class="n">gained · lost · unchanged</div></div>
+ </div>
+ <div class="foot"><span><b>Evaluation:</b> PROBE (what protein language models learn) · ProFAB · CAFA assessments</span><span class="legend"><span><i class="sw"></i>data</span><span><i class="sw ours"></i>lab methods and tools</span><span><i class="sw out"></i>outcome</span></span></div>
+</div></body></html>

@@ -23,13 +23,15 @@ lab:
   maps: https://maps.app.goo.gl/gdG4ZcpuSvUXQoCc7
 
 nav:
-  - { title: Projects, url: /projects/ }
+  - { title: Home, url: / }
+  - { title: People, url: /people/ }
+  - { title: Research, url: /research/ }
   - { title: Publications, url: /publications/ }
-  - { title: Team, url: /team/ }
-  - { title: News, url: /news/ }
+  - { title: Software, url: /software/ }
+  - { title: Join, url: /join/ }
   - { title: Contact, url: /contact/ }
 
-# Team page sections, in display order
+# People page sections, in display order
 roles:
   - { key: principal-investigator, title: Principal Investigator }
   - { key: postdoc, title: Postdoctoral Researchers }
@@ -38,20 +40,17 @@ roles:
   - { key: undergrad, title: Undergraduate Researchers }
 
 collections:
-  projects:
-    output: true
-    permalink: /projects/:name/
+  projects:            # data only (used by the Research page); no pages generated
+    output: false
   members:
     output: true
-    permalink: /team/:name/
+    permalink: /people/:name/
 
 permalink: /news/:year/:month/:title/
 
 defaults:
   - scope: { path: "" }
     values: { layout: page, image: /images/share.png }
-  - scope: { type: projects }
-    values: { layout: project }
   - scope: { type: members }
     values: { layout: member }
   - scope: { type: posts }
@@ -63,12 +62,14 @@ kramdown:
   auto_ids: true
 
 sass:
+  sass_dir: _sass
   style: compressed
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 feed:
   path: news/feed.xml

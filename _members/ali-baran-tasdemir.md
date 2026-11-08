@@ -2,6 +2,7 @@
 name: Ali Baran Taşdemir
 image: /images/team/ali-baran-tasdemir.jpg
 role: phd
+redirect_from: /team/ali-baran-tasdemir/
 aliases:
   - AB Taşdemir
   - A.B. Taşdemir

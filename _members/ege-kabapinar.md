@@ -2,6 +2,7 @@
 name: Ege Kabapınar
 image: /images/team/ege-kabapinar.jpg
 role: undergrad
+redirect_from: /team/ege-kabapinar/
 aliases:
   - E Kabapınar
   - E. Kabapınar

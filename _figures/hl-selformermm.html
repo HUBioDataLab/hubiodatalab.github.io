@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>SELFormerMM</title>
+<link rel="stylesheet" href="font.css"><link rel="stylesheet" href="fig.css"><link rel="stylesheet" href="hl.css">
+<script src="fig.js"></script></head>
+<body>
+<!-- Home slider: SELFormerMM. Content: _data/highlights.yml, _data/software.yml, SELFormerMM README only.
+     Red = the lab's own parts (SELFormer branch, the multimodal model); grey = inputs and the
+     frozen external encoders; slate = what the model is used for. -->
+<div class="fig" data-links="selfies > sf; graph > um; text > sb; kg > dmgi; sf um sb dmgi > align; align v prop">
+ <div class="grid g3">
+  <div class="head c1" style="grid-row:1">Four modalities</div>
+  <div class="head c2" style="grid-row:1">Encoders</div>
+  <div class="head c3" style="grid-row:1">SELFormerMM</div>
+
+  <div class="box c1" id="selfies" style="grid-row:2"><div class="t">SELFIES</div><div class="n">molecule as a string</div></div>
+  <div class="box c1" id="graph"   style="grid-row:3"><div class="t">Structure</div><div class="n">molecular graph</div></div>
+  <div class="box c1" id="text"    style="grid-row:4"><div class="t">Text</div><div class="n">natural-language<br>description</div></div>
+  <div class="box c1" id="kg"      style="grid-row:5"><div class="t">Knowledge graph</div><div class="n">interactions in<br>CROssBARv2</div></div>
+
+  <div class="box ours c2" id="sf" style="grid-row:2"><div class="t">SELFormer</div><div class="n">chemical language model</div></div>
+  <div class="box c2" id="um"   style="grid-row:3"><div class="t">Uni-Mol</div><div class="n">frozen</div></div>
+  <div class="box c2" id="sb"   style="grid-row:4"><div class="t">SciBERT</div><div class="n">frozen</div></div>
+  <div class="box c2" id="dmgi" style="grid-row:5"><div class="t">DMGI</div><div class="n">pretrained on the graph</div></div>
+
+  <div class="box ours c3" id="align" style="grid-row:2/span 2"><div class="t">Pretraining</div><div class="n">contrastive alignment,<br>~3 million molecules</div></div>
+  <div class="box out c3" id="prop" style="grid-row:4/span 2"><div class="t">Property prediction</div><div class="n">fine-tuned heads for<br>classification, regression</div></div>
+ </div>
+</div>
+</body></html>

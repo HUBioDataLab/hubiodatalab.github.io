@@ -2,6 +2,7 @@
 name: Melike Akkaya
 image: /images/team/melike-akkaya.jpg
 role: undergrad
+redirect_from: /team/melike-akkaya/
 aliases:
   - M Akkaya
   - M. Akkaya

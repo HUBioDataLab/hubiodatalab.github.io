@@ -1,0 +1,43 @@
+# Highlighted works shown in the slider on the home page, in display order.
+# image: figure shown on a white panel (object-fit: contain), so any aspect ratio works.
+# paper: optional full paper title, shown under the tool name.
+# links: label + url, shown in order.
+
+- title: DrugGEN
+  venue: Nature Machine Intelligence
+  year: 2025
+  image: /images/projects/druggen.jpg
+  alt: "Overview figure of DrugGEN from the paper"
+  summary: >-
+    Target-specific de novo design of drug candidate molecules with graph-transformer-based
+    generative adversarial networks. For the AKT1 protein, five designed molecules were
+    synthesised and two of them inhibited the target in vitro.
+  links:
+    - { label: Paper, url: "https://www.nature.com/articles/s42256-025-01082-y" }
+    - { label: Code, url: "https://github.com/HUBioDataLab/DrugGEN" }
+    - { label: Demo, url: "https://huggingface.co/spaces/HUBioDataLab/DrugGEN" }
+
+- title: CROssBARv2
+  venue: bioRxiv preprint
+  year: 2026
+  image: /images/projects/crossbarv2.jpg
+  alt: "Overview figure of the CROssBARv2 knowledge graph from the paper"
+  summary: >-
+    A biomedical knowledge graph of about 2.7 million nodes (14 node types) and 12.6 million
+    edges (51 edge types) built from 34 data sources, with a natural-language interface
+    driven by large language models.
+  links:
+    - { label: Web, url: "https://crossbarv2.hubiodatalab.com/" }
+    - { label: Code, url: "https://github.com/HUBioDataLab/CROssBARv2-KG" }
+
+- title: SELFormer
+  venue: "Machine Learning: Science and Technology"
+  year: 2023
+  image: /images/software/selformer.jpg
+  alt: "Overview figure of SELFormer from the paper"
+  summary: >-
+    A chemical language model that reads molecules as SELFIES strings. It was pre-trained
+    on two million drug-like compounds and fine-tuned for molecular property prediction.
+  links:
+    - { label: Code, url: "https://github.com/HUBioDataLab/SELFormer" }
+    - { label: Model, url: "https://huggingface.co/HUBioDataLab/SELFormer" }

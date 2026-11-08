@@ -1,0 +1,19 @@
+/* contact page styles. Shared components live in _base.scss. */
+.contact { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 40px; align-items: stretch; }
+.contact-details { background: var(--tint); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 30px; }
+.contact-details h2 { font-size: 1.3rem; margin-top: 1.4em; }
+.contact-details h2:first-child { margin-top: 0; }
+.contact-details .meta { margin-bottom: 1em; }
+.contact-details .meta dd { overflow-wrap: anywhere; }
+.contact-links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.contact-links a {
+  display: inline-block; padding: 4px 12px; font-size: .92rem; font-weight: 600; background: #fff;
+  border: 1px solid var(--line-strong); border-radius: 4px; color: var(--ink); text-decoration: none;
+}
+.contact-links a:hover { border-color: var(--accent); color: var(--accent); }
+.contact-map iframe { display: block; width: 100%; height: 100%; min-height: 460px; border: 1px solid var(--line); border-radius: var(--radius); }
+@media (max-width: 760px) {
+  .contact { grid-template-columns: 1fr; gap: 24px; }
+  .contact-details { padding: 22px; }
+  .contact-map iframe { min-height: 300px; }
+}

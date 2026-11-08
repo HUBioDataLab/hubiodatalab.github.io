@@ -1,0 +1,51 @@
+/* News list basics (moved from base) */
+.news-feed { list-style: none; padding: 0; }
+.news-item { display: grid; grid-template-columns: 4.5em minmax(0, 1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.news-item time { color: var(--muted); }
+.news-copy h3 { margin: 0 0 4px; }
+.news-copy p { margin: 0; color: var(--muted); }
+.news-thumb { display: none; }
+
+/* news page styles. Shared components live in _base.scss. Overrides the interim .news-* block there. */
+
+/* ---------- news index ---------- */
+.news .year-group, .year-group { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 0 24px; border-top: 1px solid var(--line); margin-top: 24px; }
+.year-group:first-of-type { margin-top: 0; }
+.year-group .year { margin: 12px 0 0; font-family: var(--serif); font-size: 1.7rem; color: var(--accent); position: sticky; top: 100px; align-self: start; }
+@media (max-width: 700px) {
+  .year-group { display: block; }
+  .year-group .year { position: static; font-size: 1.4rem; }
+}
+.news-feed { list-style: none; padding: 0; margin: 0; }
+.news-item {
+  display: grid;
+  grid-template-columns: 4.5em minmax(0, 1fr);
+  gap: 16px 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.news-item:last-child { border-bottom: 0; }
+.news-item.has-thumb { grid-template-columns: 4.5em minmax(0, 1fr) 132px; }
+.news-item time { color: var(--muted); white-space: nowrap; }
+.news-copy h3 { font-size: 1.1rem; margin: 0 0 4px; }
+.news-copy h3 a { color: var(--ink); text-decoration: none; }
+.news-copy h3 a:hover { color: var(--accent); text-decoration: underline; }
+.news-copy p { margin: 0; color: var(--muted); font-size: .97rem; max-width: 40em; }
+.news-thumb { display: block; align-self: start; }
+.news-thumb img { display: block; width: 132px; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 6px; }
+.news-feed-link { margin-top: 28px; }
+
+@media (max-width: 600px) {
+  .news-item, .news-item.has-thumb { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .news-item.has-thumb { grid-template-columns: minmax(0, 1fr) 88px; column-gap: 14px; }
+  .news-item.has-thumb time { grid-column: 1 / -1; }
+  .news-thumb img { width: 88px; }
+}
+
+/* ---------- single post ---------- */
+.post .page-head h1 { max-width: 30em; }
+.post-date { margin: 0; }
+.post .prose img { border: 1px solid var(--line); }
+.post-nav a { text-decoration: none; color: var(--ink); }
+.post-nav a:hover { color: var(--accent); text-decoration: underline; }
+.post-back { margin: 20px 0 0; }

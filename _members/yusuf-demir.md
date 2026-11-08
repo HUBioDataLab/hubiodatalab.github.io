@@ -2,6 +2,7 @@
 name: Yusuf Demir
 image: /images/team/yusuf-demir.jpg
 role: undergrad
+redirect_from: /team/yusuf-demir/
 aliases:
   - Y Demir
   - Y. Demir

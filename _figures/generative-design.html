@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Generative design</title>
+<link rel="stylesheet" href="font.css"><link rel="stylesheet" href="fig.css">
+<script src="fig.js"></script></head>
+<body>
+<!-- Content: _data/research.yml + _data/software.yml only. Layout rules: fig.css header. -->
+<div class="fig" data-links="tgt > dg pm; dg pm > nm; dn > fp ar gan mb; fp ar gan mb > np; nm np > val">
+ <div class="grid g4">
+  <div class="head c1" style="grid-row:1">Target</div>
+  <div class="head c2" style="grid-row:1">Generative models</div>
+  <div class="head c3" style="grid-row:1">Designs</div>
+  <div class="head c4" style="grid-row:1">Validation</div>
+  <div class="lane-label" style="grid-row:2"><b>Small molecules</b></div>
+  <div class="box  c1" id="tgt" style="grid-row:3/span 2"><div class="t">Target protein</div><div class="n">e.g. AKT1</div></div>
+  <div class="box ours c2" id="dg" style="grid-row:3"><div class="t">DrugGEN</div><div class="n">graph-transformer GAN</div></div>
+  <div class="box ours c2" id="pm" style="grid-row:4"><div class="t">Prot2Mol</div><div class="n">GPT-2 on protein embeddings</div></div>
+  <div class="box out c3" id="nm" style="grid-row:3/span 2"><div class="t">New molecules</div><div class="n">de novo, target-conditioned</div></div>
+  <div class="lane-label" style="grid-row:5"><b>Proteins</b> · ProtGEN, four generative regimes</div>
+  <div class="box  c1" id="dn" style="grid-row:6/span 4"><div class="t">DNA methyltransferases</div><div class="n">DNMT family, e.g. DNMT3A</div></div>
+  <div class="box ours c2" id="fp" style="grid-row:6"><div class="t">FlowProt</div><div class="n">flow matching over backbones</div></div>
+  <div class="box ours c2" id="ar" style="grid-row:7"><div class="t">Transformer</div><div class="n">autoregressive, over sequences</div></div>
+  <div class="box ours c2" id="gan" style="grid-row:8"><div class="t">Language-model GAN</div></div>
+  <div class="box ours c2" id="mb" style="grid-row:9"><div class="t">Mamba autoregressor</div><div class="n">state-space model</div></div>
+  <div class="box out c3" id="np" style="grid-row:6/span 4"><div class="t">New proteins</div><div class="n">backbones and sequences</div></div>
+  <div class="box out c4" id="val" style="grid-row:3/span 7"><div class="t">Synthesis and assays</div><div class="n">physics-based evaluation</div></div>
+ </div>
+ <div class="foot"><span>AKT1: five DrugGEN designs synthesised, two inhibited the target in vitro.</span><span class="legend"><span><i class="sw"></i>data</span><span><i class="sw ours"></i>lab methods and tools</span><span><i class="sw out"></i>outcome</span></span></div>
+</div></body></html>

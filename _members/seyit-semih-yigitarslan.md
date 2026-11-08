@@ -2,6 +2,7 @@
 name: Seyit Semih Yiğitarslan
 image: /images/team/seyit-semih-yigitarslan.jpg
 role: msc
+redirect_from: /team/seyit-semih-yigitarslan/
 aliases:
   - S. S. Yiğitarslan
   - S. Semih Yiğitarslan

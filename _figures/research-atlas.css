@@ -1,0 +1,18 @@
+/* Native scientific artwork on an open 12-column canvas. No inset card grid.
+   Layout: 1920 CSS px, 64px margins, 40px gutters, one full-span drawing.
+   Palette follows biological subjects, rather than stages of a generic pipeline. */
+:root { --ink:#203448; --muted:#526777; --rule:#e0e7eb; --M:64px; --G:40px; }
+* { box-sizing:border-box; margin:0; padding:0; }
+html,body { background:#fff; }
+body { width:1920px; font-family:'FigSans',sans-serif; color:var(--ink); }
+.research-fig { padding:52px var(--M) 34px; display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); column-gap:var(--G); }
+.figure-head,.art,.figure-foot { grid-column:1/-1; min-width:0; }
+.figure-head { margin-bottom:28px; }
+h1 { font-size:50px; font-weight:600; line-height:1.5; letter-spacing:-.018em; }
+.subtitle { color:var(--muted); font-size:28px; line-height:1.5; margin-top:10px; }
+.art { width:100%; }
+.art svg { display:block; width:100%; height:auto; overflow:visible; }
+.art text { font-family:'FigSans',sans-serif; }
+.figure-foot { display:flex; align-items:baseline; justify-content:space-between; gap:40px; margin-top:25px; padding-top:18px; border-top:1.5px solid var(--rule); }
+.figure-foot p { font-size:25px; line-height:1.5; color:var(--muted); }
+.figure-foot .aside { text-align:right; font-size:23px; }

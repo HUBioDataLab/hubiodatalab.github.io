@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Representation learning</title>
+<link rel="stylesheet" href="font.css"><link rel="stylesheet" href="fig.css">
+<script src="fig.js"></script></head>
+<body>
+<!-- Content: _data/research.yml + _data/software.yml only. Layout rules: fig.css header. -->
+<div class="fig" data-links="sel > sf; txt > mm; gr > mo; sf mm mo > emb; emb > p1 p2 p3">
+ <div class="grid g4">
+  <div class="head c1" style="grid-row:1">Inputs</div>
+  <div class="head c2" style="grid-row:1">Pre-training</div>
+  <div class="head c3" style="grid-row:1">Representation</div>
+  <div class="head c4" style="grid-row:1">Downstream tasks</div>
+  <div class="box  c1" id="sel" style="grid-row:2"><div class="t">SELFIES strings</div><div class="n">2 M drug-like compounds</div></div>
+  <div class="box  c1" id="txt" style="grid-row:3"><div class="t">Text and knowledge graph</div><div class="n">descriptions · KG embeddings</div></div>
+  <div class="box  c1" id="gr" style="grid-row:4"><div class="t">Molecular graphs</div><div class="n">2-D structure</div></div>
+  <div class="box ours c2" id="sf" style="grid-row:2"><div class="t">SELFormer</div><div class="n">chemical language model</div></div>
+  <div class="box ours c2" id="mm" style="grid-row:3"><div class="t">SELFormerMM</div><div class="n">aligns SELFIES, graphs, text, KG</div></div>
+  <div class="box ours c2" id="mo" style="grid-row:4"><div class="t">MoCL-GAT</div><div class="n">contrastive graph attention</div></div>
+  <div class="box out c3" id="emb" style="grid-row:3"><div class="t">Reusable embeddings</div><div class="n">molecules as vectors</div></div>
+  <div class="box out c4" id="p1" style="grid-row:2"><div class="t">Property prediction</div><div class="n">solubility · toxicity · side effects</div></div>
+  <div class="box out c4" id="p2" style="grid-row:3"><div class="t">Interaction prediction</div></div>
+  <div class="box out c4" id="p3" style="grid-row:4"><div class="t">Generation</div></div>
+ </div>
+ <div class="foot"><span><b>ChemPile</b> 250 GB curated chemistry dataset (contributed) · <b>TURMIND</b> towards a multimodal foundation model: DNA, RNA, proteins, ligands, metabolites</span><span class="legend"><span><i class="sw"></i>data</span><span><i class="sw ours"></i>lab methods and tools</span><span><i class="sw out"></i>outcome</span></span></div>
+</div></body></html>

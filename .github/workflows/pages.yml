@@ -19,7 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
+      - id: pages
+        uses: actions/configure-pages@v5
+      # Point url/baseurl at wherever this repo is published (lab site at the root, forks under /<repo>/).
+      - name: Set url and baseurl
+        run: |
+          sed -i 's|^url:.*|url: "${{ steps.pages.outputs.origin }}"|; s|^baseurl:.*|baseurl: "${{ steps.pages.outputs.base_path }}"|' _config.yml
+          grep -E '^(url|baseurl):' _config.yml
       - uses: actions/jekyll-build-pages@v1
         with:
           source: ./

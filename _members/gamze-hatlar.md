@@ -2,7 +2,12 @@
 name: Gamze Hatlar Deprem
 image: /images/team/gamze-hatlar.jpg
 role: msc
+redirect_from: /team/gamze-hatlar/
 aliases:
+  - G Hatlar
+  - Gamze Hatlar
+  - G Hatlar Deprem
+  - Gamze Hatlar Deprem
   - G.Hatlar
   - ghatlar
 links:

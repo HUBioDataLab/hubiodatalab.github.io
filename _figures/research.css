@@ -1,0 +1,86 @@
+/* Research figures: authored at 1920 CSS px; exported at 2x.
+   Geometry: one 12-column grid, 64px margin, 40px gutter. Peers occupy
+   equal spans. Insets are intentional: connectors terminate on outer panels.
+   Grey = evidence; Hacettepe red = learning / integration; slate = outcomes.
+   All artwork is schematic SVG, with no measured values implied. */
+:root {
+  --M: 64px; --G: 40px; --strip: 64px;
+  --ink: #20262d; --muted: #59616b; --rule: #dce0e4;
+  --red: #a6192e; --red-light: #fcf5f6;
+  --slate: #3a5579; --slate-light: #f3f6fa; --grey-light: #f7f8f9;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #fff; }
+body { width: 1920px; color: var(--ink); font: 28px/1.32 'FigSans', sans-serif; }
+.research-fig { position: relative; padding: 48px var(--M) 36px; }
+.figure-head { margin-bottom: 34px; }
+.eyebrow { color: var(--red); font-size: 23px; line-height: 1.5; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 12px; }
+h1 { font-size: 52px; line-height: 1.12; letter-spacing: -.025em; font-weight: 700; }
+.subtitle { font-size: 28px; line-height: 1.5; color: var(--muted); margin-top: 14px; }
+.row { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--G); align-items: stretch; }
+.span4 { grid-column: span 4; } .span6 { grid-column: span 6; } .span12 { grid-column: 1 / -1; }
+.panel { min-width: 0; position: relative; z-index: 1; border: 1.5px solid var(--rule); border-radius: 8px; background: var(--grey-light); padding: 26px 28px 24px; }
+.panel.learn { border-color: #d7a6ae; background: var(--red-light); }
+.panel.outcome { border-color: #b9c6d6; background: var(--slate-light); }
+.stage { font-size: 22px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 700; margin-bottom: 10px; }
+.learn .stage { color: var(--red); } .outcome .stage { color: var(--slate); }
+h2 { font-size: 34px; line-height: 1.16; font-weight: 700; letter-spacing: -.015em; }
+h3 { font-size: 29px; line-height: 1.2; font-weight: 600; }
+.panel p { font-size: 26px; color: var(--muted); }
+.panel .intro { margin-top: 10px; }
+.art { width: 100%; height: 230px; margin: 14px 0 12px; }
+.art svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.art text { font-family: 'FigSans', sans-serif; }
+.tools { color: var(--red) !important; font-weight: 600; font-size: 25px !important; }
+.caption { margin-top: 8px; }
+.arrow-strip { height: var(--strip); position: relative; }
+.wires { position: absolute; inset: 0; height: 100%; width: 100%; pointer-events: none; z-index: 0; overflow: visible; }
+.figure-foot { border-top: 1.5px solid var(--rule); padding-top: 20px; margin-top: 28px; display: flex; align-items: baseline; justify-content: space-between; gap: 32px; font-size: 25px; color: var(--muted); }
+.figure-foot b { color: var(--ink); font-weight: 600; }
+.schematic { font-size: 22px; white-space: nowrap; }
+.legend { display: flex; gap: 24px; white-space: nowrap; font-size: 23px; }
+.key::before { content: ''; display: inline-block; width: 15px; height: 15px; margin-right: 9px; background: #77818b; border-radius: 50%; }
+.key.learn::before { background: var(--red); } .key.outcome::before { background: var(--slate); }
+.stage-row .panel { min-height: 468px; }
+.stage-row .art { height: 240px; }
+.stage-row h2 { min-height: 80px; }
+.note-band { margin-top: 28px; padding: 20px 26px; background: var(--grey-light); border-left: 4px solid var(--red); font-size: 25px; color: var(--muted); }
+.note-band b { color: var(--ink); font-weight: 600; }
+
+/* Overview: two shared foundations support three complementary applications. */
+.overview .figure-head { margin-bottom: 24px; }
+.data-line { font-size: 27px; line-height: 1.5; color: var(--muted); padding-bottom: 22px; border-bottom: 1.5px solid var(--rule); margin-bottom: 24px; }
+.data-line b { color: var(--ink); font-weight: 600; margin-right: 18px; }
+.foundation { height: 262px; display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 12px; align-items: center; }
+.foundation h2 { font-size: 35px; }
+.foundation .intro { font-size: 26px; margin-bottom: 15px; }
+.foundation .art { height: 190px; margin: 0; }
+.topic-number { color: var(--red); font-size: 24px; font-weight: 700; margin-right: 12px; }
+.overview .arrow-strip { height: 68px; }
+.application { height: 298px; padding-top: 22px; }
+.application h2 { font-size: 33px; }
+.application .art { height: 128px; margin: 12px 0 8px; }
+.application p { font-size: 26px; }
+.evaluation { display: flex; align-items: center; gap: 32px; padding: 18px 26px; border: 1.5px solid var(--rule); border-radius: 7px; background: #fff; position: relative; z-index: 1; }
+.evaluation strong { color: var(--slate); font-weight: 600; white-space: nowrap; }
+.evaluation p { color: var(--muted); font-size: 25px; }
+.overview .figure-foot { margin-top: 24px; }
+
+/* Two parallel biological scales, aligned across input / model / result. */
+.lane-heads { margin-bottom: 14px; }
+.lane-heads .stage { padding-bottom: 12px; border-bottom: 1.5px solid var(--rule); margin: 0; }
+.lane-row + .lane-row { margin-top: 30px; }
+.lane-panel { height: 282px; padding: 22px 26px; }
+.lane-panel h2 { font-size: 31px; }
+.lane-panel .art { height: 158px; margin: 8px 0; }
+.lane-panel p { font-size: 25px; }
+.lane-panel .tools { font-size: 25px !important; }
+.compact-art .art { height: 148px; }
+.design .lane-panel { height: 282px; }
+.design .note-band { display: flex; justify-content: space-between; gap: 32px; }
+.representation .stage-row .panel { min-height: 490px; }
+.representation .stage-row .art { height: 238px; }
+.representation .stage-row h2 { min-height: 80px; }
+.dataset-row { margin-top: 28px; }
+.dataset-note { border-top: 2px solid var(--rule); padding-top: 16px; color: var(--muted); font-size: 25px; }
+.dataset-note b { color: var(--ink); font-weight: 600; }

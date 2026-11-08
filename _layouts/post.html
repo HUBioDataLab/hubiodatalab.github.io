@@ -1,14 +1,22 @@
 ---
 layout: default
 ---
-<article class="wrap post">
-  <header class="post-head">
-    <p class="eyebrow"><a href="{{ '/news/' | relative_url }}">News</a> / <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
+<header class="page-hero post-hero">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ '/news/' | relative_url }}">News</a></p>
     <h1>{{ page.title }}</h1>
-  </header>
+    <p class="post-date muted"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
+  </div>
+</header>
+<article class="wrap page post">
   <div class="prose">{{ content }}</div>
   <nav class="post-nav" aria-label="More news">
-    {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span class="eyebrow">Older</span>{{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
-    {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span class="eyebrow">Newer</span>{{ page.next.title }}</a>{% endif %}
+    {%- if page.previous %}
+    <a class="prev" href="{{ page.previous.url | relative_url }}"><span class="post-nav-label">‹ Older</span>{{ page.previous.title }}</a>
+    {%- else %}<span></span>{% endif %}
+    {%- if page.next %}
+    <a class="next" href="{{ page.next.url | relative_url }}"><span class="post-nav-label">Newer ›</span>{{ page.next.title }}</a>
+    {%- endif %}
   </nav>
+  <p class="post-back"><a href="{{ '/news/' | relative_url }}">All news</a></p>
 </article>

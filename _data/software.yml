@@ -1,0 +1,318 @@
+# Software shown on /software/. Other pages link to /software/#<id>.
+#
+# areas: display order of the sections on the page (key, title).
+# tools: one entry per tool.
+#   id       lowercase anchor (keep stable, other pages link to it)
+#   name     display name
+#   area     key from `areas`; leave out for earlier tools
+#   status   maintained | archived (archived tools appear under "Earlier tools")
+#   summary  what you can do with it, 1-2 plain sentences
+#   ref      short paper reference (venue, year); leave out if there is no paper
+#   image    optional figure (shown as a thumbnail)
+#   links    list of { label, url }, in display order
+
+areas:
+  - { key: knowledge-graphs, title: Knowledge graphs }
+  - { key: protein-function, title: Protein function and variants }
+  - { key: design, title: Molecule and protein design }
+  - { key: representations, title: Molecular representations }
+  - { key: dti, title: Drug–target interactions }
+
+tools:
+  # ---------- knowledge graphs ----------
+  - id: crossbarv2
+    name: CROssBARv2
+    area: knowledge-graphs
+    status: maintained
+    summary: >-
+      A biomedical knowledge graph of about 2.7 million nodes and 12.6 million edges
+      (proteins, genes, drugs, compounds, diseases, pathways, GO terms and more) integrated from 34 data sources.
+      Explore it in the browser through the web service, download the graph, or rebuild it with the adapter scripts.
+    ref: bioRxiv, 2026
+    image: /images/projects/crossbarv2.jpg
+    links:
+      - { label: Web service, url: "https://crossbarv2.hubiodatalab.com/" }
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/CROssBARv2" }
+      - { label: KG adapters, url: "https://github.com/HUBioDataLab/CROssBARv2-KG" }
+      - { label: Dataset, url: "https://huggingface.co/datasets/HUBioDataLab/CROssBARv2-KG" }
+
+  - id: crossbar-llm
+    name: CROssBAR-LLM
+    area: knowledge-graphs
+    status: maintained
+    summary: >-
+      Ask a question about the CROssBARv2 knowledge graph in plain language; a large language model
+      turns it into a Cypher query, runs it on the graph and returns the answer.
+    ref: CROssBARv2, bioRxiv, 2026
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/CROssBAR_LLM" }
+
+  - id: prothgt
+    name: ProtHGT
+    area: knowledge-graphs
+    status: maintained
+    summary: >-
+      Predicts Gene Ontology terms (molecular function, biological process, cellular component) for proteins
+      with a heterogeneous graph transformer trained on a biological knowledge graph and protein language model embeddings.
+      Enter proteins in the online demo to get their predicted functions.
+    ref: bioRxiv, 2025
+    image: /images/software/prothgt.jpg
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/ProtHGT" }
+      - { label: Demo, url: "https://huggingface.co/spaces/HUBioDataLab/ProtHGT" }
+      - { label: Dataset, url: "https://huggingface.co/datasets/HUBioDataLab/ProtHGT" }
+      - { label: Paper, url: "https://doi.org/g9xshp" }
+
+  - id: eclipse
+    name: ECLIPSE
+    area: knowledge-graphs
+    status: maintained
+    summary: >-
+      Predicts bioactivity values for compound–protein pairs using a heterogeneous graph transformer
+      over a biomedical knowledge graph of proteins, compounds, drugs, pathways, phenotypes and diseases.
+    ref: bioRxiv, 2025
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/ECLIPSE" }
+      - { label: Paper, url: "https://doi.org/g99tmt" }
+
+  - id: gladigator
+    name: GLaDiGAtor
+    area: knowledge-graphs
+    status: maintained
+    summary: >-
+      Predicts disease–gene associations with a graph neural network over gene–gene, disease–disease
+      and gene–disease relations, using ProtT5 protein embeddings and BioBERT embeddings of disease definitions.
+      Trained models are included for scoring a gene–disease pair.
+    ref: arXiv, 2026
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/GLaDiGAtor" }
+      - { label: Paper, url: "https://arxiv.org/abs/2602.18769" }
+
+  # ---------- protein function and variants ----------
+  - id: probe
+    name: PROBE
+    area: protein-function
+    status: maintained
+    summary: >-
+      Benchmarks protein representation models on function: upload your protein embeddings and get scores for
+      semantic similarity inference, GO term prediction, drug-target family classification and binding affinity
+      prediction, compared with other models on a leaderboard.
+    ref: Nature Machine Intelligence, 2022
+    image: /images/software/probe.jpg
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/PROBE" }
+      - { label: Demo, url: "https://huggingface.co/spaces/HUBioDataLab/PROBE" }
+      - { label: Paper, url: "https://doi.org/grckz2" }
+
+  - id: domain2go
+    name: Domain2GO
+    area: protein-function
+    status: maintained
+    summary: >-
+      Predicts Gene Ontology terms for proteins from their domains, using domain–GO term associations
+      derived from existing domain and GO annotations.
+    ref: Protein Science, 2024
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/Domain2GO" }
+      - { label: Demo, url: "https://huggingface.co/spaces/HUBioDataLab/Domain2GO" }
+
+  - id: ascaris
+    name: ASCARIS
+    area: protein-function
+    status: maintained
+    summary: >-
+      Annotates single amino acid variants with positional features from sequence annotations and protein structure,
+      producing a representation of each variant for use in variant effect prediction.
+    ref: Computational and Structural Biotechnology Journal, 2023
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/ASCARIS" }
+      - { label: Demo, url: "https://huggingface.co/spaces/HUBioDataLab/ASCARIS" }
+      - { label: Paper, url: "https://doi.org/g9xshw" }
+
+  - id: contvar
+    name: ContVAR
+    area: protein-function
+    status: maintained
+    summary: >-
+      Give a protein structure (PDB or CIF) to get predicted GO terms, or give a wild-type and a variant structure
+      to see which functions are predicted to be gained, lost or unchanged by the variant.
+    image: /images/projects/contvar.jpg
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/ContVAR" }
+      - { label: Demo, url: "https://huggingface.co/spaces/fd55/contvarspace" }
+
+  # ---------- molecule and protein design ----------
+  - id: druggen
+    name: DrugGEN
+    area: design
+    status: maintained
+    summary: >-
+      Generates new drug candidate molecules for a selected target protein with a graph transformer-based
+      generative adversarial network. Generate molecules in the online demo, or retrain the model for another
+      protein using a dataset of its known bioactive molecules.
+    ref: Nature Machine Intelligence, 2025
+    image: /images/projects/druggen.jpg
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/DrugGEN" }
+      - { label: Demo, url: "https://huggingface.co/spaces/HUBioDataLab/DrugGEN" }
+      - { label: Dataset, url: "https://huggingface.co/datasets/HUBioDataLab/DrugGEN-chembl-smiles" }
+      - { label: Paper, url: "https://doi.org/g9xsh2" }
+
+  - id: prot2mol
+    name: Prot2Mol
+    area: design
+    status: maintained
+    summary: >-
+      Give a target protein and generate candidate molecules for it: a GPT-2 model with cross-attention
+      on protein embeddings (ProtT5, ESM or AlphaFold2) writes molecules as SELFIES strings.
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/Prot2Mol" }
+      - { label: Model, url: "https://huggingface.co/HUBioDataLab/Prot2Mol" }
+
+  - id: flowprot
+    name: FlowProt
+    area: design
+    status: maintained
+    summary: >-
+      Generates protein backbones steered toward a target domain family, using flow matching guided by a domain
+      classifier; shown on the catalytic domain of the DNA methyltransferase DNMT3A.
+    image: /images/software/flowprot.jpg
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/FlowProt" }
+
+  # ---------- molecular representations ----------
+  - id: selformer
+    name: SELFormer
+    area: representations
+    status: maintained
+    summary: >-
+      A chemical language model pre-trained on two million drug-like molecules written as SELFIES.
+      Use it to compute embeddings for your own molecules, or fine-tune it and predict molecular properties
+      such as solubility, toxicity and side effects.
+    ref: "Machine Learning: Science and Technology, 2023"
+    image: /images/software/selformer.jpg
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/SELFormer" }
+      - { label: Model, url: "https://huggingface.co/HUBioDataLab/SELFormer" }
+      - { label: Model (Lite), url: "https://huggingface.co/HUBioDataLab/SELFormer-Lite" }
+      - { label: Dataset (SELFIES), url: "https://huggingface.co/datasets/HUBioDataLab/SELFormer-selfies" }
+      - { label: Dataset (SMILES), url: "https://huggingface.co/datasets/HUBioDataLab/SELFormer-smiles" }
+      - { label: Paper, url: "https://doi.org/g9xshx" }
+
+  - id: selformermm
+    name: SELFormerMM
+    area: representations
+    status: maintained
+    summary: >-
+      Learns molecular representations from four sources at once (SELFIES, 2D molecular graphs, text descriptions
+      and knowledge graph embeddings). Pre-trained and fine-tuned models are available for molecular property
+      prediction (classification and regression).
+    ref: Bioinformatics, 2026
+    image: /images/software/selformermm.jpg
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/SELFormerMM" }
+      - { label: Models and data, url: "https://huggingface.co/datasets/HUBioDataLab/SELFormerMM" }
+      - { label: Paper, url: "https://doi.org/10.1093/bioinformatics/btag451" }
+
+  # ---------- drug-target interactions ----------
+  - id: deepscreen2
+    name: DEEPScreen2
+    area: dti
+    status: maintained
+    summary: >-
+      Train a drug–target interaction model for a target of your choice and screen compounds against it.
+      Compounds are drawn as 2D images and classified with convolutional or vision transformer networks;
+      training data can be fetched automatically from ChEMBL, MoleculeNet or TDC.
+    image: /images/software/deepscreen2.jpg
+    links:
+      - { label: GitHub, url: "https://github.com/HUBioDataLab/DEEPScreen2" }
+
+  # ---------- earlier tools ----------
+  - id: deepscreen
+    name: DEEPScreen
+    status: archived
+    summary: Drug–target interaction prediction with convolutional networks on 2D compound images.
+    ref: Chemical Science, 2020
+    links:
+      - { label: GitHub, url: "https://github.com/cansyl/DEEPScreen" }
+
+  - id: mdeepred
+    name: MDeePred
+    status: archived
+    summary: Drug–target binding affinity prediction with multi-channel protein featurization.
+    ref: Bioinformatics, 2020
+    links:
+      - { label: GitHub, url: "https://github.com/cansyl/MDeePred" }
+      - { label: Paper, url: "https://doi.org/g9kf9x" }
+
+  - id: crossbar
+    name: CROssBAR
+    status: archived
+    summary: The first version of CROssBAR, a resource of biomedical relations explored as knowledge graphs.
+    ref: Nucleic Acids Research, 2021
+    links:
+      - { label: Web service, url: "https://crossbar.kansil.org/" }
+      - { label: GitHub, url: "https://github.com/cansyl/CROssBAR" }
+      - { label: Paper, url: "https://doi.org/gndrgn" }
+
+  - id: druidom
+    name: DRUIDom
+    status: archived
+    summary: Predicts drug/compound–target interactions based on protein domains.
+    ref: PLOS Computational Biology, 2021
+    links:
+      - { label: GitHub, url: "https://github.com/cansyl/DRUIDom" }
+      - { label: Paper, url: "https://doi.org/g9xsjb" }
+
+  - id: transferlearning4dti
+    name: TransferLearning4DTI
+    status: archived
+    summary: Applies transfer learning to drug–target interaction prediction.
+    ref: Bioinformatics, 2023
+    links:
+      - { label: GitHub, url: "https://github.com/cansyl/TransferLearning4DTI" }
+      - { label: Paper, url: "https://doi.org/g9dhzh" }
+
+  - id: deepred
+    name: DEEPred
+    status: archived
+    summary: Gene Ontology term prediction for protein sequences with multi-task feed-forward deep networks.
+    ref: Scientific Reports, 2019
+    links:
+      - { label: GitHub, url: "https://github.com/cansyl/DEEPred" }
+      - { label: Paper, url: "https://doi.org/g9xsjg" }
+
+  - id: ecpred
+    name: ECPred
+    status: archived
+    summary: Predicts the enzymatic function (EC number) of protein sequences.
+    ref: BMC Bioinformatics, 2018
+    links:
+      - { label: GitHub, url: "https://github.com/cansyl/ECPred" }
+      - { label: Paper, url: "https://doi.org/g4jbgs" }
+
+  - id: slpred
+    name: SLPred
+    status: archived
+    summary: Predicts the subcellular locations of human proteins, including proteins found in several locations.
+    ref: Bioinformatics, 2022
+    links:
+      - { label: GitHub, url: "https://github.com/cansyl/SLPred" }
+      - { label: Paper, url: "https://doi.org/g9xsh6" }
+
+  - id: hpo2go
+    name: HPO2GO
+    status: archived
+    summary: Predicts Human Phenotype Ontology terms for proteins by mapping between HPO and GO annotations.
+    ref: PeerJ, 2018
+    links:
+      - { label: GitHub, url: "https://github.com/cansyl/HPO2GO" }
+
+  - id: profab
+    name: ProFAB
+    status: archived
+    summary: An open benchmark of datasets and models for protein functional annotation.
+    ref: Briefings in Bioinformatics, 2023
+    links:
+      - { label: GitHub, url: "https://github.com/kansil/ProFAB" }
+      - { label: Paper, url: "https://doi.org/g9xshz" }

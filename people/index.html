@@ -1,0 +1,66 @@
+---
+title: People
+redirect_from: /team/
+lede: An interdisciplinary group of computer scientists, bioinformaticians and computational biologists.
+---
+<figure class="people-photo">
+  <img src="{{ '/images/news/ismb2025.jpg' | relative_url }}" alt="Lab members together at the ISMB/ECCB 2025 conference" width="1880" height="1210">
+  <figcaption>The lab at ISMB/ECCB 2025, Liverpool.</figcaption>
+</figure>
+{%- for r in site.roles %}
+{%- assign group = site.members | where: "role", r.key | sort: "name" -%}
+{%- if group.size > 0 %}
+<section class="people-group" id="{{ r.key }}">
+  <h2 class="kicker-title">{{ r.title }}</h2>
+  {%- if r.key == 'principal-investigator' %}
+  {%- for m in group %}
+  {%- if m.summary -%}
+    {%- assign summary = m.summary | markdownify -%}
+  {%- else -%}
+    {%- assign summary = m.content | split: '</p>' | first | append: '</p>' -%}
+  {%- endif %}
+  <article class="pi-card">
+    <a class="pi-card-photo" href="{{ m.url | relative_url }}" tabindex="-1" aria-hidden="true">{% if m.image %}<img src="{{ m.image | relative_url }}" alt="" loading="lazy">{% endif %}</a>
+    <div class="pi-card-copy">
+      <h3><a href="{{ m.url | relative_url }}">{{ m.name }}</a></h3>
+      {% if m.position %}<p class="person-role">{{ m.position }}</p>{% endif %}
+      <div class="pi-card-bio">{{ summary }}</div>
+      {% include member-links.html links=m.links style="inline" %}
+      <p class="more"><a href="{{ m.url | relative_url }}">Full profile and publications</a></p>
+    </div>
+  </article>
+  {%- endfor %}
+  {%- else %}
+  {%- case r.key -%}
+    {%- when 'postdoc' -%}{%- assign role_line = 'Postdoctoral researcher' -%}
+    {%- when 'phd' -%}{%- assign role_line = 'PhD student' -%}
+    {%- when 'msc' -%}{%- assign role_line = 'MSc student' -%}
+    {%- when 'undergrad' -%}{%- assign role_line = 'Undergraduate researcher' -%}
+    {%- else -%}{%- assign role_line = r.title -%}
+  {%- endcase %}
+  <ul class="people-list">
+    {%- for m in group %}
+    <li class="people-item">
+      <a href="{{ m.url | relative_url }}" class="people-item-photo" tabindex="-1" aria-hidden="true">{% if m.image %}<img src="{{ m.image | relative_url }}" alt="" loading="lazy">{% endif %}</a>
+      <h3><a href="{{ m.url | relative_url }}">{{ m.name }}</a></h3>
+      <p class="people-item-role">{% if m.position %}{{ m.position }}{% else %}{{ role_line }}{% endif %}</p>
+      {% if m.program %}<p class="people-item-program">{{ m.program }}</p>{% endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+</section>
+{%- endif %}
+{%- endfor %}
+
+{%- assign alumni = site.members | where: "role", "alumni" | sort: "name" -%}
+{%- if alumni.size > 0 %}
+<section class="people-group" id="alumni">
+  <h2 class="kicker-title">Alumni</h2>
+  <ul class="alumni">
+    {%- for m in alumni %}
+    <li><a href="{{ m.url | relative_url }}">{{ m.name }}</a>{% if m.degree %} &mdash; {{ m.degree }}{% endif %}{% if m.now %} <span class="muted">&rarr; {{ m.now }}</span>{% endif %}</li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}

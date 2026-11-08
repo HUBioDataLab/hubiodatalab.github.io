@@ -3,133 +3,112 @@ layout: default
 title: Hacettepe Biological Data Science Lab
 body_class: home
 ---
-{%- assign pubs = site.data.publications | where_exp: "p", "p.hidden != true" -%}
-{%- assign people = site.members | where_exp: "m", "m.role != 'alumni'" -%}
-{%- assign projects = site.projects | sort: "order" -%}
+<h1 class="sr-only">{{ site.title }}</h1>
 
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">{{ site.lab.department }} · {{ site.lab.university }}, Ankara</p>
-      <h1 class="display">Machine learning for molecules, proteins and biomedical knowledge.</h1>
-      <p class="lede">We develop deep learning methods that integrate heterogeneous biomedical data, predict the functions of genes and proteins, and design new drug candidates and proteins. Our code, data and models are released in the open.</p>
-      <div class="hero-actions">
-        <a class="btn" href="{{ '/projects/' | relative_url }}">Our projects {% include icon.html name="arrow" %}</a>
-        <a class="btn btn-ghost" href="{{ '/publications/' | relative_url }}">Publications</a>
-      </div>
+<section class="home-hero" aria-labelledby="welcome-title">
+  <div class="wrap home-top">
+    <div class="welcome">
+      <p class="welcome-eyebrow" id="welcome-title">Welcome to the Biological Data Science Lab</p>
+      <p class="welcome-statement">We build machine learning methods that turn biomedical data into knowledge about proteins and new drug candidates.</p>
+      <p>Our work spans three connected problems: integrating and representing heterogeneous biomedical data, predicting the functional properties of genes and proteins, and discovering and designing new drug candidate molecules. Much of it relies on representation learning and generative AI, with ongoing projects on small-molecule and protein design.</p>
+      <p>The lab is led by Prof. Tunca Doğan in the Department of Computer Engineering at Hacettepe University, Ankara. We release our code, data and models openly.</p>
+      <p class="welcome-links">
+        <a class="btn" href="{{ '/research/' | relative_url }}">Our research</a>
+        <a class="btn btn-ghost" href="{{ '/people/' | relative_url }}">Meet the people</a>
+      </p>
     </div>
-    <div class="hero-art" aria-hidden="true">
-      {% include mark.html class="mark-hero" stroke="0.55" %}
-    </div>
-  </div>
-  <div class="wrap">
-    <dl class="stats">
-      <div><dt>Publications</dt><dd>{{ pubs.size }}</dd></div>
-      <div><dt>Funded projects</dt><dd>{{ site.projects.size }}</dd></div>
-      <div><dt>Lab members</dt><dd>{{ people.size }}</dd></div>
-      <div><dt>Open-source repositories</dt><dd><a href="https://github.com/{{ site.lab.github }}">GitHub {% include icon.html name="ext" %}</a></dd></div>
-    </dl>
-  </div>
-</section>
 
-<section class="section">
-  <div class="wrap">
-    <header class="section-head">
-      <p class="eyebrow">Research</p>
-      <h2>Three questions we keep coming back to</h2>
-    </header>
-    <ol class="themes">
-      <li>
-        <span class="num">01</span>
-        <h3>How do we connect scattered biomedical data?</h3>
-        <p>We integrate genes, proteins, pathways, diseases and drugs from open resources into knowledge graphs, and learn representations that can be queried and reasoned over.</p>
-        <p class="theme-projects"><a href="{{ '/projects/crossbarv2/' | relative_url }}">CROssBARv2</a><a href="{{ '/projects/crossbar/' | relative_url }}">CROssBAR</a></p>
-      </li>
-      <li>
-        <span class="num">02</span>
-        <h3>What does a protein do, and what if we change it?</h3>
-        <p>We predict protein functions and the effects of variants with protein language models and graph learning, and design new protein sequences and backbones for a given function.</p>
-        <p class="theme-projects"><a href="{{ '/projects/protgen/' | relative_url }}">ProtGEN</a><a href="{{ '/projects/contvar/' | relative_url }}">ContVAR</a></p>
-      </li>
-      <li>
-        <span class="num">03</span>
-        <h3>Can we design the molecule we need?</h3>
-        <p>We build generative models that design target-specific drug candidates, and predictive models of drug–target interactions and drug response. We test the best designs in the wet lab with our collaborators.</p>
-        <p class="theme-projects"><a href="{{ '/projects/druggen/' | relative_url }}">DrugGEN</a><a href="{{ '/projects/deepresponse/' | relative_url }}">DeepResponse</a></p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<section class="section section-feature">
-  <div class="wrap feature">
-    <figure class="feature-figure">
-      <img src="{{ '/images/projects/druggen.jpg' | relative_url }}" alt="DrugGEN pipeline: dataset formation, generative model training, and molecule selection through docking, molecular dynamics and in vitro assays." loading="lazy" width="1500" height="932">
-    </figure>
-    <div class="feature-copy">
-      <p class="eyebrow">Featured · Nature Machine Intelligence, 2025</p>
-      <h2>DrugGEN: designing target-specific drug candidates with graph transformers</h2>
-      <p>DrugGEN couples a generative adversarial network with graph transformers to design new molecules for a chosen protein target. For AKT1, five designs were synthesised; two inhibited the target significantly in vitro.</p>
-      <ul class="link-row">
-        <li><a class="link-arrow" href="https://www.nature.com/articles/s42256-025-01082-y">Paper {% include icon.html name="ext" %}</a></li>
-        <li><a class="link-arrow" href="https://github.com/HUBioDataLab/DrugGEN">Code {% include icon.html name="ext" %}</a></li>
-        <li><a class="link-arrow" href="https://huggingface.co/spaces/HUBioDataLab/DrugGEN">Try the demo {% include icon.html name="ext" %}</a></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <header class="section-head section-head-row">
-      <div>
-        <p class="eyebrow">Projects</p>
-        <h2>What we're building</h2>
-      </div>
-      <a class="link-arrow" href="{{ '/projects/' | relative_url }}">All projects {% include icon.html name="arrow" %}</a>
-    </header>
-    <div class="card-grid">
-      {%- for pr in projects offset: 1 limit: 3 %}
-      {% include project-card.html project=pr %}
-      {%- endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section section-split">
-  <div class="wrap split">
-    <div>
-      <header class="section-head section-head-row">
-        <div><p class="eyebrow">Recent papers</p><h2>Publications</h2></div>
-        <a class="link-arrow" href="{{ '/publications/' | relative_url }}">All {% include icon.html name="arrow" %}</a>
-      </header>
-      <ol class="pub-list pub-list-compact">
-        {%- for p in pubs limit: 5 %}{% include pub.html pub=p %}{% endfor %}
-      </ol>
-    </div>
-    <div>
-      <header class="section-head section-head-row">
-        <div><p class="eyebrow">Lab news</p><h2>News</h2></div>
-        <a class="link-arrow" href="{{ '/news/' | relative_url }}">All {% include icon.html name="arrow" %}</a>
-      </header>
-      <ol class="news-list">
+    <aside class="home-news card" aria-labelledby="news-title">
+      <h2 id="news-title">Recent news</h2>
+      <ul class="home-news-list">
         {%- for post in site.posts limit: 5 %}
         <li>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </li>
         {%- endfor %}
-      </ol>
-    </div>
+      </ul>
+      <p class="more"><a href="{{ '/news/' | relative_url }}">All news</a></p>
+    </aside>
   </div>
 </section>
 
-<section class="section cta">
-  <div class="wrap cta-inner">
-    <div>
-      <h2>Join the lab</h2>
-      <p>We welcome motivated students at all levels (BSc, MSc and PhD) with a background in computer science, bioinformatics or the life sciences. If you'd like to work with us, send a short note and your CV.</p>
-    </div>
-    <a class="btn" href="{{ '/contact/' | relative_url }}">Get in touch {% include icon.html name="arrow" %}</a>
+{%- assign slides = site.data.highlights %}
+<section class="wrap section highlights" aria-roledescription="carousel" aria-labelledby="highlights-title" data-slider>
+  <div class="section-head">
+    <h2 id="highlights-title">Highlighted work</h2>
+    <p class="more"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>
+  </div>
+  <div class="slides" data-slides>
+    {%- for s in slides %}
+    <article class="slide card" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ slides.size }}: {{ s.title }}">
+      <div class="slide-figure">
+        <img src="{{ s.image | relative_url }}" alt="{{ s.alt | default: s.title }}"{% unless forloop.first %} loading="lazy"{% endunless %}>
+      </div>
+      <div class="slide-text">
+        <p class="slide-venue">{{ s.venue }} · {{ s.year }}</p>
+        <h3 class="slide-title">{{ s.title }}</h3>
+        {%- if s.paper %}
+        <p class="slide-paper">{{ s.paper }}</p>
+        {%- endif %}
+        <p class="slide-summary">{{ s.summary }}</p>
+        {%- if s.links %}
+        <p class="slide-links">
+          {%- for l in s.links -%}
+          <a class="btn btn-small{% unless forloop.first %} btn-ghost{% endunless %}" href="{{ l.url }}">{{ l.label }}<span class="sr-only"> ({{ s.title }})</span></a>
+          {%- endfor -%}
+        </p>
+        {%- endif %}
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+  <div class="slider-dots" data-dots hidden>
+    {%- for s in slides %}
+    <button type="button" class="slider-dot" data-dot="{{ forloop.index0 }}" aria-label="Show slide {{ forloop.index }}: {{ s.title }}"></button>
+    {%- endfor %}
   </div>
 </section>
+
+<section class="wrap section home-areas" aria-labelledby="areas-title">
+  <div class="section-head">
+    <h2 id="areas-title">What we work on</h2>
+    <p class="more"><a href="{{ '/research/' | relative_url }}">Research in detail</a></p>
+  </div>
+  <ul class="area-grid">
+    {%- for d in site.data.research.directions %}
+    <li>
+      <a class="area card" href="{{ '/research/' | relative_url }}#{{ d.id }}">
+        {%- if d.figure %}<span class="area-figure"><img src="{{ d.figure | relative_url }}" alt="" loading="lazy"></span>{% endif %}
+        <span class="area-body">
+          <span class="area-title">{{ d.title }}</span>
+          <span class="area-short">{{ d.short }}</span>
+        </span>
+      </a>
+    </li>
+    {%- endfor %}
+    <li>
+      <a class="area area-software card" href="{{ '/software/' | relative_url }}">
+        <span class="area-body">
+          <span class="area-title">Open software</span>
+          <span class="area-short">Code, models, datasets and web services from our papers, free to use on GitHub and Hugging Face.</span>
+          <span class="area-cta">Browse the software</span>
+        </span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="wrap section">
+  <div class="join-band">
+    <div>
+      <h2 class="join-band-title">Join the lab</h2>
+      <p>We welcome students and researchers from computer science and the life sciences who want to work on machine learning for biology and chemistry.</p>
+    </div>
+    <p class="join-band-links">
+      <a class="btn" href="{{ '/join/' | relative_url }}">How to join</a>
+      <a class="btn btn-ghost" href="{{ '/contact/' | relative_url }}">Contact us</a>
+    </p>
+  </div>
+</section>
+<script src="{{ '/assets/js/home.js' | relative_url }}" defer></script>

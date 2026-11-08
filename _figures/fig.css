@@ -1,0 +1,70 @@
+/* Shared style for the lab's research schematics.
+
+   Geometry contract
+   - One 12-column grid (.grid) per figure, one column gutter (--G), one outer margin (--M).
+     Tracks are minmax(0,1fr) so a long token can never widen a column.
+   - Every box is placed explicitly with grid-column / grid-row (inline style), so its
+     left/right edges sit on column lines. Stages use equal spans (3+3+3+3 or 4+4+4).
+   - Boxes never stretch: a box that serves several rows is centred on them
+     (align-self:center) and keeps the uniform box height, so one-to-one arrows are
+     exactly horizontal.
+   - Connectors are drawn by fig.js from measured rects (data-links on .fig).
+   - No nested padding: lane labels and stage heads are grid items, not wrappers.
+
+   Colour roles (one accent): grey = data / inputs, red = the lab's own methods and tools,
+   slate = outputs and validation. */
+:root{
+  --M: 30px;          /* outer margin                         */
+  --G: 46px;          /* column gutter: room for arrows       */
+  --RG: 12px;         /* row gap between boxes                */
+  --BH: 68px;         /* uniform box height                   */
+  --ink:#1a1a1a; --muted:#5a5a5a; --rule:#d4d4d4;
+  --data-edge:#bdbdbd; --data-fill:#ffffff;
+  --ours:#a6192e; --ours-fill:#fbf3f4;
+  --out:#3a5579; --out-fill:#f1f4f8;
+  --wire:#4a4a4a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff}
+body{font-family:'FigSans',system-ui,sans-serif;color:var(--ink);width:1200px;font-size:16px;line-height:1.25}
+.fig{position:relative;padding:var(--M)}
+
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--G);row-gap:var(--RG);align-items:center}
+
+/* stage columns: 4 stages of 3 columns, or 3 stages of 4 */
+.g4 .c1{grid-column:1/span 3}.g4 .c2{grid-column:4/span 3}.g4 .c3{grid-column:7/span 3}.g4 .c4{grid-column:10/span 3}
+.g3 .c1{grid-column:1/span 4}.g3 .c2{grid-column:5/span 4}.g3 .c3{grid-column:9/span 4}
+
+/* stage heads (row 1) */
+.head{font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
+      padding-bottom:7px;border-bottom:1px solid var(--rule);align-self:end;margin-bottom:6px;min-width:0}
+
+/* lane label: a full-width row that names a group of boxes (or one column, with .cN) */
+.lane-label{grid-column:1/-1;font-size:16px;line-height:1.4;font-weight:600;color:var(--muted);padding-top:10px;min-width:0}
+.lane-label.sub{padding-top:4px;font-size:15.5px}
+.lane-label b{color:var(--ink);font-weight:700}
+
+/* boxes */
+.box{height:var(--BH);display:flex;flex-direction:column;justify-content:center;
+     border:1.25px solid var(--data-edge);background:var(--data-fill);border-radius:3px;
+     padding:0 11px 0 12px;min-width:0;position:relative;z-index:1}
+.box.ours{border-color:var(--ours);background:var(--ours-fill)}
+.box.out{border-color:var(--out);background:var(--out-fill)}
+.t,.n{width:max-content}  /* rect = painted text, so verify sees overflow */
+.t{font-size:19.5px;font-weight:700;line-height:1.2;white-space:nowrap}
+.ours .t{color:var(--ours)} .out .t{color:var(--out)}
+.n{font-size:16.5px;color:var(--muted);line-height:1.25;margin-top:2px;white-space:nowrap}
+
+/* footer note under a rule */
+.foot{margin-top:20px;padding-top:11px;border-top:1px solid var(--rule);font-size:16.5px;line-height:1.4;color:var(--muted);
+      display:flex;gap:10px 34px;flex-wrap:wrap}
+.foot b{color:var(--ink);font-weight:600}
+.foot .r{color:var(--ours);font-weight:600}
+
+/* legend swatches */
+.legend{display:flex;gap:26px;margin-left:auto}
+.sw{display:inline-block;width:14px;height:11px;border:1.25px solid var(--data-edge);border-radius:2px;vertical-align:-1px;margin-right:6px}
+.sw.ours{border-color:var(--ours);background:var(--ours-fill)}
+.sw.out{border-color:var(--out);background:var(--out-fill)}
+
+svg.wires{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:0}

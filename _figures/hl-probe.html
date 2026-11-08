@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>PROBE</title>
+<link rel="stylesheet" href="font.css"><link rel="stylesheet" href="fig.css"><link rel="stylesheet" href="hl.css">
+<script src="fig.js"></script></head>
+<body>
+<!-- Home slider: PROBE. Content: _data/highlights.yml, _data/software.yml, PROBE README only. -->
+<div class="fig" data-links="emb > sim go fam aff; sim > m1; go > m2; fam > m3; aff > m4">
+ <div class="grid g3">
+  <div class="head c1" style="grid-row:1">Input</div>
+  <div class="head c2" style="grid-row:1">Four benchmarks</div>
+  <div class="head c3" style="grid-row:1">Scored by</div>
+
+  <div class="box c1" id="emb" style="grid-row:2/span 4"><div class="t">Protein embeddings</div><div class="n">fixed-length vectors,<br>one per protein</div></div>
+
+  <div class="box ours c2" id="sim" style="grid-row:2"><div class="t">Semantic similarity</div><div class="n">vs. GO-based similarity</div></div>
+  <div class="box ours c2" id="go"  style="grid-row:3"><div class="t">GO term prediction</div><div class="n">MF, BP and CC</div></div>
+  <div class="box ours c2" id="fam" style="grid-row:4"><div class="t">Drug-target family</div><div class="n">classification</div></div>
+  <div class="box ours c2" id="aff" style="grid-row:5"><div class="t">Binding affinity</div><div class="n">interface mutants<br>(SKEMPI v1)</div></div>
+
+  <div class="box out c3" id="m1" style="grid-row:2"><div class="t">Spearman</div><div class="n">correlation</div></div>
+  <div class="box out c3" id="m2" style="grid-row:3"><div class="t">F-max</div><div class="n">AUROC, AUPR</div></div>
+  <div class="box out c3" id="m3" style="grid-row:4"><div class="t">MCC</div><div class="n">accuracy, macro-F1</div></div>
+  <div class="box out c3" id="m4" style="grid-row:5"><div class="t">MSE</div><div class="n">MAE, Pearson R</div></div>
+ </div>
+</div>
+</body></html>

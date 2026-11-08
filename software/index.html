@@ -1,0 +1,67 @@
+---
+title: Software
+description: Open-source tools, models, datasets and web services from the HU Biological Data Science Lab.
+lede: >-
+  Tools from our papers and what you can do with each. Code is on
+  <a href="https://github.com/HUBioDataLab">GitHub</a>; models, datasets and demos are on
+  <a href="https://huggingface.co/HUBioDataLab">Hugging Face</a>.
+redirect_from:
+  - /projects/
+---
+{%- assign sw = site.data.software -%}
+<div class="software">
+  <nav class="sw-toc" aria-label="Software areas">
+    <span class="sw-toc-label">Jump to</span>
+    <ul>
+      {%- for area in sw.areas %}
+      <li><a href="#{{ area.key }}">{{ area.title }}</a></li>
+      {%- endfor %}
+      <li><a href="#earlier">Earlier tools</a></li>
+    </ul>
+  </nav>
+
+  {%- for area in sw.areas %}
+  {%- assign tools = sw.tools | where: "area", area.key | where: "status", "maintained" %}
+  {%- if tools.size > 0 %}
+  <section class="section sw-area" id="{{ area.key }}" aria-labelledby="{{ area.key }}-h">
+    <h2 id="{{ area.key }}-h">{{ area.title }}</h2>
+    <div class="sw-grid">
+    {%- for t in tools %}
+    <article class="sw card{% if t.image %} has-image{% endif %}" id="{{ t.id }}">
+      {%- if t.image %}
+      <div class="sw-thumb"><img src="{{ t.image | relative_url }}" alt="{{ t.name }} overview figure" loading="lazy"></div>
+      {%- endif %}
+      <div class="sw-body">
+        <h3><a class="sw-anchor" href="#{{ t.id }}">{{ t.name }}</a></h3>
+        {%- if t.ref %}<p class="sw-ref muted">{{ t.ref }}</p>{% endif %}
+        <p class="sw-desc">{{ t.summary }}</p>
+        {%- if t.links %}
+        <p class="sw-links">
+          {%- for l in t.links %}<a class="sw-btn" href="{{ l.url }}">{{ l.label }}</a>{% endfor -%}
+        </p>
+        {%- endif %}
+      </div>
+    </article>
+    {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+  {%- endfor %}
+
+  {%- assign earlier = sw.tools | where: "status", "archived" %}
+  <section class="section sw-earlier" id="earlier" aria-labelledby="earlier-h">
+    <h2 id="earlier-h">Earlier tools</h2>
+    <p class="muted">Tools from the group's earlier work, kept online for reference. They are no longer actively developed.</p>
+    <ul class="sw-list">
+      {%- for t in earlier %}
+      <li id="{{ t.id }}">
+        <strong>{{ t.name }}</strong> {{ t.summary }}
+        {%- if t.ref %} <span class="muted">{{ t.ref }}.</span>{% endif %}
+        <span class="sw-links">
+          {%- for l in t.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% unless forloop.last %}<span class="sep" aria-hidden="true"> · </span>{% endunless %}{% endfor -%}
+        </span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+</div>

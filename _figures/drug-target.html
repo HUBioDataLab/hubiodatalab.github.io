@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Drug-target interactions</title>
+<link rel="stylesheet" href="font.css"><link rel="stylesheet" href="fig.css">
+<script src="fig.js"></script></head>
+<body>
+<!-- Content: _data/research.yml + _data/software.yml only. Layout rules: fig.css header. -->
+<div class="fig" data-links="cmp tgt > ds dru tl md; cell > resp; ds dru tl > dti; md > aff; resp > pic; dti > lim; pic > hcc">
+ <div class="grid g4">
+  <div class="head c1" style="grid-row:1">Inputs</div>
+  <div class="head c2" style="grid-row:1">Models</div>
+  <div class="head c3" style="grid-row:1">Predictions</div>
+  <div class="head c4" style="grid-row:1">Experimental validation</div>
+  <div class="box  c1" id="cmp" style="grid-row:2/span 2"><div class="t">Compounds</div><div class="n">ChEMBL · MoleculeNet · TDC</div></div>
+  <div class="box  c1" id="tgt" style="grid-row:4/span 2"><div class="t">Target proteins</div><div class="n">sequences and domains</div></div>
+  <div class="box  c1" id="cell" style="grid-row:6"><div class="t">Cancer cell lines</div><div class="n">multi-omics features</div></div>
+  <div class="box ours c2" id="ds" style="grid-row:2"><div class="t">DEEPScreen2</div><div class="n">CNN / ViT on 2-D images</div></div>
+  <div class="box ours c2" id="dru" style="grid-row:3"><div class="t">DRUIDom</div><div class="n">protein-domain level</div></div>
+  <div class="box ours c2" id="tl" style="grid-row:4"><div class="t">TransferLearning4DTI</div><div class="n">transfer learning</div></div>
+  <div class="box ours c2" id="md" style="grid-row:5"><div class="t">MDeePred</div><div class="n">multi-channel protein features</div></div>
+  <div class="box ours c2" id="resp" style="grid-row:6"><div class="t">DeepResponse</div><div class="n">multi-omics + drug features</div></div>
+  <div class="box out c3" id="dti" style="grid-row:2/span 3"><div class="t">Drug–target interactions</div></div>
+  <div class="box out c3" id="aff" style="grid-row:5"><div class="t">Binding affinity</div></div>
+  <div class="box out c3" id="pic" style="grid-row:6"><div class="t">Drug response</div><div class="n">pIC50</div></div>
+  <div class="box out c4" id="lim" style="grid-row:3"><div class="t">LIM kinases</div><div class="n">DRUIDom predictions</div></div>
+  <div class="box out c4" id="hcc" style="grid-row:6"><div class="t">Hepatocellular carcinoma</div><div class="n">in vitro, DeepResponse</div></div>
+ </div>
+ <div class="foot"><span>Trained and evaluated under realistic, non-random data splits.</span><span class="legend"><span><i class="sw"></i>data</span><span><i class="sw ours"></i>lab methods and tools</span><span><i class="sw out"></i>outcome</span></span></div>
+</div></body></html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Research overview</title>
+<link rel="stylesheet" href="font.css"><link rel="stylesheet" href="fig.css">
+<script src="fig.js"></script></head>
+<body>
+<!-- Lab research as one pipeline. Content: _data/research.yml + _data/software.yml only. -->
+<div class="fig" data-links="db v kg; kg > prot mol; prot mol > pf dti dr md pd; pf dti dr md pd > val">
+ <div class="grid g4">
+  <div class="head c1" style="grid-row:1">Data integration</div>
+  <div class="head c2" style="grid-row:1">Representation learning</div>
+  <div class="head c3" style="grid-row:1">Prediction and generation</div>
+  <div class="head c4" style="grid-row:1">Validation</div>
+
+  <div class="lane-label sub c3" style="grid-row:2">Prediction</div>
+  <div class="lane-label sub c3" style="grid-row:6">Generation</div>
+
+  <div class="box c1" id="db" style="grid-row:3"><div class="t">Biomedical databases</div><div class="n">genes · proteins · drugs · diseases</div></div>
+  <div class="box ours c1" id="kg" style="grid-row:5"><div class="t">Knowledge graphs</div><div class="n">CROssBARv2 · CROssBAR-LLM</div></div>
+
+  <div class="box ours c2" id="prot" style="grid-row:4"><div class="t">Protein representations</div><div class="n">PROBE · ASCARIS · ContVAR</div></div>
+  <div class="box ours c2" id="mol" style="grid-row:7"><div class="t">Molecular representations</div><div class="n">SELFormer · SELFormerMM</div></div>
+
+  <div class="box ours c3" id="pf"  style="grid-row:3"><div class="t">Protein function</div><div class="n">ProtHGT · Domain2GO · DEEPred</div></div>
+  <div class="box ours c3" id="dti" style="grid-row:4"><div class="t">Drug–target interactions</div><div class="n">DEEPScreen2 · DRUIDom</div></div>
+  <div class="box ours c3" id="dr"  style="grid-row:5"><div class="t">Drug response</div><div class="n">DeepResponse</div></div>
+  <div class="box ours c3" id="md"  style="grid-row:7"><div class="t">Molecule design</div><div class="n">DrugGEN · Prot2Mol</div></div>
+  <div class="box ours c3" id="pd"  style="grid-row:8"><div class="t">Protein design</div><div class="n">ProtGEN · FlowProt</div></div>
+
+  <div class="box out c4" id="val" style="grid-row:3/span 6"><div class="t">Experimental validation</div><div class="n">with collaborators</div></div>
+ </div>
+ <div class="foot">
+  <span class="legend"><span><i class="sw"></i>data</span><span><i class="sw ours"></i>lab methods and tools</span><span><i class="sw out"></i>outcome</span></span>
+ </div>
+</div>
+</body></html>
