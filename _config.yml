@@ -1,8 +1,9 @@
 title: Hacettepe Biological Data Science Lab
 short_title: HU BioDataLab
 description: >-
-  We develop machine learning methods for biomedical data integration,
-  protein function prediction and the design of new drug candidate molecules.
+  We develop artificial intelligence methods to understand biological systems
+  and accelerate biomedical discovery, from biomedical knowledge graphs and
+  foundation models to protein function prediction and generative drug design.
 url: https://hubiodatalab.github.io
 baseurl: ""
 lang: en
@@ -37,7 +38,7 @@ roles:
   - { key: postdoc, title: Postdoctoral Researchers }
   - { key: phd, title: PhD Students }
   - { key: msc, title: MSc Students }
-  - { key: undergrad, title: Undergraduate Researchers }
+  - { key: researcher, title: Researchers }
 
 collections:
   projects:            # data only (used by the Research page); no pages generated

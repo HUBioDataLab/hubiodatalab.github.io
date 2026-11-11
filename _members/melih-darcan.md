@@ -1,7 +1,7 @@
 ---
 name: Melih Darcan
 image: /images/team/melih-darcan.jpg
-role: undergrad
+role: msc
 redirect_from: /team/melih-darcan/
 aliases:
   - M Darcan

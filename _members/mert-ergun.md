@@ -1,7 +1,7 @@
 ---
 name: Mert Ergün
 image: /images/team/mert-ergun.jpg
-role: undergrad
+role: msc
 redirect_from: /team/mert-ergun/
 aliases:
   - M Ergun

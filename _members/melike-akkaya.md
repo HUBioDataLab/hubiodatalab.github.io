@@ -1,7 +1,8 @@
 ---
 name: Melike Akkaya
 image: /images/team/melike-akkaya.jpg
-role: undergrad
+role: researcher
+degree: BSc
 redirect_from: /team/melike-akkaya/
 aliases:
   - M Akkaya

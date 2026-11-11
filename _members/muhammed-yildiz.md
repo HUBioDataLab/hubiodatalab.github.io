@@ -1,7 +1,8 @@
 ---
 name: Muhammed Yıldız
 image: /images/team/muhammed-yildiz.jpg
-role: undergrad
+role: alumni
+degree: undergraduate
 redirect_from: /team/muhammed-yildiz/
 aliases:
   - Muhammed Yildiz

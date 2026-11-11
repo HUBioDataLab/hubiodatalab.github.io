@@ -1,11 +1,15 @@
 # Publications shown on /publications. Fields: title, authors, venue, year, url, doi, code,
-# selected (show in "Selected"), preprint, projects (project slugs), hidden (keep but do not show).
+# selected (show in "Selected"), selected_rank (order within Selected), preprint, projects (project slugs), hidden (keep but do not show).
 - title: 'SELFormerMM: multimodal molecular representation learning via SELFIES, structure, text, and knowledge graph integration'
   authors: E Ulusoy, Ş Bostancı, BE Deniz, T Doğan
   venue: Bioinformatics 42 (Supplement_2), btag451
   year: 2026
   scholar_id: tHnMNPEAAAAJ:sfnaS5RM6jYC
   citations: 0
+  url: https://doi.org/10.1093/bioinformatics/btag451
+  doi: 10.1093/bioinformatics/btag451
+  selected: true
+  selected_rank: 2
   topics:
   - representation-learning
 - title: 'DTA-GNN: a toolkit for constructing target-specific drug–target affinity datasets and training graph neural networks'
@@ -96,7 +100,10 @@
   year: 2025
   scholar_id: tHnMNPEAAAAJ:jmjb1lOE9QIC
   citations: 5
+  url: https://doi.org/10.1038/s42003-025-09129-x
+  doi: 10.1038/s42003-025-09129-x
   selected: true
+  selected_rank: 3
   topics:
   - drug-target
 - title: 'ECLIPSE: Exploration of Complex Ligand-Protein Interactions through Learning from Systems-level Heterogeneous Biomedical Knowledge Graphs'
@@ -120,6 +127,7 @@
   url: https://doi.org/g9xsh2
   doi: 10.48550/ARXIV.2302.07868
   selected: true
+  selected_rank: 1
   projects:
   - druggen
   topics:
@@ -257,7 +265,6 @@
   citations: 182
   url: https://doi.org/g9xshx
   doi: 10.1088/2632-2153/acdb30
-  selected: true
   topics:
   - representation-learning
 - title: How to approach machine learning-based prediction of drug/compound–target interactions
@@ -326,6 +333,7 @@
   url: https://doi.org/grckz2
   doi: 10.1038/s42256-022-00457-9
   selected: true
+  selected_rank: 4
   topics:
   - protein-function
 - title: 'Hnet-DTI: Incorporating heterogeneous information network for drug-target interaction prediction'
@@ -423,6 +431,7 @@
   url: https://doi.org/gndrgn
   doi: 10.1093/nar/gkab543
   selected: true
+  selected_rank: 5
   projects:
   - crossbar
   topics:

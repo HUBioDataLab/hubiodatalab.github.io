@@ -1,7 +1,8 @@
 ---
 name: Sezin Yavuz
 image: /images/team/sezin-yavuz.jpg
-role: undergrad
+role: alumni
+degree: undergraduate
 redirect_from: /team/sezin-yavuz/
 aliases:
   - S Yavuz

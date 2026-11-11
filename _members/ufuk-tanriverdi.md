@@ -1,7 +1,8 @@
 ---
 name: Ufuk Tanrıverdi
 image: /images/team/ufuk-tanriverdi.jpg
-role: undergrad
+role: researcher
+degree: BSc
 redirect_from: /team/ufuk-tanriverdi/
 aliases:
   - Ufuk T.

@@ -1,7 +1,8 @@
 ---
 name: Rauf Yanmaz
 image: /images/team/rauf-yanmaz.jpg
-role: undergrad
+role: alumni
+degree: undergraduate
 redirect_from: /team/rauf-yanmaz/
 aliases:
   - R Yanmaz

@@ -10,8 +10,20 @@
 
 /* group photo */
 .people-photo { margin: 0 0 8px; }
-.people-photo img { display: block; width: 100%; height: auto; max-height: 560px; object-fit: cover; border-radius: var(--radius); }
+.people-photo-collage {
+  display: grid;
+  /* Match the images' aspect ratios so both are complete and equally tall. */
+  grid-template-columns: minmax(0, 3.24293785fr) minmax(0, 2.54585153fr);
+  gap: 8px;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+.people-photo-collage img { display: block; width: 100%; height: auto; }
 .people-photo figcaption { color: var(--muted); font-size: .92rem; margin-top: 8px; }
+
+@media (max-width: 640px) {
+  .people-photo-collage { grid-template-columns: minmax(0, 1fr); }
+}
 
 /* sections */
 .people-group { margin-top: 64px; }
@@ -43,11 +55,23 @@
 .people-item-role,
 .people-item-program { color: var(--muted); font-size: .95rem; line-height: 1.4; margin: 0; }
 
+.people-item-initials {
+  display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
+  font-family: var(--serif); font-size: 2.4rem; font-weight: 600; color: var(--muted); background: var(--tint-2);
+}
+
+/* name-only lists (undergraduates) */
+.name-list { list-style: none; padding: 0; margin: 0; columns: 4 12em; column-gap: 40px; }
+.name-list li { padding: 8px 0; border-bottom: 1px solid var(--line); break-inside: avoid; }
+.name-list a { color: var(--ink); text-decoration: none; font-weight: 600; }
+.name-list a:hover { color: var(--accent); }
+
 /* alumni */
 .alumni { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 40px; }
 .alumni li { padding: 12px 0; border-bottom: 1px solid var(--line); }
 .alumni li a { font-weight: 600; text-decoration: none; color: var(--ink); }
 .alumni li a:hover { color: var(--accent); }
+.alumni-name { font-weight: 600; }
 
 @media (max-width: 1000px) {
   .people-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -67,6 +91,7 @@
 .member-head { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 44px; align-items: start; margin-top: 16px; }
 .member-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); }
 .member-intro { padding-top: 8px; }
+.member-head.no-photo { grid-template-columns: minmax(0, 1fr); }
 .member-intro h1 { margin: 0 0 8px; }
 .member-role { font-size: 1.15rem; color: var(--muted); margin: 0 0 4px; }
 .member-now { color: var(--muted); margin: 0 0 4px; }

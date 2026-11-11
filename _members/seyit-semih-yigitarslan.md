@@ -1,7 +1,8 @@
 ---
 name: Seyit Semih Yiğitarslan
 image: /images/team/seyit-semih-yigitarslan.jpg
-role: msc
+role: alumni
+degree: MSc
 redirect_from: /team/seyit-semih-yigitarslan/
 aliases:
   - S. S. Yiğitarslan

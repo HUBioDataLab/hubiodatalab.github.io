@@ -1,7 +1,7 @@
 ---
 name: Mehmet Furkan Çalışkan
 image: /images/team/mehmet-furkan-caliskan.jpg
-role: undergrad
+role: msc
 redirect_from: /team/mehmet-furkan-caliskan/
 aliases:
   - M.F. Caliskan

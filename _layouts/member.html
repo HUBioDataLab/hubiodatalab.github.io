@@ -7,8 +7,9 @@ layout: default
   {%- when 'postdoc' -%}{%- assign role_line = 'Postdoctoral researcher' -%}{%- assign crumb = role.title -%}
   {%- when 'phd' -%}{%- assign role_line = 'PhD student' -%}{%- assign crumb = 'PhD students' -%}
   {%- when 'msc' -%}{%- assign role_line = 'MSc student' -%}{%- assign crumb = 'MSc students' -%}
+  {%- when 'researcher' -%}{%- capture role_line -%}Researcher{% if page.degree %} ({{ page.degree }}){% endif %}{%- endcapture -%}{%- assign crumb = 'Researchers' -%}
   {%- when 'undergrad' -%}{%- assign role_line = 'Undergraduate researcher' -%}{%- assign crumb = 'Undergraduate researchers' -%}
-  {%- when 'alumni' -%}{%- capture role_line -%}Former {% if page.degree %}{{ page.degree }} student{% else %}member{% endif %}{%- endcapture -%}{%- assign crumb = 'Alumni' -%}
+  {%- when 'alumni' -%}{%- capture role_line -%}Former {% if page.degree == 'undergraduate' %}undergraduate researcher{% elsif page.degree %}{{ page.degree }} student{% else %}member{% endif %}{%- endcapture -%}{%- assign crumb = 'Alumni' -%}
   {%- else -%}{%- assign role_line = role.title -%}{%- assign crumb = role.title -%}
 {%- endcase -%}
 {%- assign group = site.members | where: "role", page.role | sort: "name" -%}
@@ -21,8 +22,11 @@ layout: default
 <div class="page-hero member-hero">
 <div class="wrap">
   <p class="breadcrumb"><a href="{{ '/people/' | relative_url }}">People</a> / <a href="{{ '/people/' | relative_url }}#{{ page.role }}">{{ crumb }}</a></p>
-  <header class="member-head">
-    <div class="member-photo">{% if page.image %}<img src="{{ page.image | relative_url }}" alt="Portrait of {{ page.name }}" width="240" height="300">{% endif %}</div>
+  {%- assign photo = page.image | default: '' -%}{%- if photo == '/images/share.png' -%}{%- assign photo = '' -%}{%- endif %}
+  <header class="member-head{% if photo == '' %} no-photo{% endif %}">
+    {%- if photo != '' %}
+    <div class="member-photo"><img src="{{ page.image | relative_url }}" alt="Portrait of {{ page.name }}" width="240" height="300"></div>
+    {%- endif %}
     <div class="member-intro">
       <h1>{{ page.name }}</h1>
       <p class="member-role">
@@ -44,10 +48,13 @@ layout: default
 </div>
 </div>
 <article class="wrap page member">
+  {%- assign about = content | strip %}
+  {%- if about != '' %}
   <section class="member-section member-about">
     <h2>About</h2>
     <div class="prose">{{ content }}</div>
   </section>
+  {%- endif %}
 
   {%- if page.interests %}
   <section class="member-section">

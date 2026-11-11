@@ -1,7 +1,8 @@
 ---
 name: Arya Zeynep Mete
 image: /images/team/arya-zeynep-mete.jpg
-role: undergrad
+role: alumni
+degree: undergraduate
 redirect_from: /team/arya-zeynep-mete/
 aliases:
   - A Mete
