@@ -1,18 +1,6 @@
-# Name-only lists on the People page. People with a profile live in _members/.
+# Alumni list on the People page. Current members live in _members/.
 # `profile` links an alumni entry to its _members/<slug>.md page.
 # `aliases` lists extra author-name forms so alumni are highlighted on publications.
-
-undergraduates:
-  - Ömer Taha Gögen
-  - Melih Koç
-  - Sıla Keskin
-  - Ayşe Yaren
-  - Furkan Necati İnan
-  - İrem Bekdemir
-  - Büşra Ö. Koç
-  - Doğukan
-  - Ahmet Emir Şaşmazlar
-  - Mehmet Y. Tekman
 
 alumni:
   - { name: Ahmet Sarıgün, degree: Undergraduate, aliases: [Sarigün Ahmet] }

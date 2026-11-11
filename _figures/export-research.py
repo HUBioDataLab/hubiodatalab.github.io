@@ -1,6 +1,7 @@
 """Export lossless web images, PNGs, PDFs and an overview sheet after validation."""
 from pathlib import Path
 import shutil
+import sys
 
 from PIL import Image
 
@@ -11,20 +12,26 @@ NAMES = [
     "overview", "knowledge-graphs", "protein-function", "drug-target",
     "generative-design", "representation-learning",
 ]
+requested=set(sys.argv[1:] or NAMES)
+unknown=requested-set(NAMES)
+if unknown:
+    raise SystemExit('Unknown figure name: '+', '.join(sorted(unknown)))
 WEB.mkdir(parents=True, exist_ok=True)
 previews = []
 for name in NAMES:
     image = Image.open(OUT / f"research-{name}_4k.png").convert("RGB")
     web_size = (2000, round(image.height * 2000 / image.width))
-    web = image.resize(web_size, Image.Resampling.LANCZOS)
-    web.save(WEB / f"{name}.png", optimize=True)
-    web.save(WEB / f"{name}.webp", lossless=True, quality=100, method=6)
-    shutil.copyfile(OUT / f"research-{name}.pdf", WEB / f"{name}.pdf")
-    shutil.copyfile(OUT / f"research-{name}.svg", WEB / f"{name}.svg")
+    if name in requested:
+        web = image.resize(web_size, Image.Resampling.LANCZOS)
+        web.save(WEB / f"{name}.png", optimize=True)
+        web.save(WEB / f"{name}.webp", lossless=True, quality=100, method=6)
+        shutil.copyfile(OUT / f"research-{name}.pdf", WEB / f"{name}.pdf")
+        shutil.copyfile(OUT / f"research-{name}.svg", WEB / f"{name}.svg")
     preview = image.resize((1000, round(image.height * 1000 / image.width)), Image.Resampling.LANCZOS)
     preview.save(OUT / f"research-{name}-review.png")
     previews.append(preview)
-    print(f"{name}: figure_size: [{web_size[0]}, {web_size[1]}]")
+    if name in requested:
+        print(f"{name}: web PNG: [{web_size[0]}, {web_size[1]}]")
 
 row_heights = [max(im.height for im in previews[i:i + 2]) + 40 for i in range(0, 6, 2)]
 sheet = Image.new("RGB", (2080, sum(row_heights) + 20), "#e6e9ec")

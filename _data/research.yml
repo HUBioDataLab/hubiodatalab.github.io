@@ -154,16 +154,17 @@ directions:
   - id: generative-design
     title: Generative design of molecules and proteins
     short: Designing new drug candidate molecules and proteins with generative models.
-    figure: /images/figures/generative-design.svg
-    figure_size: [1800, 840]
+    figure: /images/figures/generative-design.png
+    figure_size: [1000, 467]
     figure_alt: >-
-      A biological objective branches into small-molecule and protein design. Molecular examples
-      lie across an amber contour landscape and connect to an assay plate. Below, a point cloud
-      and flowing trajectories lead to a protein ribbon and physical evaluation. All molecules,
-      folds and design spaces are illustrative, rather than outputs of the named models.
+      Two equal halves separate drug design from protein design. On the left, a target protein
+      guides candidate molecules in an amber chemical design space, followed by synthesis and
+      assays. On the right, a target function guides protein sequence and backbone generation,
+      followed by structure- and physics-based evaluation. All structures and design spaces
+      are illustrative.
     figure_caption: >-
-      Generative models propose new molecules and proteins. Evaluation includes experiments on
-      selected small molecules and structure- and physics-based assessment of protein designs.
+      Left: target-guided drug candidate design, with synthesis and assays for selected molecules.
+      Right: function-guided protein sequence and backbone design, with structural and physical evaluation.
     body:
       - >-
         Chemical space and protein sequence space are too large to search exhaustively, so instead

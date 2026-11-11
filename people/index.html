@@ -41,8 +41,13 @@ lede: An interdisciplinary group of computer scientists, bioinformaticians and c
     {%- when 'undergrad' -%}{%- assign role_line = 'Undergraduate researcher' -%}
     {%- else -%}{%- assign role_line = r.title -%}
   {%- endcase %}
+  {%- comment -%} sort by name ignoring Turkish accents (Ö, İ, Ç ... would otherwise sort last) {%- endcomment -%}
+  {%- capture keys -%}{%- for m in group -%}{{ m.name | replace: 'Ö','O' | replace: 'İ','I' | replace: 'Ç','C' | replace: 'Ş','S' | replace: 'Ü','U' | replace: 'Ğ','G' | downcase }}::{{ m.url }}|{%- endfor -%}{%- endcapture -%}
+  {%- assign keys = keys | split: '|' | sort %}
   <ul class="people-list">
-    {%- for m in group %}
+    {%- for k in keys %}
+    {%- assign u = k | split: '::' | last %}
+    {%- assign m = group | where: "url", u | first %}
     <li class="people-item">
       <a href="{{ m.url | relative_url }}" class="people-item-photo{% unless m.image and m.image != '/images/share.png' %} is-empty{% endunless %}" tabindex="-1" aria-hidden="true">{% if m.image and m.image != '/images/share.png' %}<img src="{{ m.image | relative_url }}" alt="" loading="lazy">{% else %}{% include person-icon.html %}{% endif %}</a>
       <h3><a href="{{ m.url | relative_url }}">{{ m.name }}</a></h3>
@@ -51,11 +56,6 @@ lede: An interdisciplinary group of computer scientists, bioinformaticians and c
     </li>
     {%- endfor %}
   </ul>
-  {%- if r.key == 'undergrad' and site.data.people.undergraduates.size > 0 %}
-  <ul class="name-list">
-    {%- for n in site.data.people.undergraduates %}<li>{{ n }}</li>{% endfor %}
-  </ul>
-  {%- endif %}
   {%- endif %}
 </section>
 {%- endif %}

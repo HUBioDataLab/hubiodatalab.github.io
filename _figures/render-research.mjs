@@ -32,7 +32,11 @@ if(preview){
         inside:[...document.images].every(i=>{const r=i.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth;})
       }));
       if(result.images!==6||!result.loaded||result.overflow||!result.inside)throw Error(JSON.stringify(result));
-      await (await page.$('section')).screenshot({path:path.join(out,width===1100?'research-live-size.png':'research-mobile.png')});
+      const sections=await page.$$('section');
+      const index=requested.length?ALL.indexOf(names[0]):0;
+      const filename=requested.length?`research-${names[0]}-${width===1100?'live':'mobile'}.png`:
+        width===1100?'research-live-size.png':'research-mobile.png';
+      await (await sections[index].$('img')).screenshot({path:path.join(out,filename)});
       console.log(JSON.stringify({viewport:width,checks:'PASS — all six SVGs load and fit the page'}));
     }
   }finally{await browser.close();}
@@ -111,8 +115,9 @@ try {
     const fonts=(data.match(/\/FontFile2/g)||[]).length;
     if(!fonts||/\/Subtype\s*\/Type3\b/.test(data))checks.bad.push('PDF font embedding failed');
     const extracted=execFileSync('pdftotext',['-layout',pdf,'-'],{encoding:'utf8'});
-    const heading=await page.$eval('h1',e=>e.textContent);
-    if(!extracted.replace(/\s+/g,' ').includes(heading.replace(/\s+/g,' ')))checks.bad.push('PDF heading is not extractable');
+    const heading=await page.$eval('h1',e=>e.getClientRects().length?e.textContent:null);
+    const probes=heading?[heading]:await page.$$eval('.atlas-canvas svg text',els=>els.slice(0,2).map(e=>e.textContent));
+    if(!probes.length||probes.some(t=>!extracted.replace(/\s+/g,' ').includes(t.replace(/\s+/g,' '))))checks.bad.push('PDF text is not extractable');
     if(/\/Subtype\s*\/Image\b/.test(data))checks.bad.push('Unexpected raster in vector PDF');
     failures+=checks.bad.length;
     console.log(JSON.stringify({name,size:[3840,checks.height*2],embeddedFonts:fonts,checks:checks.bad.length?checks.bad:'PASS — SVG bounds, text overflow, embedded fonts, extractable vector text'}));

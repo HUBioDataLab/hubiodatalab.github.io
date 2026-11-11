@@ -6,7 +6,7 @@ The six `research-*.html` figures are the set used by `/research/`. They follow 
 Claude `html-vector-figures` skill: a 12-column grid at 1920 CSS px, measured connectors,
 embedded static fonts, and native SVG scientific illustrations. The overview is a connected
 map of five research areas. Each section has its own composition: a heterogeneous network,
-a protein fold and annotation hierarchy, a ligand/cell/response view, two design spaces,
+a protein fold and annotation hierarchy, a ligand/cell/response view, equal drug/protein design halves,
 and a multimodal embedding manifold. Teal, blue, amber, rose and violet identify subjects.
 
 - `compose-research.py`: source for all six illustrations and their HTML. Uses RDKit for
@@ -31,7 +31,9 @@ node _figures/render-research.mjs --preview
 ```
 
 Run from the repository root. The renderer also accepts individual names, for example
-`node _figures/render-research.mjs protein-function`. It discovers the existing local
+`node _figures/render-research.mjs protein-function`. The composer and exporter accept
+the same names to update one figure without rewriting the other website assets.
+It discovers the existing local
 Playwright Chromium installation when `CHROME_PATH` is omitted. It requires `pdftotext`
 for the searchable-text check; the composer requires RDKit and NumPy, and the exporter
 requires Pillow.

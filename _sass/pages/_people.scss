@@ -60,12 +60,6 @@
 .people-item-photo.is-empty { display: flex; background: var(--tint-2); }
 .member-photo-empty { display: flex; aspect-ratio: 4 / 5; background: var(--tint-2); border-radius: var(--radius); overflow: hidden; }
 
-/* name-only lists (undergraduates) */
-.people-list + .name-list { margin-top: 36px; }
-.name-list { list-style: none; padding: 0; margin: 0; columns: 4 12em; column-gap: 40px; }
-.name-list li { padding: 8px 0; border-bottom: 1px solid var(--line); break-inside: avoid; }
-.name-list a { color: var(--ink); text-decoration: none; font-weight: 600; }
-.name-list a:hover { color: var(--accent); }
 
 /* alumni */
 .alumni { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 40px; }

@@ -7,6 +7,7 @@ No performance, experimental structure or model-generated candidate is depicted.
 from pathlib import Path
 import html
 import math
+import sys
 import numpy as np
 from rdkit import Chem
 from rdkit.Chem import rdDepictor
@@ -391,33 +392,47 @@ def drug():
 
 def design():
     a=''
-    # Two design spaces share an objective, but have distinct candidates and checks.
-    a+=label(55,82,'Specify a target or function',INK,34,600)
-    a+=ribbon_fold(218,304,1.13,(TEAL,BLUE,VIOLET),-18)
-    a+=circle(262,277,24,ROSE,'none',2.2)
-    a+=label(55,472,'Biological objective',MUTED,28)
-    a+=contours(1030,252,1.65,GOLD)
-    a+=label(768,50,'Small-molecule design',GOLD,36,600)
-    a+=molecule(ASPIRIN,936,210,210,GOLD,-12)+molecule(CAFFEINE,1258,126,162,GOLD,18)+molecule(IBUPROFEN,1240,364,198,GOLD,-12)
-    for xx,yy in [(1096,164),(1135,230),(1108,332)]:a+=circle(xx,yy,4,GOLD,GOLD,0)
-    a+=label(797,463,'DrugGEN · Prot2Mol',GOLD,29,600)
-    a+=plate(1540,193,1.14)+label(1498,389,'Synthesis & assays',GOLD,29,600)
-    a+=label(57,565,'Protein design',BLUE,36,600)
-    # Noise-to-fold trajectories illustrate the FlowProt backbone design path.
+    # Two equal, independent halves: drug design first, protein design second.
+    a+=line((900,20),(900,820),LINE,2)
+    a+=label(450,65,'Drug design',GOLD,42,600,'middle')
+    a+=label(450,110,'Target-guided molecular design',MUTED,27,400,'middle')
+    a+=label(1350,65,'Protein design',BLUE,42,600,'middle')
+    a+=label(1350,110,'Function-guided sequence and structure design',MUTED,27,400,'middle')
+
+    # Drug half: a target protein guides candidates in chemical space.
+    a+=ribbon_fold(170,270,.72,(TEAL,BLUE,VIOLET),-18)
+    a+=circle(198,253,17,ROSE,'none',2)
+    a+=label(170,410,'Target protein',MUTED,27,400,'middle')
+    a+=contours(570,390,.98,GOLD)
+    a+=molecule(ASPIRIN,470,325,150,GOLD,-12)
+    a+=molecule(CAFFEINE,700,370,130,GOLD,18)
+    a+=molecule(IBUPROFEN,570,480,165,GOLD,-12)
+    a+=label(570,610,'Candidate molecules',GOLD,29,600,'middle')
+    a+=plate(170,720,.75)+label(350,775,'Synthesis & assays',GOLD,29,600)
+    a+=port('drug-objective',290,275)+port('drug-space',355,345)
+    a+=connection('drug-objective','drug-space',GOLD,-.1,False,True)
+    a+=port('drug-candidates',570,640)+port('drug-evaluation',530,715)
+    a+=connection('drug-candidates','drug-evaluation',GOLD,.1,False,True)
+
+    # Protein half: functional constraints guide sequence/backbone generation.
+    a+=ribbon_fold(1110,260,.66,(TEAL,BLUE,VIOLET),-18)
+    a+=circle(1136,244,16,BLUE,'none',2)
+    a+=label(1110,395,'Target function',MUTED,27,400,'middle')
     rng=np.random.default_rng(31)
     for i in range(90):
-        xx,yy=rng.normal(443,70),rng.normal(679,53)
+        xx,yy=rng.normal(1110,46),rng.normal(520,40)
         a+=circle(xx,yy,2+(i%4==0),VIOLET,VIOLET,0,opacity='.56')
     for k in range(19):
-        yy=600+k*8
-        a+=path(f'M545 {yy} C705 {yy-100} 823 {765-k*5} 1032 {654+k*3}',BLUE if k%2 else VIOLET,1.35,opacity='.25')
-    a+=ribbon_fold(1231,655,1.07,(TEAL,BLUE,VIOLET),-14)
-    a+=label(395,799,'FlowProt · ProtGEN',BLUE,29,600)
-    a+=contours(1636,649,.56,VIOLET)+label(1495,788,'Structure & physics',BLUE,29,600)
-    a+=port('goal-upper',430,273)+port('molecule-space',721,246)+connection('goal-upper','molecule-space',GOLD,-.45,False,True)
-    a+=port('goal-lower',308,477)+port('noise-space',406,567)+connection('goal-lower','noise-space',BLUE,.2,False,True)
-    a+=port('design-upper',1406,258)+port('assay',1501,258)+connection('design-upper','assay',GOLD,.2,False,True)
-    a+=port('design-lower',1400,655)+port('physics',1510,655)+connection('design-lower','physics',BLUE,.2,False,True)
+        yy=455+k*7
+        a+=path(f'M1200 {yy} C1270 {yy-50} 1335 {580-k*4} 1405 {485+k*2}',BLUE if k%2 else VIOLET,1.35,opacity='.25')
+    a+=ribbon_fold(1575,490,.98,(TEAL,BLUE,VIOLET),-14)
+    a+=label(1500,640,'Candidate proteins',BLUE,29,600,'middle')
+    a+=label(1500,681,'Sequences + backbones',MUTED,26,400,'middle')
+    a+=contours(1115,758,.47,VIOLET)+label(1290,775,'Structure & physics',BLUE,29,600)
+    a+=port('protein-objective',1230,280)+port('protein-space',1350,450)
+    a+=connection('protein-objective','protein-space',BLUE,-.1,False,True)
+    a+=port('protein-candidates',1500,700)+port('protein-evaluation',1470,725)
+    a+=connection('protein-candidates','protein-evaluation',BLUE,.1,False,True)
     return a,840
 
 
@@ -456,15 +471,21 @@ SPECS = [
      'ProtHGT · DEEPred · Domain2GO · ASCARIS · ContVAR','PROBE · ProFAB · CAFA'),
     ('drug-target','Drug–target interactions and cellular response','Interactions at the protein scale; drug response in the context of a cell.',drug,
      'DEEPScreen2 · MDeePred · DRUIDom','DeepResponse · illustrative response curves'),
-    ('generative-design','Generative molecule and protein design','Proposing new candidates for a biological target or function.',design,
-     'DrugGEN / AKT1: five designs synthesised, two inhibited the target in vitro.','Molecules, folds and design spaces are illustrative'),
+    ('generative-design','Generative molecule and protein design','Drug design on the left; protein design on the right.',design,
+     'Target- and function-guided generation, followed by evaluation.','Molecules, folds and design spaces are illustrative'),
     ('representation-learning','Molecular representations and foundation models','Connecting molecular structure, language and biological context through pre-training.',representations,
      'SELFormer · SELFormerMM · MoCL-GAT','ChemPile · TURMIND · illustrative latent geometry'),
 ]
 
 
-def build():
+def build(names=None):
+    requested=set(names or [spec[0] for spec in SPECS])
+    unknown=requested-{spec[0] for spec in SPECS}
+    if unknown:
+        raise SystemExit('Unknown figure name: '+', '.join(sorted(unknown)))
     for name,title,sub,draw,foot,aside in SPECS:
+        if name not in requested:
+            continue
         art,height=draw()
         svg=element('svg',element('g','',id='connections')+art,xmlns='http://www.w3.org/2000/svg',viewBox=f'0 0 1800 {height}',role='img',aria_label=sub)
         output=f'''<!doctype html>
@@ -482,4 +503,4 @@ def build():
 
 
 if __name__=='__main__':
-    build()
+    build(sys.argv[1:])
