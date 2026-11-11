@@ -38,7 +38,7 @@ roles:
   - { key: postdoc, title: Postdoctoral Researchers }
   - { key: phd, title: PhD Students }
   - { key: msc, title: MSc Students }
-  - { key: researcher, title: Researchers }
+  - { key: undergrad, title: Undergraduate Researchers }
 
 collections:
   projects:            # data only (used by the Research page); no pages generated

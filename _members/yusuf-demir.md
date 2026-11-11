@@ -1,8 +1,7 @@
 ---
 name: Yusuf Demir
 image: /images/team/yusuf-demir.jpg
-role: researcher
-degree: BSc
+role: undergrad
 redirect_from: /team/yusuf-demir/
 aliases:
   - Y Demir

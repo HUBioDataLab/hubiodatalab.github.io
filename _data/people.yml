@@ -1,5 +1,6 @@
 # Name-only lists on the People page. People with a profile live in _members/.
 # `profile` links an alumni entry to its _members/<slug>.md page.
+# `aliases` lists extra author-name forms so alumni are highlighted on publications.
 
 undergraduates:
   - Ömer Taha Gögen
@@ -14,7 +15,7 @@ undergraduates:
   - Mehmet Y. Tekman
 
 alumni:
-  - { name: Ahmet Sarıgün, degree: Undergraduate }
+  - { name: Ahmet Sarıgün, degree: Undergraduate, aliases: [Sarigün Ahmet] }
   - { name: Ardan Yılmaz, degree: MSc }
   - { name: Arın Dalahmetoğlu, degree: Undergraduate }
   - { name: Arya Z. Mete, degree: Undergraduate, profile: arya-zeynep-mete }
@@ -27,8 +28,8 @@ alumni:
   - { name: Fulya Çıray, degree: "PhD, METU" }
   - { name: Gökçe Abay, degree: "MSc, METU" }
   - { name: Gökhan Özsarı, degree: PhD }
-  - { name: Hayriye Çelikbilek, degree: pre-MSc }
-  - { name: Heval Ataş, degree: "PhD, METU" }
+  - { name: Hayriye Çelikbilek, degree: pre-MSc, aliases: [Çelikbilek Hayriye] }
+  - { name: Heval Ataş, degree: "PhD, METU", aliases: [H Atas Guvenilir, H Ataş Güvenilir] }
   - { name: Kaan Vural, degree: Undergraduate }
   - { name: Muhammed Yıldız, profile: muhammed-yildiz, degree: Undergraduate }
   - { name: Navid Mohammadvand, degree: pre-MSc }

@@ -50,9 +50,13 @@
         var node;
         if (m) {
           node = document.createElement("strong");
-          var a = document.createElement("a");
-          a.href = m.url; a.textContent = n.trim();
-          node.appendChild(a);
+          if (m.url) {
+            var a = document.createElement("a");
+            a.href = m.url; a.textContent = n.trim();
+            node.appendChild(a);
+          } else {
+            node.textContent = n.trim();
+          }
         } else {
           node = document.createTextNode(n.trim());
         }

@@ -6,7 +6,7 @@ lede: An interdisciplinary group of computer scientists, bioinformaticians and c
 <figure class="people-photo">
   <div class="people-photo-collage">
     <img src="{{ '/images/people/group-indoor.png' | relative_url }}" alt="Lab members together in an indoor group photograph" width="1148" height="354" decoding="async">
-    <img src="{{ '/images/people/group-outdoor.jpg' | relative_url }}" alt="Lab members together in an outdoor group photograph" width="583" height="229" decoding="async">
+    <img src="{{ '/images/people/group-outdoor.png' | relative_url }}" alt="Lab members together in an outdoor group photograph" width="581" height="229" decoding="async">
   </div>
   <figcaption>Members of the Hacettepe Biological Data Science Lab.</figcaption>
 </figure>
@@ -38,35 +38,30 @@ lede: An interdisciplinary group of computer scientists, bioinformaticians and c
     {%- when 'postdoc' -%}{%- assign role_line = 'Postdoctoral researcher' -%}
     {%- when 'phd' -%}{%- assign role_line = 'PhD student' -%}
     {%- when 'msc' -%}{%- assign role_line = 'MSc student' -%}
-    {%- when 'researcher' -%}{%- assign role_line = 'Researcher' -%}
+    {%- when 'undergrad' -%}{%- assign role_line = 'Undergraduate researcher' -%}
     {%- else -%}{%- assign role_line = r.title -%}
   {%- endcase %}
   <ul class="people-list">
     {%- for m in group %}
     <li class="people-item">
-      {%- assign parts = m.name | split: ' ' -%}
-      <a href="{{ m.url | relative_url }}" class="people-item-photo" tabindex="-1" aria-hidden="true">{% if m.image and m.image != '/images/share.png' %}<img src="{{ m.image | relative_url }}" alt="" loading="lazy">{% else %}<span class="people-item-initials">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>{% endif %}</a>
+      <a href="{{ m.url | relative_url }}" class="people-item-photo{% unless m.image and m.image != '/images/share.png' %} is-empty{% endunless %}" tabindex="-1" aria-hidden="true">{% if m.image and m.image != '/images/share.png' %}<img src="{{ m.image | relative_url }}" alt="" loading="lazy">{% else %}{% include person-icon.html %}{% endif %}</a>
       <h3><a href="{{ m.url | relative_url }}">{{ m.name }}</a></h3>
-      <p class="people-item-role">{% if m.position %}{{ m.position }}{% else %}{{ role_line }}{% if r.key == 'researcher' and m.degree %} ({{ m.degree }}){% endif %}{% endif %}</p>
+      <p class="people-item-role">{% if m.position %}{{ m.position }}{% else %}{{ role_line }}{% endif %}</p>
       {% if m.program %}<p class="people-item-program">{{ m.program }}</p>{% endif %}
     </li>
     {%- endfor %}
   </ul>
+  {%- if r.key == 'undergrad' and site.data.people.undergraduates.size > 0 %}
+  <ul class="name-list">
+    {%- for n in site.data.people.undergraduates %}<li>{{ n }}</li>{% endfor %}
+  </ul>
+  {%- endif %}
   {%- endif %}
 </section>
 {%- endif %}
 {%- endfor %}
 
 {%- assign ppl = site.data.people -%}
-{%- if ppl.undergraduates.size > 0 %}
-<section class="people-group" id="undergrad">
-  <h2 class="kicker-title">Undergraduate Researchers</h2>
-  <ul class="name-list">
-    {%- for n in ppl.undergraduates %}<li>{{ n }}</li>{% endfor %}
-  </ul>
-</section>
-{%- endif %}
-
 <section class="people-group" id="alumni">
   <h2 class="kicker-title">Alumni</h2>
   <ul class="alumni">

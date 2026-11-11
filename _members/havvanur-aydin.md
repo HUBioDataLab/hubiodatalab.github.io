@@ -1,7 +1,6 @@
 ---
 name: Havvanur Aydın
-role: researcher
-degree: MSc
+role: msc
 aliases:
   - Havvanur Aydın
   - H. Aydın

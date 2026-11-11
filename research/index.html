@@ -57,34 +57,6 @@ lede: >-
     {%- endfor %}
   </div>
 
-  <div class="research-rels">
-  {%- if d.projects and d.projects.size > 0 %}
-  <p class="research-rel">
-    <span class="research-rel-key">Projects</span><span class="research-rel-val">
-    {%- for slug in d.projects %}
-      {%- assign proj = site.projects | where_exp: "pr", "pr.slug == slug" | first %}
-      {%- if proj %}
-        {% unless forloop.first %}<span class="sep">·</span>{% endunless %}
-        <span class="research-rel-item">{{ proj.title }}
-          <span class="muted small">({{ site.data.research.programs[slug] }}{% if proj.funding.number %}, {{ proj.funding.number }}{% endif %})</span>
-        </span>
-      {%- endif %}
-    {%- endfor %}
-  </span></p>
-  {%- endif %}
-
-  {%- if d.tools and d.tools.size > 0 %}
-  <p class="research-rel">
-    <span class="research-rel-key">Tools</span><span class="research-rel-val">
-    {%- assign sw_ids = site.data.software.tools | map: "id" %}
-    {%- for t in d.tools %}
-      {%- assign tid = t | downcase | slugify %}
-      {% if sw_ids contains tid %}<a class="tool-tag" href="{{ '/software/#' | append: tid | relative_url }}">{{ t }}</a>{% else %}<span class="tool-tag">{{ t }}</span>{% endif %}
-    {%- endfor %}
-  </span></p>
-  {%- endif %}
-  </div>
-
   {%- if topic_pubs.size > 0 %}
   {%- assign recent = topic_pubs | slice: 0, 6 %}
   <div class="research-pubs">
@@ -95,6 +67,26 @@ lede: >-
       {%- endfor %}
     </ul>
     <p class="more"><a href="{{ '/publications/' | relative_url }}">All {{ topic_pubs.size }} papers on this topic</a></p>
+  </div>
+  {%- endif %}
+
+  {%- if d.tools and d.tools.size > 0 %}
+  <div class="research-tools">
+    <h3>Related tools</h3>
+    <ul class="tool-grid">
+      {%- for t in d.tools %}
+      {%- assign tid = t | downcase | slugify %}
+      {%- assign tool = site.data.software.tools | where: "id", tid | first %}
+      <li class="tool-item">
+        {%- if tool %}
+        <a href="{{ '/software/#' | append: tid | relative_url }}"><span class="tool-name">{{ tool.name }}</span><span class="tool-summary">{{ tool.summary | strip_html | truncatewords: 16 }}</span></a>
+        {%- else %}
+        <span class="tool-name">{{ t }}</span>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+    <p class="more"><a href="{{ '/software/' | relative_url }}">All software</a></p>
   </div>
   {%- endif %}
 </section>

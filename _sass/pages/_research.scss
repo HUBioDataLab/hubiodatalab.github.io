@@ -29,19 +29,6 @@
 .research-figure figcaption { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
 
 /* Projects / Tools panel */
-.research-rels { background: var(--tint); border-radius: var(--radius); padding: 16px 20px; margin: 24px 0 0; }
-.research-rel { display: grid; grid-template-columns: 6em minmax(0, 1fr); gap: 4px 12px; margin: 0; padding: 6px 0; line-height: 1.6; }
-.research-rel + .research-rel { border-top: 1px solid var(--line); padding-top: 10px; }
-.research-rel-key { font-weight: 600; color: var(--ink); }
-.research-rel .sep { color: var(--muted); padding: 0 .2em; }
-.research-rel-item .muted { white-space: normal; }
-.research-rel-val { display: block; }
-.tool-tag {
-  display: inline-block; margin: 2px 4px 2px 0; padding: 1px 9px; font-size: .92rem; font-weight: 600;
-  background: #fff; border: 1px solid var(--line-strong); border-radius: 4px; color: var(--ink); text-decoration: none;
-}
-a.tool-tag:hover { border-color: var(--accent); color: var(--accent); }
-
 .research-pubs { margin-top: 32px; }
 .research-pubs h3 { font-size: 1.1rem; margin-bottom: .2em; }
 .research-pubs .more { margin-top: 1em; }
@@ -52,5 +39,20 @@ a.tool-tag:hover { border-color: var(--accent); color: var(--accent); }
 }
 @media (max-width: 560px) {
   .research-figure { padding: 12px; }
-  .research-rel { grid-template-columns: 1fr; gap: 2px; }
+}
+
+/* related tools, listed under the papers of each direction */
+.research-tools { margin-top: 28px; }
+.research-tools h3 { font-size: 1.1rem; margin: 0 0 12px; }
+.tool-grid { list-style: none; padding: 0; margin: 0 0 12px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.tool-item > a, .tool-item > .tool-name:only-child {
+  display: block; height: 100%; padding: 12px 16px; border: 1px solid var(--line); border-radius: var(--radius);
+  background: #fff; text-decoration: none; color: var(--ink);
+}
+.tool-item > a:hover { border-color: var(--accent); }
+.tool-item > a:hover .tool-name { color: var(--accent); }
+.tool-name { display: block; font-weight: 600; }
+.tool-summary { display: block; color: var(--muted); font-size: .92rem; line-height: 1.45; margin-top: 2px; }
+@media (max-width: 560px) {
+  .tool-grid { grid-template-columns: minmax(0, 1fr); }
 }
