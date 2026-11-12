@@ -5,6 +5,8 @@ tags:
   - drug discovery
   - representation learning
   - graph neural networks
+image: /images/news/mocl-gat.jpg
+image_alt: "MoCL-GAT architecture: local contrastive learning and global descriptor regression on a graph attention encoder"
 ---
 
 Our paper "MoCL-GAT: Molecular Contrastive Learning with Graph Attention Network for Enhanced Molecular Representation" is out in *BMC Bioinformatics*.

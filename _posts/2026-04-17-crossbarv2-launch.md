@@ -5,6 +5,8 @@ tags:
   - knowledge graphs
   - large language models
   - CROssBARv2
+image: /images/news/crossbarv2-launch.jpg
+image_alt: "Meet CROssBARv2, a unified biomedical knowledge graph"
 ---
 
 CROssBARv2 is now available as an online platform, and its preprint is out.

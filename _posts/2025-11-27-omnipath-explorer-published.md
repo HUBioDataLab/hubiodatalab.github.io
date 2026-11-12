@@ -5,6 +5,8 @@ tags:
   - knowledge integration
   - systems biology
   - collaboration
+image: /images/news/omnipath-explorer.jpg
+image_alt: "The OmniPath Explorer web app: explore the molecular universe"
 ---
 
 The new release of OmniPath, together with the OmniPath Explorer web app, has been published in *Nucleic Acids Research*. The project is led by Dénes Türei and the Saez-Rodriguez group at Heidelberg University and EMBL-EBI, and our lab took part as a project partner.

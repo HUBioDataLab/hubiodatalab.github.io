@@ -4,6 +4,20 @@ author: research-news
 tags:
   - conference
   - ECCB
+image: /images/news/eccb2026-1.jpg
+image_alt: "Lab members in front of the ECCB 2026 banner in Geneva"
+gallery:
+  - { src: /images/news/eccb2026-2.jpg, alt: "The SELFormerMM proceedings talk at ECCB 2026" }
+  - { src: /images/news/eccb2026-3.jpg, alt: "A lab member with a poster" }
+  - { src: /images/news/eccb2026-4.jpg, alt: "A lab member with a poster" }
+  - { src: /images/news/eccb2026-5.jpg, alt: "Discussing a poster with visitors" }
+  - { src: /images/news/eccb2026-6.jpg, alt: "A lab member with a poster" }
+  - { src: /images/news/eccb2026-7.jpg, alt: "Explaining a poster at the poster session" }
+  - { src: /images/news/eccb2026-8.jpg, alt: "Group photo at the conference centre" }
+  - { src: /images/news/eccb2026-9.jpg, alt: "The team by Lake Geneva" }
+  - { src: /images/news/eccb2026-10.jpg, alt: "Team dinner in Geneva" }
+  - { src: /images/news/eccb2026-11.jpg, alt: "Group photo at the conference" }
+  - { src: /images/news/eccb2026-12.jpg, alt: "We are presenting at ECCB 2026" }
 ---
 
 Our lab took part in the 25th European Conference on Computational Biology (ECCB 2026), held in Geneva from 31 August to 4 September and hosted by the SIB Swiss Institute of Bioinformatics, with one proceedings talk and eight posters.

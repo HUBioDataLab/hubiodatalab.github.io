@@ -5,6 +5,8 @@ tags:
   - drug discovery
   - representation learning
   - conference
+image: /images/news/selformermm-eccb2026.jpg
+image_alt: "SELFormerMM overview: four molecular modalities aligned in one representation space, with benchmark results"
 ---
 
 Our study "SELFormerMM: Multimodal Molecular Representation Learning via SELFIES, Structure, Text, and Knowledge Graph Integration" has been accepted as a proceedings paper at ECCB 2026 and will be presented orally in Geneva. It will appear in *Bioinformatics* (Oxford University Press).

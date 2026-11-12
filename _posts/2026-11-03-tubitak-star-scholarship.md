@@ -5,6 +5,8 @@ tags:
   - positions
   - students
   - TÜBİTAK
+image: /images/news/tubitak-star-scholarship.jpg
+image_alt: "TÜBİTAK 2247-C STAR undergraduate scholarship announcement for project 124E639"
 ---
 
 We are looking for one undergraduate scholar to join our TÜBİTAK ARDEB 1001 project **"High-Precision Protein Function Prediction with Graph Contrastive Representation Learning"** (project no. 124E639) through the TÜBİTAK 2247-C STAR programme.

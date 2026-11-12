@@ -5,6 +5,10 @@ tags:
   - drug discovery
   - graph neural networks
   - software
+image: /images/news/dta-gnn-1.jpg
+image_alt: "The DTA-GNN web interface"
+gallery:
+  - { src: /images/news/dta-gnn-2.jpg, alt: "DTA-GNN workflow: dataset construction, model training and analysis" }
 ---
 
 DTA-GNN, an end-to-end open-source Python toolkit for drug–target affinity (DTA) prediction with graph neural networks, has been published in *SoftwareX*.

@@ -9,7 +9,18 @@ layout: default
   </div>
 </header>
 <article class="wrap page post">
+  {%- comment -%} Posts with image_alt show their image as a cover; older posts embed it in the text. {%- endcomment -%}
+  {%- if page.image_alt %}
+  <figure class="post-cover"><a href="{{ page.image | relative_url }}"><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}"></a></figure>
+  {%- endif %}
   <div class="prose">{{ content }}</div>
+  {%- if page.gallery %}
+  <ul class="post-gallery" aria-label="Photos">
+    {%- for g in page.gallery %}
+    <li><a href="{{ g.src | relative_url }}"><img src="{{ g.src | relative_url }}" alt="{{ g.alt | escape }}" loading="lazy"></a></li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
   <nav class="post-nav" aria-label="More news">
     {%- if page.previous %}
     <a class="prev" href="{{ page.previous.url | relative_url }}"><span class="post-nav-label">‹ Older</span>{{ page.previous.title }}</a>

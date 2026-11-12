@@ -4,6 +4,8 @@ author: research-news
 tags:
   - teaching
   - alumni
+image: /images/news/patent-strategies-course.jpg
+image_alt: "Course poster for SEC 643, Patent Strategies in Information Technologies"
 ---
 
 Our alumna Dr. Fulya Çıray is teaching a new university elective at Hacettepe this semester, open to undergraduates from all departments: **SEC 643, Patent Strategies in Information Technologies**.

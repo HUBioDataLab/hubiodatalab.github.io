@@ -6,6 +6,8 @@ tags:
   - drug discovery
   - virology
   - medicine
+image: /images/news/mpox-communications-biology.jpg
+image_alt: "Overview of the AI-driven drug repurposing pipeline against poxviruses"
 ---
 
 Great news from our group! Our collaborative study with Erasmus University, focusing on drug development against the pox virus, has been accepted by the journal *Communications Biology*. Congratulations to Atabey and Elif for their contributions!

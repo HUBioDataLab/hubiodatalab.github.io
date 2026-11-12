@@ -4,6 +4,13 @@ author: research-news
 tags:
   - students
   - teaching
+image: /images/news/project-exhibition-2026-1.jpg
+image_alt: "Students presenting their project poster at the exhibition"
+gallery:
+  - { src: /images/news/project-exhibition-2026-2.jpg, alt: "A student team with their poster" }
+  - { src: /images/news/project-exhibition-2026-3.jpg, alt: "A student team with their poster" }
+  - { src: /images/news/project-exhibition-2026-4.jpg, alt: "A student team with their poster" }
+  - { src: /images/news/project-exhibition-2026-5.jpg, alt: "A student team with their poster and mentors" }
 ---
 
 Five student groups who carried out their graduation projects in our lab presented their work at the 2026 Project Exhibition of Hacettepe University's Computer Engineering and Artificial Intelligence Engineering departments. Each project is the result of a year of work:

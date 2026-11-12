@@ -5,6 +5,8 @@ tags:
   - conference
   - large language models
   - proteins
+image: /images/news/proquest-iscb-uk-2026.jpg
+image_alt: "Melike Akkaya presenting ProQuest at ISCB-UK 2026"
 ---
 
 Melike Akkaya presented our project "ProQuest: A Large Language Model Application on the UniProt Protein Sequence and Annotation Database" at ISCB-UK 2026, held at the University of Cambridge.

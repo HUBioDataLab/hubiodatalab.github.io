@@ -4,6 +4,8 @@ author: research-news
 tags:
   - recognition
   - editorial
+image: /images/news/bioinformatics-editor.jpg
+image_alt: "Cover banner of the journal Bioinformatics (ISCB, Oxford University Press)"
 ---
 
 Prof. Tunca Doğan has joined the Editorial Board of *Bioinformatics* (Oxford University Press), the official journal of the International Society for Computational Biology (ISCB), as an Associate Editor.

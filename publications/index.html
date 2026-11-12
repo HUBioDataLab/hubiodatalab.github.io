@@ -2,7 +2,7 @@
 title: Publications
 ---
 {%- assign meta = site.data.publications_meta -%}
-{%- assign scholar_url = "https://scholar.google.com/citations?user=" | append: site.lab.scholar -%}
+{%- assign scholar_url = "https://scholar.google.com/citations?hl=en&user=" | append: site.lab.scholar | append: "&view_op=list_works&sortby=pubdate" -%}
 {%- if meta.scholar_url %}{% assign scholar_url = meta.scholar_url %}{% endif -%}
 {%- assign pubs = site.data.publications | where_exp: "p", "p.hidden != true" -%}
 {%- assign selected = pubs | where: "selected", true | sort: "selected_rank" -%}

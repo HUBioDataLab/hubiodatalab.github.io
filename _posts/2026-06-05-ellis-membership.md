@@ -4,6 +4,8 @@ author: research-news
 tags:
   - recognition
   - AI
+image: /images/news/ellis-membership.jpg
+image_alt: "ELLIS, the European Laboratory for Learning and Intelligent Systems, logo"
 ---
 
 Prof. Tunca Doğan has joined ELLIS, the European Laboratory for Learning and Intelligent Systems, as a member. ELLIS is a pan-European network of excellence in AI and machine learning research that aims to keep top-level basic research in Europe and turn it into economic and societal impact.
