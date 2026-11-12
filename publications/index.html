@@ -4,7 +4,7 @@ title: Publications
 {%- assign meta = site.data.publications_meta -%}
 {%- assign scholar_url = "https://scholar.google.com/citations?hl=en&user=" | append: site.lab.scholar | append: "&view_op=list_works&sortby=pubdate" -%}
 {%- if meta.scholar_url %}{% assign scholar_url = meta.scholar_url %}{% endif -%}
-{%- assign pubs = site.data.publications | where_exp: "p", "p.hidden != true" -%}
+{%- assign pubs = site.data.publications | where_exp: "p", "p.hidden != true" | where_exp: "p", "p.year" -%}
 {%- assign selected = pubs | where: "selected", true | sort: "selected_rank" -%}
 <div class="pubs-intro">
   {%- if meta.updated %}
@@ -43,7 +43,7 @@ title: Publications
   {%- assign groups = pubs | group_by: "year" -%}
   {%- for g in groups %}
   <section class="year-group" data-year-group>
-    <h3 class="year">{% if g.name == "" or g.name == nil %}Undated{% else %}{{ g.name }}{% endif %}</h3>
+    <h3 class="year">{{ g.name }}</h3>
     <ol class="pub-list">{% for p in g.items %}{% include pub.html pub=p hide_year=true %}{% endfor %}</ol>
   </section>
   {%- endfor %}

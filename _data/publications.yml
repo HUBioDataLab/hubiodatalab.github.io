@@ -293,7 +293,6 @@
   year: 2023
   scholar_id: tHnMNPEAAAAJ:Zh0EY9V9P6UC
   citations: 8449
-  hidden: true
 - title: Machine learning-based prediction of drug approvals using molecular, physicochemical, clinical trial and patent related features
   authors: F Ciray, T Doğan
   venue: Expert Opinion on Drug Discovery
@@ -385,7 +384,6 @@
   year: 2021
   scholar_id: tHnMNPEAAAAJ:LXmCCkuhhTsC
   citations: 171
-  hidden: true
 - title: Machine Learning Methodologies To Study Molecular Interactions
   authors: E Ozkirimli, A Yakimovich, T Dogan, A Ozgur
   venue: Frontiers in Molecular Biosciences, 1174
@@ -442,14 +440,12 @@
   year: 2021
   scholar_id: tHnMNPEAAAAJ:mWEH9CqjF64C
   citations: 108
-  hidden: true
 - title: 'UniProt: the universal protein knowledgebase in 2021'
   authors: UP Consortium
   venue: Nucleic acids research 49 (D1), D480-D489
   year: 2021
   scholar_id: tHnMNPEAAAAJ:tHtfpZlB6tUC
   citations: 7502
-  hidden: true
 - title: 'MDeePred: Novel Multi-Channel protein featurization for deep learning based binding affinity prediction in drug discovery'
   authors: AS Rifaioglu, R Cetin Atalay, D Cansen Kahraman, T Doğan, M Martin, ...
   venue: Bioinformatics, btaa858
@@ -495,14 +491,12 @@
   year: 2019
   scholar_id: tHnMNPEAAAAJ:KaMxkj08jr0C
   citations: 633
-  hidden: true
 - title: FAIR adoption, assessment and challenges at UniProt
   authors: L Garcia, J Bolleman, S Gehant, N Redaschi, M Martin, UP Consortium
   venue: Scientific data 6 (1), 1-4
   year: 2019
   scholar_id: tHnMNPEAAAAJ:U_HPUtbDl20C
   citations: 32
-  hidden: true
 - title: 'Recent applications of deep learning and machine intelligence on in silico drug discovery: methods, tools and databases'
   authors: AS Rifaioglu, H Atas, MJ Martin, R Cetin-Atalay, V Atalay, T Doğan
   venue: Briefings in bioinformatics 20 (5), 1878–1912
@@ -609,21 +603,18 @@
   year: 2017
   scholar_id: tHnMNPEAAAAJ:4fGpz3EwCPoC
   citations: 14
-  hidden: true
 - title: 'UniProt: the universal protein knowledgebase'
   authors: UP Consortium
   venue: Nucleic acids research 45 (D1), D158-D169
   year: 2017
   scholar_id: tHnMNPEAAAAJ:oi2SiIJ9l4AC
   citations: 6919
-  hidden: true
 - title: An expanded evaluation of protein function prediction methods shows an improvement in accuracy
   authors: Y Jiang, TR Oron, WT Clark, AR Bankapur, D D’Andrea, R Lepore, ...
   venue: Genome biology 17 (1), 184
   year: 2016
   scholar_id: tHnMNPEAAAAJ:u9iWguZQMMsC
   citations: 532
-  hidden: true
 - title: 'UniProt-DAAC: domain architecture alignment and classification, a new method for automatic functional annotation in UniProtKB'
   authors: T Doğan, A MacDougall, R Saidi, D Poggioli, A Bateman, C O’Donovan, ...
   venue: Bioinformatics 32 (15), 2264-2271
@@ -640,28 +631,24 @@
   year: 2016
   scholar_id: tHnMNPEAAAAJ:p2g8aNsByqUC
   citations: 228
-  hidden: true
 - title: The UniProtKB guide to the human proteome
   authors: L Breuza, S Poux, A Estreicher, ML Famiglietti, M Magrane, M Tognolli, ...
   venue: Database 2016, bav120
   year: 2016
   scholar_id: tHnMNPEAAAAJ:Tiz5es2fbqcC
   citations: 218
-  hidden: true
 - title: Unsupervised identification of redundant domain entries in InterPro database using clustering techniques
   authors: AS Rifaioğlu, T Doğan, T Can
   venue: Proceedings of the 6th ACM Conference on Bioinformatics, Computational …
   year: 2015
   scholar_id: tHnMNPEAAAAJ:OU6Ihb5iCvQC
   citations: 0
-  hidden: true
 - title: 'UniProt: a hub for protein information'
   authors: UniProt Consortium
   venue: Nucleic acids research 43 (D1), D204-D212
   year: 2015
   scholar_id: tHnMNPEAAAAJ:PyEswDtIyv0C
   citations: 5687
-  hidden: true
 - title: The role of UniProt's protein sequence databases in biomedical research
   authors: A Nightingale, T Dogan, D Poggioli, M Martin, UniProt Consortium
   venue: F1000Research 5
@@ -681,33 +668,30 @@
   year: 2014
   scholar_id: tHnMNPEAAAAJ:-jrNzM816MMC
   citations: 1453
-  hidden: true
 - title: Automatic identification of highly conserved family regions and relationships in genome wide datasets including remote protein sequences
   authors: T Doğan, B Karaçalı
   venue: PloS one 8 (9), e75458
   year: 2013
   scholar_id: tHnMNPEAAAAJ:XiSMed-E-HIC
   citations: 14
-  hidden: true
 - title: 2-D Thresholding of the Connectivity Map Following the Multiple Sequence Alignments of Diverse Datasets
   authors: T Doğan, B Karaçalı
   venue: The 10th IASTED International Conference on Biomedical Engineering
   year: 2013
   scholar_id: tHnMNPEAAAAJ:d1gkVwhDpl0C
   citations: 0
-  hidden: true
 - title: Evolutionary relationships between gene sequences via nonlinear embedding
   authors: T Dogan, B Karaçalı
   venue: Biomedical Engineering Meeting (BIYOMUT), 2010 15th National, 1-4
   year: 2010
   scholar_id: tHnMNPEAAAAJ:qjMakFHDy7sC
   citations: 0
-  hidden: true
 - title: 'Deep Learning for Antimicrobial Peptide Recognition: Application to Trichoderma reesei Genome'
   authors: H Soykam, T Doğan, S Ünsal, G Bayram Akçapınar
   venue: ''
   year: null
   scholar_id: tHnMNPEAAAAJ:iyewoVqAXLQC
+  hidden: true
   citations: 0
   topics:
   - protein-function
@@ -725,6 +709,7 @@
   venue: ''
   year: null
   scholar_id: tHnMNPEAAAAJ:c_xDhezhKKUC
+  hidden: true
   citations: 0
   projects:
   - protgen
