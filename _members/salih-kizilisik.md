@@ -2,7 +2,7 @@
 name: Salih Kızılışık
 image: /images/team/salih-kizilisik.jpg
 role: msc
-redirect_from: /team/bunyamin-sen/
+redirect_from: /team/salih-kizilisik/
 aliases:
   - Salih Kızılışık
   - S. Kızılışık
