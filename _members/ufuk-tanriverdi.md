@@ -4,18 +4,22 @@ image: /images/team/ufuk-tanriverdi.jpg
 role: undergrad
 redirect_from: /team/ufuk-tanriverdi/
 aliases:
+  - Ufuk Tanriverdi
+  - U. Tanriverdi
   - Ufuk T.
-  - U. Tanrıverdi
 links:
   email: ufuktanriverdi1@gmail.com
   orcid: 0009-0000-9527-110X
   github: UfukTanriverdi8
-  linkedin: ufuk-tanrıverdi-91a503264
+  linkedin: ufuk-tanriverdi-91a503264
 ---
 
-Currently 3rd year Computer Engineering student at Hacettepe University.
-I have a **special interest in LLMs** and what they can achieve. 
+Senior CS student at Hacettepe University.
 
+I've been voluntarily working on a research project here since the start of my sophomore year.
 
-Working on generating artificial protein sequences that can mimic the function of the DNMT family in this lab. Trying to do that by utilizing an architecture
-that integrates Transformers into a GAN setup.
+My work is part of the TÜBİTAK project *ProtGEN*. I'm working on generating artificial protein sequences that can mimic the DNMT enzyme family. I'm utilizing an adversarial architecture that's made up of two Transformer encoder models.
+
+I was lucky enough to present my work as a poster at ISMB/ECCB 2025 and ECCB 2026!
+
+Currently I have interest in making AI/ML more sustainable and more meaningful before making it more powerful. I believe LLMs are a huge advancement for the field, but other areas of AI/ML can give us options that are more powerful and more efficient, and they deserve the same attention.
